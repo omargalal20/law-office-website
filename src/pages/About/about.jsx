@@ -1,11 +1,11 @@
 import React from "react";
-import aboutbg from "../assets/about.svg";
-import aboutbg2 from "../assets/about2.svg";
-import aboutbg3 from "../assets/about3.svg";
+import aboutbg from "../../assets/Images/About/about.svg";
+import aboutbg2 from "../../assets/Images/About/about2.svg";
+import aboutbg3 from "../../assets/Images/About/about3.svg";
+import bx6 from "../../assets/Images/Misc/img.svg";
 import Stack from "@mui/material/Stack";
-import HeaderBar from "../reusable-components/header";
+import HeaderBar from "../../components/Header/header";
 import { useState } from "react";
-import bx6 from "../assets/img.svg";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 
 const About = () => {

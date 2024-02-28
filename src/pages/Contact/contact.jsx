@@ -1,11 +1,11 @@
 import React from "react";
-import contactbg from "../assets/contact.svg";
+import contactbg from "../../assets/Images/Contact/contact.svg";
 import Stack from "@mui/material/Stack";
-import HeaderBar from "../reusable-components/header";
+import HeaderBar from "../../components/Header/header";
 import { Input, Typography } from "antd";
 import CloseIcon from "@mui/icons-material/Close";
-import map from "../assets/Rectangle.png";
-import line from "../assets/Line 7.png";
+import map from "../../assets/Images/Contact/Rectangle.png";
+import line from "../../assets/Images/Misc/Line 7.png";
 
 const Contact = () => {
   return (

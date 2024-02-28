@@ -4,19 +4,15 @@ import {
   MDBContainer,
   MDBRow,
   MDBCol,
-  MDBIcon,
 } from "mdb-react-ui-kit";
-import { MDBInput } from "mdb-react-ui-kit";
 import { MDBBtn } from "mdb-react-ui-kit";
-import logoMain from "../assets/logo-main9 2.svg";
-import fbIcon from "../assets/facebook.svg";
-import xIcon from "../assets/x.svg";
+import logoMain from "../../assets/Images/Misc/logo-main9 2.svg";
+import fbIcon from "../../assets/Images/Misc/facebook.svg";
+import xIcon from "../../assets/Images/Misc/x.svg";
 import { TextField } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import IconButton from "@mui/material/IconButton";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 
 export default function Footer() {
