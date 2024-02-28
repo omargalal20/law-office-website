@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Footer from "./reusable-components/footer";
-import Landing from "./pages/landing";
-import Contact from "./pages/contact";
-import About from "./pages/about";
-import Dentons from "./pages/dentons";
+import Footer from "./components/Footer/footer";
+import Landing from "./pages/Landing/landing";
+import Contact from "./pages/Contact/contact";
+import About from "./pages/About/about";
+import Dentons from "./pages/Dentons/dentons";
 
 function App() {
   return (
