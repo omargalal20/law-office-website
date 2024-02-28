@@ -3,7 +3,7 @@ import landOne from "../assets/image1.jpg";
 import mobileOne from "../assets/mobile1.jpg";
 import mobileTwo from "../assets/mob2.svg";
 import Stack from "@mui/material/Stack";
-import HeaderBar from "../reusable-components/header";
+import HeaderBar from "../../reusable-components/Header/header";
 import landTwo from "../assets/main2.jpg";
 import landThree from "../assets/main3.jpg";
 import EastIcon from "@mui/icons-material/East";
