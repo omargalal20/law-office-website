@@ -194,9 +194,39 @@ const Dentons = () => {
       </div>
       <div style={{ background: "white", height: "1390px" }}>
         <Stack direction={"row"} spacing={5}>
-          <Stack direction={"column"}>
-            <p>Global Scale, Local Touch</p>
-            <p>
+          <Stack direction={"column"} style={{ position: "relative" }}>
+            <p
+              style={{
+                fontSize: "50px",
+                fontWeight: 300,
+                width: "350px",
+                top: 134,
+                left: 107,
+                position: "absolute",
+              }}
+            >
+              Global Scale,{" "}
+              <span
+                style={{
+                  fontSize: "50px",
+                  fontWeight: 100,
+                  fontStyle: "italic",
+                }}
+              >
+                Local Touch
+              </span>
+            </p>
+            <p
+              style={{
+                fontSize: "18px",
+                fontWeight: 400,
+                width: "651px",
+                top: 340,
+                left: 107,
+                position: "absolute",
+                fontFamily: "Montserrat",
+              }}
+            >
               From bustling metropolises to remote corners of the world, Dentons
               has deep local roots in every jurisdiction they operate in. This
               ensures clients receive not just global reach, but the nuanced
@@ -206,10 +236,134 @@ const Dentons = () => {
             <img
               src={dentonsbg3}
               alt="bg"
-              style={{ width: "651px", height: "888px" }}
+              style={{
+                width: "651px",
+                height: "888px",
+                marginTop: "435px",
+                paddingLeft: 107,
+              }}
             />
           </Stack>
-          <Stack direction={"column"}></Stack>
+          <Stack direction={"column"} style={{ position: "relative" }}>
+            <p
+              style={{
+                fontSize: "50px",
+                fontWeight: 300,
+                width: "300px",
+                top: 134,
+                left: 107,
+                position: "absolute",
+              }}
+            >
+              A Symphony{" "}
+              <span
+                style={{
+                  fontSize: "50px",
+                  fontWeight: 100,
+                  fontStyle: "italic",
+                }}
+              >
+                of Expertise
+              </span>
+            </p>
+            <p
+              style={{
+                fontSize: "18px",
+                fontWeight: 400,
+                width: "651px",
+                top: 320,
+                left: 107,
+                position: "absolute",
+                fontFamily: "Montserrat",
+              }}
+            >
+              From corporate giants to individual entrepreneurs, Dentons caters
+              to a vast spectrum of clients with a bespoke approach. With over
+              50 practice areas spanning everything from tax law to intellectual
+              property, their lawyers are virtuosos in their respective fields,
+              collaborating seamlessly to orchestrate legal solutions that meet
+              your specific needs.
+            </p>
+            <p
+              style={{
+                fontSize: "50px",
+                fontWeight: 300,
+                width: "200px",
+                top: 520,
+                left: 107,
+                position: "absolute",
+              }}
+            >
+              Innovation{" "}
+              <span
+                style={{
+                  fontSize: "50px",
+                  fontWeight: 100,
+                  fontStyle: "italic",
+                }}
+              >
+                at Heart
+              </span>
+            </p>
+            <p
+              style={{
+                fontSize: "18px",
+                fontWeight: 400,
+                width: "651px",
+                top: 670,
+                left: 107,
+                position: "absolute",
+                fontFamily: "Montserrat",
+              }}
+            >
+              Dentons isn't just a legal powerhouse, it's a breeding ground for
+              cutting-edge legal solutions. They embrace technology as a force
+              for good, utilizing AI and data analytics to streamline processes,
+              optimize outcomes, and stay ahead of the curve in an ever-evolving
+              legal landscape.
+            </p>
+            <p
+              style={{
+                fontSize: "50px",
+                fontWeight: 300,
+                width: "250px",
+                top: 858,
+                left: 107,
+                position: "absolute",
+              }}
+            >
+              Commitment{" "}
+              <span
+                style={{
+                  fontSize: "50px",
+                  fontWeight: 100,
+                  fontStyle: "italic",
+                }}
+              >
+                at Heart
+              </span>
+            </p>
+            <p
+              style={{
+                fontSize: "18px",
+                fontWeight: 400,
+                width: "651px",
+                top: 1010,
+                left: 107,
+                position: "absolute",
+                fontFamily: "Montserrat",
+              }}
+            >
+              Dentons is a testament to the fact that professionalism and global
+              reach go hand in hand. It's a firm that doesn't just boast
+              impressive numbers, but translates them into tangible results for
+              its clients. So, when you need a legal partner who combines
+              unparalleled expertise with a truly global perspective, look no
+              further than Dentons. They're more than just a law firm - they're
+              a force for legal excellence, forged in the fire of global
+              collaboration.
+            </p>
+          </Stack>
         </Stack>
       </div>
       <div

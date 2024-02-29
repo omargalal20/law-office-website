@@ -5,6 +5,8 @@ import Landing from "./pages/Landing/landing";
 import Contact from "./pages/Contact/contact";
 import About from "./pages/About/about";
 import Dentons from "./pages/Dentons/dentons";
+import Practice from "./pages/PracticeArea/practiceArea";
+import { Container } from "@mui/material";
 
 function App() {
   return (
@@ -15,6 +17,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/dentons" element={<Dentons />} />
+          <Route path="/practiceAreas" element={<Practice />} />
         </Routes>
         <Footer />
       </div>
