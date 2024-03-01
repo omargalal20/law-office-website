@@ -4,7 +4,7 @@ import aboutbg2 from "../../assets/Images/About/about2.svg";
 import aboutbg3 from "../../assets/Images/About/about3.svg";
 import bx6 from "../../assets/Images/Misc/img.svg";
 import Stack from "@mui/material/Stack";
-import HeaderBar from "../../components/Header/header";
+import HeaderBar from "../../components/Layout/Header/header";
 import { useState } from "react";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 

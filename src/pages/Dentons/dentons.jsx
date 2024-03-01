@@ -3,7 +3,7 @@ import dentonsbg from "../../assets/Images/Dentons/dentons.svg";
 import dentonsbg2 from "../../assets/Images/Dentons/dentons2.svg";
 import dentonsbg3 from "../../assets/Images/Dentons/dentons3.svg";
 import Stack from "@mui/material/Stack";
-import HeaderBar from "../../components/Header/header";
+import HeaderBar from "../../components/Layout/Header/header";
 import { useState } from "react";
 import bx6 from "../../assets/Images/Misc/img.svg";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";

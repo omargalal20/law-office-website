@@ -6,9 +6,9 @@ import {
   MDBCol,
 } from "mdb-react-ui-kit";
 import { MDBBtn } from "mdb-react-ui-kit";
-import logoMain from "../../assets/Images/Misc/logo-main9 2.svg";
-import fbIcon from "../../assets/Images/Misc/facebook.svg";
-import xIcon from "../../assets/Images/Misc/x.svg";
+import logoMain from "../../../assets/Images/Misc/logo-main9 2.svg";
+import fbIcon from "../../../assets/Images/Misc/facebook.svg";
+import xIcon from "../../../assets/Images/Misc/x.svg";
 import { TextField } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
