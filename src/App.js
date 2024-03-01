@@ -1,31 +1,18 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Footer from "./components/Layout/Footer/footer";
-import Landing from "./pages/Landing/landing";
-import Contact from "./pages/Contact/contact";
-import About from "./pages/About/about";
-import Dentons from "./pages/Dentons/dentons";
-import Insights from "./pages/Insights/insights";
-import Practice from "./pages/PracticeArea/practiceArea";
-import Maps from "../src/pages/maps.jsx";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Layout from "./components/Layout/Layout.jsx";
+import routes from "./routes/index.js";
 
 function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Routes>
-          <Route path="/" exact element={<Landing />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/dentons" element={<Dentons />} />
-          <Route path='/insights' element={<Insights />} />
-          <Route path="/practiceAreas" element={<Practice />} />
-          <Route path="/maps" element={<Maps />} />
-        </Routes>
-        <Footer />
-      </div>
-    </Router>
-  );
+  const router = createBrowserRouter([
+    {
+      element: <Layout />,
+      children: routes,
+    },
+  ]);
+
+  return <RouterProvider router={router} />;
 }
 
 export default App;
