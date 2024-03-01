@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 import clockIcon from '../../../assets/Images/Insights/main-insights-clock-icon.svg'
 import hoverableImageButtonIcon from '../../../assets/Images/Misc/hoverable-image-button-icon.svg'
 
-const HoverableImage = ({ src, alt, width, height, text }) => {
+const HoverableImage = ({ src, alt, width, height, text, buttonEnabled = true }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [isButtonEnabled, setIsButtonEnabled] = useState(buttonEnabled);
+
+  useEffect(() => {
+    setIsButtonEnabled(buttonEnabled);
+  }, [buttonEnabled]);
 
   return (
     <div style={{ display: "flex", flexDirection: "column" }}>
@@ -34,25 +39,29 @@ const HoverableImage = ({ src, alt, width, height, text }) => {
           </div>
         )}
       </div>
-      <div
-        style={{ display: "flex", alignSelf: "flex-end", justifyContent: "center", alignItems: "center" }}
-        onMouseEnter={() => setIsHovered(true)}
-        onMouseLeave={() => setIsHovered(false)}
-      >
-        <button>See what is ahead</button>
-        <div
-          style={{
-            transition: "transform 0.5s ease",
-            transform: isHovered ? "translateX(5px)" : "translateX(0)",
-          }}
-        >
-          <img
-            src={hoverableImageButtonIcon}
-            alt="icon"
-            style={{ marginLeft: "10px" }}
-          />
-        </div>
-      </div>
+      {
+        isButtonEnabled && (
+          <div
+            style={{ display: "flex", alignSelf: "flex-end", justifyContent: "center", alignItems: "center" }}
+            onMouseEnter={() => setIsHovered(true)}
+            onMouseLeave={() => setIsHovered(false)}
+          >
+            <button>See what is ahead</button>
+            <div
+              style={{
+                transition: "transform 0.5s ease",
+                transform: isHovered ? "translateX(5px)" : "translateX(0)",
+              }}
+            >
+              <img
+                src={hoverableImageButtonIcon}
+                alt="icon"
+                style={{ marginLeft: "10px" }}
+              />
+            </div>
+          </div>
+        )
+      }
     </div>
   );
 };

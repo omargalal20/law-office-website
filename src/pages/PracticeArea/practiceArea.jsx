@@ -3,12 +3,9 @@ import practicebg from "../../assets/Images/PracticeArea/practice.svg";
 import practicebg2 from "../../assets/Images/PracticeArea/practice2.svg";
 import practicebg3 from "../../assets/Images/PracticeArea/Rectangle 36.svg";
 import Stack from "@mui/material/Stack";
-import { useState } from "react";
-import bx6 from "../../assets/Images/Misc/img.svg";
-import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
-import BlackHeaderBar from "../../components/Header/blackHeader";
+import BlackHeaderBar from "../../components/Layout/Header/blackHeader";
 import img1 from "../../assets/Images/PracticeArea/Group 397.svg";
 import img2 from "../../assets/Images/PracticeArea/Group 161.svg";
 import img3 from "../../assets/Images/PracticeArea/Group 163.svg";
@@ -19,7 +16,7 @@ import img7 from "../../assets/Images/PracticeArea/Group 160.svg";
 import img8 from "../../assets/Images/PracticeArea/Group 162.svg";
 import img9 from "../../assets/Images/PracticeArea/Group 164 (1).svg";
 import img10 from "../../assets/Images/PracticeArea/Group 391.png";
-import { Container, Grid } from "@mui/material";
+import { Container } from "@mui/material";
 
 import practiceBG from "../../assets/Images/PracticeArea/nrd-c3tNiAb098I-unsplash 2 (1).svg";
 

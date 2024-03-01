@@ -33,17 +33,6 @@ const theme = createTheme({
     },
 });
 
-const gridContainer = {
-    display: "grid",
-    gridTemplateColumns: "repeat(5, 1fr)",
-    gridTemplateRows: "auto auto auto auto auto", // Define 5 rows
-};
-
-const gridItem = {
-    margin: "8px",
-    border: "1px solid red"
-};
-
 const itemData = [
     {
         img: mainInsightsGenericInsightsImage,
