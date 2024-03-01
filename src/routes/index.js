@@ -1,5 +1,5 @@
 import React from "react";
-import PathConstants from "./PathConstants";
+import MainPathConstants from "./MainPathConstants";
 import InsightsPathConstants from "./InsightsPathConstants";
 
 const Landing = React.lazy(() => import("../pages/Landing/landing"));
@@ -20,12 +20,12 @@ const EnergyGlobalDemandInsights = React.lazy(() => import("../pages/Insights/En
 const CapitalRetentionInsights = React.lazy(() => import("../pages/Insights/CapitalRetention/capitalRetention"));
 
 const routes = [
-  { path: PathConstants.LANDING, element: <Landing /> },
-  { path: PathConstants.CONTACT, element: <Contact /> },
-  { path: PathConstants.ABOUT, element: <About /> },
-  { path: PathConstants.DENTONS, element: <Dentons /> },
-  { path: PathConstants.PRACTICE_AREAS, element: <Practice /> },
-  { path: PathConstants.MAPS, element: <Maps /> },
+  { path: MainPathConstants.LANDING, element: <Landing /> },
+  { path: MainPathConstants.CONTACT, element: <Contact /> },
+  { path: MainPathConstants.ABOUT, element: <About /> },
+  { path: MainPathConstants.DENTONS, element: <Dentons /> },
+  { path: MainPathConstants.PRACTICE_AREAS, element: <Practice /> },
+  { path: MainPathConstants.MAPS, element: <Maps /> },
   { path: InsightsPathConstants.MAIN_INSIGHTS, element: <MainInsights /> },
   { path: InsightsPathConstants.LABOR_LAW_INSIGHTS, element: <LaborLawInsights /> },
   { path: InsightsPathConstants.RENEWABLE_ENERGY_INSIGHTS, element: <RenewableEnergyInsights /> },

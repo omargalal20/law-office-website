@@ -1,4 +1,4 @@
-const PathConstants = {
+const MainPathConstants = {
   LANDING: "/",
   CONTACT: "contact",
   ABOUT: "about",
@@ -7,4 +7,4 @@ const PathConstants = {
   MAPS: "maps",
 };
 
-export default PathConstants;
+export default MainPathConstants;
