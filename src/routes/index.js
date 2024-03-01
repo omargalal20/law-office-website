@@ -7,8 +7,9 @@ const About = React.lazy(() => import("../pages/About/about"));
 const Dentons = React.lazy(() => import("../pages/Dentons/dentons"));
 const Practice = React.lazy(() => import("../pages/PracticeArea/practiceArea"));
 const Maps = React.lazy(() => import("../pages/maps"));
-const Insights = React.lazy(() => import("../pages/Insights/insights"));
+const MainInsights = React.lazy(() => import("../pages/Insights/mainInsights"));
 const InsightsLaborLaw = React.lazy(() => import("../pages/Insights/LaborLaw/laborlaw"));
+const InsightsRenewableEnergy = React.lazy(() => import("../pages/Insights/RenewableEnergy/renewableEnergy"));
 
 const routes = [
   { path: PathConstants.LANDING, element: <Landing /> },
@@ -17,8 +18,9 @@ const routes = [
   { path: PathConstants.DENTONS, element: <Dentons /> },
   { path: PathConstants.PRACTICE_AREAS, element: <Practice /> },
   { path: PathConstants.MAPS, element: <Maps /> },
-  { path: PathConstants.INSIGHTS, element: <Insights /> },
+  { path: PathConstants.MAIN_INSIGHTS, element: <MainInsights /> },
   { path: PathConstants.INSIGHTS_LABOR_LAW, element: <InsightsLaborLaw /> },
+  { path: PathConstants.INSIGHTS_RENEWABLE_ENERGY, element: <InsightsRenewableEnergy /> },
 ];
 
 export default routes;

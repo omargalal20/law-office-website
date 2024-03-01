@@ -80,7 +80,7 @@ const itemData1 = [
     },
 ];
 
-const Insights = () => {
+const MainInsights = () => {
     return (
         <>
             <Hero
@@ -208,4 +208,4 @@ const Insights = () => {
     )
 }
 
-export default Insights
+export default MainInsights
