@@ -5,7 +5,7 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import Stack from "@mui/material/Stack";
 import EastIcon from "@mui/icons-material/East";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
-import HeaderBar from "../../components/Header/header";
+import HeaderBar from "../../components/Layout/Header/header";
 import landOne from "../../assets/Images/Landing/image1.jpg";
 import landTwo from "../../assets/Images/Landing/main2.jpg";
 import landThree from "../../assets/Images/Landing/main3.jpg";
