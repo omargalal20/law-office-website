@@ -1,6 +1,6 @@
 import React from 'react';
 
-const LaborLawUpdate = () => {
+const LaborLawText = () => {
   return (
     <div style={{
       color: "#000000",
@@ -31,4 +31,4 @@ const LaborLawUpdate = () => {
   );
 };
 
-export default LaborLawUpdate;
+export default LaborLawText;

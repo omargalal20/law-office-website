@@ -1,13 +1,8 @@
 import React from 'react'
 
-import mainInsightsLaborLawImage from '../../../assets/Images/Insights/main-insights-law-labor.jpeg'
-import sectionHeaderArrow from '../../../assets/Images/Misc/section-header-arrow.svg'
-import laborLawInsightsHybrid from '../../../assets/Images/Insights/labor-law-insights-hybrid.jpeg'
-import laborLawInsightsBenefits from '../../../assets/Images/Insights/labor-law-insights-1.jpeg'
-
-import Hero from '../../../components/Common/Hero'
-import LaborLawUpdate from './laborLawText'
-import HoverableImage from '../../../components/Common/HoverableImage/hoverableImage'
+import Hero from '../../components/Common/Hero'
+import HoverableImage from '../../components/Common/HoverableImage/hoverableImage'
+import sectionHeaderArrow from '../../assets/Images/Misc/section-header-arrow.svg'
 
 import createTheme from '@mui/material/styles/createTheme'
 import ThemeProvider from '@mui/material/styles/ThemeProvider'
@@ -27,31 +22,20 @@ const theme = createTheme({
     },
 });
 
-const laborLawImages = [
-    {
-        img: laborLawInsightsHybrid,
-        title: 'Hybrid Work',
-        textLines: ["Employment", "Hybrid Work", "Models", "31 January, 2024"]
-    },
-    {
-        img: laborLawInsightsBenefits,
-        title: 'Employment',
-        textLines: ["Employment", "Flexible Benefits", "Packages", "31 January, 2024"]
-    },
-]
+const PersonalRelatedInsights = ({ heroDetails, insightImages, children }) => {
+    const { heroImage, heroPrimaryHeading, heroSecondaryHeading, heroSubHeading } = heroDetails;
 
-const LaborLaw = () => {
     return (
         <>
             <Hero
-                backgroundImage={mainInsightsLaborLawImage}
-                primaryHeading={'Insights'}
-                secondaryHeading={'Insights'}
-                subHeading={"New A Balancing Act: Egypt's New Labor Law Navigates a Complex Landscape"}
+                backgroundImage={heroImage}
+                primaryHeading={heroPrimaryHeading}
+                secondaryHeading={heroSecondaryHeading}
+                subHeading={heroSubHeading}
             />
             <ThemeProvider theme={theme}>
                 <Container maxWidth="lg" style={{ marginTop: "10vh", marginBottom: "10vh" }}>
-                    <LaborLawUpdate />
+                    {children}
 
                     <div style={{ display: "flex", alignItems: "center", marginTop: "10vh", marginBottom: "10vh" }}>
                         <p
@@ -82,7 +66,7 @@ const LaborLaw = () => {
 
                     <Stack direction="row" spacing={2} sx={{ height: "100%" }}>
                         {/* Labor law images */}
-                        {laborLawImages.map((item) => (
+                        {insightImages.map((item) => (
                             <HoverableImage
                                 key={item.title}
                                 src={item.img}
@@ -158,4 +142,4 @@ const LaborLaw = () => {
     )
 }
 
-export default LaborLaw;
+export default PersonalRelatedInsights
