@@ -29,7 +29,11 @@ const TransportationLogistics = () => {
     ]
 
     return (
-        <PersonalRelatedInsights heroDetails={heroDetails} insightImages={transportationLogisticsImages}>
+        <PersonalRelatedInsights
+            key={"TransportationLogistics"}
+            heroDetails={heroDetails}
+            insightImages={transportationLogisticsImages}
+        >
             <TransportationLogisticsText />
         </PersonalRelatedInsights>
     )

@@ -6,6 +6,8 @@ import insightsGreenImage from '../../../assets/Images/Insights/renewable-energy
 
 import PersonalRelatedInsights from '../personalRelatedInsights'
 import HydrogenInitiativesText from './hydrogenInitiativesText'
+import Swiper from '../../../components/Common/Swiper/swiper'
+import ProfileCard from '../../../components/Common/ProfileCard/profileCard'
 
 const HydrogenInitiatives = () => {
     const heroDetails = {
@@ -28,10 +30,28 @@ const HydrogenInitiatives = () => {
         },
     ]
 
+    const profiles = [
+        "Habil Abu El-Kheir",
+        "Tamer Kamal",
+        "Hossam El Sharawi"
+    ]
+
     return (
-        <PersonalRelatedInsights heroDetails={heroDetails} insightImages={hydrogrenInitiativesImages}>
-            <HydrogenInitiativesText />
-        </PersonalRelatedInsights>
+        <>
+            <PersonalRelatedInsights heroDetails={heroDetails} insightImages={hydrogrenInitiativesImages}>
+                <HydrogenInitiativesText />
+            </PersonalRelatedInsights>
+
+            <Swiper key={"Hydrogen-Initiatives-Our-Experts"} sectionHeader={"Our Experts"}>
+                {
+                    profiles.map(profile => (
+                        <swiper-slide>
+                            <ProfileCard key={profile} profileName={profile} />
+                        </swiper-slide>
+                    ))
+                }
+            </Swiper>
+        </>
     )
 }
 
