@@ -6,6 +6,8 @@ import insightsArbitrationImage from '../../../assets/Images/Insights/taxing-cat
 
 import PersonalRelatedInsights from '../personalRelatedInsights'
 import SustainableFuelsText from './sustainableFuelsText'
+import Swiper from '../../../components/Common/Swiper/swiper'
+import ProfileCard from '../../../components/Common/ProfileCard/profileCard'
 
 const SustainableFuels = () => {
     const heroDetails = {
@@ -28,10 +30,28 @@ const SustainableFuels = () => {
         },
     ]
 
+    const profiles = [
+        "Habil Abu El-Kheir",
+        "Tamer Kamal",
+        "Hossam El Sharawi"
+    ]
+
     return (
-        <PersonalRelatedInsights heroDetails={heroDetails} insightImages={SustainableFuelsImages}>
-            <SustainableFuelsText />
-        </PersonalRelatedInsights>
+        <>
+            <PersonalRelatedInsights heroDetails={heroDetails} insightImages={SustainableFuelsImages}>
+                <SustainableFuelsText />
+            </PersonalRelatedInsights>
+
+            <Swiper key={"Sustainable-Fuels-Our-Experts"} sectionHeader={"Our Experts"}>
+                {
+                    profiles.map(profile => (
+                        <swiper-slide>
+                            <ProfileCard key={profile} profileName={profile} />
+                        </swiper-slide>
+                    ))
+                }
+            </Swiper>
+        </>
     )
 }
 

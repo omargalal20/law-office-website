@@ -6,6 +6,8 @@ import mergerControlArbitration from '../../../assets/Images/Insights/taxing-cat
 
 import PersonalRelatedInsights from '../personalRelatedInsights'
 import MergerControlText from './mergerControlText'
+import Swiper from '../../../components/Common/Swiper/swiper'
+import ProfileCard from '../../../components/Common/ProfileCard/profileCard'
 
 const MergerControl = () => {
     const heroDetails = {
@@ -28,10 +30,28 @@ const MergerControl = () => {
         },
     ]
 
+    const profiles = [
+        "Habil Abu El-Kheir",
+        "Tamer Kamal",
+        "Hossam El Sharawi"
+    ]
+
     return (
-        <PersonalRelatedInsights heroDetails={heroDetails} insightImages={mergerControlImages}>
-            <MergerControlText />
-        </PersonalRelatedInsights>
+        <>
+            <PersonalRelatedInsights heroDetails={heroDetails} insightImages={mergerControlImages}>
+                <MergerControlText />
+            </PersonalRelatedInsights>
+
+            <Swiper key={"Merger-Control-Our-Experts"} sectionHeader={"Our Experts"}>
+                {
+                    profiles.map(profile => (
+                        <swiper-slide>
+                            <ProfileCard key={profile} profileName={profile} />
+                        </swiper-slide>
+                    ))
+                }
+            </Swiper>
+        </>
     )
 }
 

@@ -5,7 +5,7 @@ import legalPerspectiveAdaptation from '../../../assets/Images/Insights/taxing-c
 import legalPerspectiveArbitration from '../../../assets/Images/Insights/taxing-catalyst-arbitration.jpeg'
 
 import PersonalRelatedInsights from '../personalRelatedInsights'
-import LegalPerspectiveText from './legalPerspectiveTExt'
+import LegalPerspectiveText from './legalPerspectiveText'
 
 const LegalPerspective = () => {
     const heroDetails = {
