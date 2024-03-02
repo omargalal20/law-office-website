@@ -1,6 +1,6 @@
 import React from 'react'
 
-import mainInsightsGenericInsightsRenewableImage from '../../../assets/Images/Insights/main-insights-renewable.jpeg'
+import mainInsightsGenericInsightsRenewableImage from '../../../assets/Images/Insights/main-insights-renewable-windmill.jpeg'
 import RenewableEnergyInsightsWaves from '../../../assets/Images/Insights/renewable-energy-waves.jpeg'
 import RenewableEnergyInsightsGreen from '../../../assets/Images/Insights/renewable-energy-green.jpeg'
 
@@ -13,7 +13,7 @@ const RenewableEnergy = () => {
         heroImage: mainInsightsGenericInsightsRenewableImage,
         heroPrimaryHeading: 'Insights',
         heroSecondaryHeading: 'Insights',
-        heroSubHeading: "Navigating the Path to Renewables Egypt and the UAE's Energy Transition Roadmap at COP27 and COP28."
+        heroSubHeading: "A Nation Powered by Sunshine Egypt's 2030 Renewable Energy Target"
     };
 
     const renewableEnergyImages = [
