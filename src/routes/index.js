@@ -9,7 +9,7 @@ const Dentons = React.lazy(() => import("../pages/Dentons/dentons"));
 const Practice = React.lazy(() => import("../pages/PracticeArea/practiceArea"));
 const Maps = React.lazy(() => import("../pages/maps"));
 
-const MainInsights = React.lazy(() => import("../pages/Insights/mainInsights"));
+const MainInsights = React.lazy(() => import("../pages/Insights/MainInsights/mainInsights"));
 const LaborLawInsights = React.lazy(() =>
   import("../pages/Insights/LaborLaw/laborlaw")
 );

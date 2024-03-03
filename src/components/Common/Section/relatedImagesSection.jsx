@@ -5,7 +5,6 @@ import HoverableImage from '../../../components/Common/HoverableImage/hoverableI
 import Stack from '@mui/material/Stack'
 import Box from "@mui/material/Box"
 
-
 const RelatedImagesSection = ({ insightImages, teamName = "Employment" }) => {
     return (
         <Stack direction="row" spacing={2} sx={{ height: "100%" }}>
