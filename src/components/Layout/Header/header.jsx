@@ -55,20 +55,38 @@ export default function HeaderBar() {
     <Box
       sx={{
         width: "100vw",
+        height: "100vh",
         background: "linear-gradient(to right,#09283F 25%, white 25%)",
       }}
       role="presentation"
       onClick={toggleDrawer(false)}
     >
-      <IconButton>
-        <img src={mainLogo} alt="Home" />
-      </IconButton>
+      <Box
+        sx={{
+          width: "100vw",
+          height: "10vh",
+          background: "white",
+        }}
+      >
+        <IconButton>
+          <img src={mainLogo} alt="Home" />
+        </IconButton>
+      </Box>
       <List>
         {["Insights", "About Afifi", "Practice Areas", "Team", "Contacts"].map(
           (text, index) => (
             <ListItem key={text} disablePadding style={{ width: "25%" }}>
               <ListItemButton>
-                <ListItemText primary={text} style={{ color: "white" }} />
+                <ListItemText
+                  primary={text}
+                  style={{
+                    color: "white",
+                  }}
+                  primaryTypographyProps={{
+                    fontSize: "25px",
+                    fontFamily: "Montserrat",
+                  }}
+                />
                 <ListItemIcon>
                   {<ArrowForwardIcon sx={{ color: "white" }} />}
                 </ListItemIcon>
@@ -82,7 +100,14 @@ export default function HeaderBar() {
         {["Dentons Partnership"].map((text, index) => (
           <ListItem key={text} disablePadding style={{ width: "25%" }}>
             <ListItemButton>
-              <ListItemText primary={text} style={{ color: "white" }} />
+              <ListItemText
+                primary={text}
+                style={{ color: "white" }}
+                primaryTypographyProps={{
+                  fontSize: "25px",
+                  fontFamily: "Montserrat",
+                }}
+              />
               <ListItemIcon>
                 {<ArrowForwardIcon sx={{ color: "white" }} />}
               </ListItemIcon>
