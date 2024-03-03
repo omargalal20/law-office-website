@@ -19,6 +19,7 @@ import TextField from "@mui/material/TextField";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuIcon from "@mui/icons-material/Menu";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,28 +52,40 @@ export default function HeaderBar() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+    <Box
+      sx={{
+        width: "100vw",
+        background: "linear-gradient(to right,#09283F 25%, white 25%)",
+      }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
+      <IconButton>
+        <img src={mainLogo} alt="Home" />
+      </IconButton>
       <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <></> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        {["Insights", "About Afifi", "Practice Areas", "Team", "Contacts"].map(
+          (text, index) => (
+            <ListItem key={text} disablePadding style={{ width: "25%" }}>
+              <ListItemButton>
+                <ListItemText primary={text} style={{ color: "white" }} />
+                <ListItemIcon>
+                  {<ArrowForwardIcon sx={{ color: "white" }} />}
+                </ListItemIcon>
+              </ListItemButton>
+            </ListItem>
+          )
+        )}
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {["Dentons Partnership"].map((text, index) => (
+          <ListItem key={text} disablePadding style={{ width: "25%" }}>
             <ListItemButton>
+              <ListItemText primary={text} style={{ color: "white" }} />
               <ListItemIcon>
-                {index % 2 === 0 ? <></> : <MailIcon />}
+                {<ArrowForwardIcon sx={{ color: "white" }} />}
               </ListItemIcon>
-              <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}

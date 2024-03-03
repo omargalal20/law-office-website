@@ -14,8 +14,8 @@ const RelatedImagesSection = ({ insightImages, teamName = "Employment" }) => {
                 <HoverableImage
                     key={item.title}
                     src={item.img}
-                    width="100%"
-                    height="100%"
+                    width="503px"
+                    height="534px"
                     text={item.textLines}
                     buttonEnabled={false}
                 />
@@ -26,13 +26,13 @@ const RelatedImagesSection = ({ insightImages, teamName = "Employment" }) => {
                 sx={{
                     display: "flex",
                     flexDirection: "column",
-                    height: "50",
-                    width: "30%",
+                    height: "534px",
+                    width: "235px",
                 }}
             >
                 <div
                     style={{
-                        height: "70%",
+                        height: "393px",
                         backgroundImage: "linear-gradient(0deg, #09283F, #09283F)",
                         display: "flex",
                         flexDirection: "column",
@@ -56,7 +56,7 @@ const RelatedImagesSection = ({ insightImages, teamName = "Employment" }) => {
                 </div>
                 <div
                     style={{
-                        height: "30%",
+                        height: "141px",
                         backgroundImage: "linear-gradient(0deg, #702082, #702082)",
                         display: "flex",
                         flexDirection: "column",
