@@ -12,9 +12,9 @@ const HoverableImage = ({ src, alt, width, height, text, buttonEnabled = true })
   }, [buttonEnabled]);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column" }}>
+    <div style={{ display: "flex", flexDirection: "column", height: height }}>
       <div style={{ position: "relative", display: "inline-block" }}>
-        <img src={src} alt={alt} style={{ width: width, height: height }} />
+        <img src={src} alt={alt} style={{ width: width, height: height, objectFit: "cover" }} />
         {text && (
           <div style={{
             position: "absolute",
@@ -42,7 +42,13 @@ const HoverableImage = ({ src, alt, width, height, text, buttonEnabled = true })
       {
         isButtonEnabled && (
           <div
-            style={{ display: "flex", alignSelf: "flex-end", justifyContent: "center", alignItems: "center" }}
+            style={{
+              display: "flex",
+              alignSelf: "flex-end",
+              justifyContent: "center",
+              alignItems: "center",
+              overflowX: "hidden", // Prevent horizontal scrolling
+            }}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
