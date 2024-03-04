@@ -69,7 +69,7 @@ const Hero = ({ backgroundImage, primaryHeading, secondaryHeading, subHeading })
         <p
           style={{
             position: "absolute",
-            top: 650,
+            top: 571,
             left: 85,
             right: 0,
             color: "white",

@@ -20,6 +20,7 @@ import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuIcon from "@mui/icons-material/Menu";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import CloseIcon from "@mui/icons-material/Close";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -72,10 +73,21 @@ export default function HeaderBar() {
           <img src={mainLogo} alt="Home" />
         </IconButton>
       </Box>
-      <List>
+      <IconButton style={{ color: "white", paddingLeft : "20%" }}>
+        <CloseIcon sx={{ fontSize: 40 }} />
+      </IconButton>
+      <List style={{ paddingTop: "50px" }}>
         {["Insights", "About Afifi", "Practice Areas", "Team", "Contacts"].map(
           (text, index) => (
-            <ListItem key={text} disablePadding style={{ width: "25%" }}>
+            <ListItem
+              key={text}
+              disablePadding
+              style={{
+                width: "25%",
+                paddingLeft: "45px",
+                paddingRight: "45px",
+              }}
+            >
               <ListItemButton>
                 <ListItemText
                   primary={text}
@@ -98,7 +110,11 @@ export default function HeaderBar() {
       <Divider />
       <List>
         {["Dentons Partnership"].map((text, index) => (
-          <ListItem key={text} disablePadding style={{ width: "25%" }}>
+          <ListItem
+            key={text}
+            disablePadding
+            style={{ width: "25%", paddingTop: "150px" }}
+          >
             <ListItemButton>
               <ListItemText
                 primary={text}
@@ -131,7 +147,7 @@ export default function HeaderBar() {
       <div className={classes.searchContainer}>
         <TextField
           id="input-with-sx"
-          label="How can we be in service?"
+          label="Search Here"
           variant="standard"
           style={{ width: 180 }}
           InputProps={{
@@ -173,7 +189,7 @@ export default function HeaderBar() {
         />
         <TextField
           id="input-with-sx"
-          label="How can we be in service?"
+          label="Search Here"
           variant="standard"
           style={{ width: 630 }}
           sx={{
@@ -194,7 +210,11 @@ export default function HeaderBar() {
           <img src={drawerLogo} alt="Icon" />
         </IconButton>
       </div>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer
+        open={open}
+        onClose={toggleDrawer(false)}
+        anchor="top                                                                                                 "
+      >
         {DrawerList}
       </Drawer>
     </Stack>

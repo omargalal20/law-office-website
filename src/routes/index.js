@@ -1,6 +1,11 @@
 import React from "react";
 import MainPathConstants from "./MainPathConstants";
 import InsightsPathConstants from "./InsightsPathConstants";
+import PracticeAreasConstants from "./PracticeAreasConstants";
+
+const AviationPracticeArea = React.lazy(() =>
+  import("../pages/PracticeArea/Aviation/aviation.jsx")
+);
 
 const Landing = React.lazy(() => import("../pages/Landing/landing"));
 const Contact = React.lazy(() => import("../pages/Contact/contact"));
@@ -9,7 +14,9 @@ const Dentons = React.lazy(() => import("../pages/Dentons/dentons"));
 const Practice = React.lazy(() => import("../pages/PracticeArea/practiceArea"));
 const Maps = React.lazy(() => import("../pages/maps"));
 
-const MainInsights = React.lazy(() => import("../pages/Insights/MainInsights/mainInsights"));
+const MainInsights = React.lazy(() =>
+  import("../pages/Insights/MainInsights/mainInsights")
+);
 const LaborLawInsights = React.lazy(() =>
   import("../pages/Insights/LaborLaw/laborlaw")
 );
@@ -143,6 +150,10 @@ const routes = [
   {
     path: InsightsPathConstants.TRANSPORTATION_LOGISTICS,
     element: <TransportationLogisticsInsights />,
+  },
+  {
+    path: PracticeAreasConstants.AVIATION,
+    element: <AviationPracticeArea />,
   },
 ];
 

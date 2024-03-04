@@ -19,6 +19,8 @@ import TextField from "@mui/material/TextField";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import MenuIcon from "@mui/icons-material/Menu";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import CloseIcon from "@mui/icons-material/Close";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,28 +53,80 @@ export default function BlackHeaderBar() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <></> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+    <Box
+      sx={{
+        width: "100vw",
+        height: "100vh",
+        background: "linear-gradient(to right,#09283F 25%, white 25%)",
+      }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
+      <Box
+        sx={{
+          width: "100vw",
+          height: "10vh",
+          background: "white",
+        }}
+      >
+        <IconButton>
+          <img src={mainLogo} alt="Home" />
+        </IconButton>
+      </Box>
+      <IconButton style={{ color: "white", paddingLeft: "20%" }}>
+        <CloseIcon sx={{ fontSize: 40 }} />
+      </IconButton>
+      <List style={{ paddingTop: "50px" }}>
+        {["Insights", "About Afifi", "Practice Areas", "Team", "Contacts"].map(
+          (text, index) => (
+            <ListItem
+              key={text}
+              disablePadding
+              style={{
+                width: "25%",
+                paddingLeft: "45px",
+                paddingRight: "45px",
+              }}
+            >
+              <ListItemButton>
+                <ListItemText
+                  primary={text}
+                  style={{
+                    color: "white",
+                  }}
+                  primaryTypographyProps={{
+                    fontSize: "25px",
+                    fontFamily: "Montserrat",
+                  }}
+                />
+                <ListItemIcon>
+                  {<ArrowForwardIcon sx={{ color: "white" }} />}
+                </ListItemIcon>
+              </ListItemButton>
+            </ListItem>
+          )
+        )}
       </List>
       <Divider />
       <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
+        {["Dentons Partnership"].map((text, index) => (
+          <ListItem
+            key={text}
+            disablePadding
+            style={{ width: "25%", paddingTop: "150px" }}
+          >
             <ListItemButton>
+              <ListItemText
+                primary={text}
+                style={{ color: "white" }}
+                primaryTypographyProps={{
+                  fontSize: "25px",
+                  fontFamily: "Montserrat",
+                }}
+              />
               <ListItemIcon>
-                {index % 2 === 0 ? <></> : <MailIcon />}
+                {<ArrowForwardIcon sx={{ color: "white" }} />}
               </ListItemIcon>
-              <ListItemText primary={text} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -93,7 +147,7 @@ export default function BlackHeaderBar() {
       <div className={classes.searchContainer}>
         <TextField
           id="input-with-sx"
-          label="How can we be in service?"
+          label="Search Here"
           variant="standard"
           style={{ width: 180 }}
           InputProps={{
@@ -135,7 +189,7 @@ export default function BlackHeaderBar() {
         />
         <TextField
           id="input-with-sx"
-          label="How can we be in service?"
+          label="Search Here"
           variant="standard"
           style={{ width: 630 }}
           sx={{
