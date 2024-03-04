@@ -40,7 +40,8 @@ const HoverableImage = ({
               fontSize: "24px",
               fontWeight: "400",
               fontFamily: "Montserrat",
-              padding: "5px",
+              paddingLeft: "29px",
+              paddingBottom: "42px",
             }}
           >
             {text.map((line, index) => {

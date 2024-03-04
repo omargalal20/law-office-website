@@ -2,11 +2,13 @@ import React from "react";
 import MainPathConstants from "./MainPathConstants";
 import InsightsPathConstants from "./InsightsPathConstants";
 import PracticeAreasConstants from "./PracticeAreasConstants";
+import TeamPathConstants from "./TeamPathConstants";
 
 const AviationPracticeArea = React.lazy(() =>
   import("../pages/PracticeArea/Aviation/aviation.jsx")
 );
 
+const Habil = React.lazy(() => import("../pages/Team/habil.jsx"));
 const Landing = React.lazy(() => import("../pages/Landing/landing"));
 const Contact = React.lazy(() => import("../pages/Contact/contact"));
 const About = React.lazy(() => import("../pages/About/about"));
@@ -154,6 +156,10 @@ const routes = [
   {
     path: PracticeAreasConstants.AVIATION,
     element: <AviationPracticeArea />,
+  },
+  {
+    path: TeamPathConstants.HABIL,
+    element: <Habil />,
   },
 ];
 

@@ -50,7 +50,7 @@ const HoverableImageWith = ({
               fontSize: "24px",
               fontWeight: "400",
               fontFamily: "Montserrat",
-              paddingBottom: "50px",
+              paddingBottom: "20px",
               paddingLeft: "20px",
             }}
           >
@@ -91,29 +91,28 @@ const HoverableImageWith = ({
             })}
           </div>
         )}
+      </div>
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          overflowX: "hidden", // Prevent horizontal scrolling
+        }}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+      >
+        <button>See what is ahead</button>
         <div
           style={{
-            display: "flex",
-            alignSelf: "flex-end",
-            alignItems: "center",
-            overflowX: "hidden", // Prevent horizontal scrolling
+            transition: "transform 0.5s ease",
+            transform: isHovered ? "translateX(5px)" : "translateX(0)",
           }}
-          onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
         >
-          <button>See what is ahead</button>
-          <div
-            style={{
-              transition: "transform 0.5s ease",
-              transform: isHovered ? "translateX(5px)" : "translateX(0)",
-            }}
-          >
-            <img
-              src={hoverableImageButtonIcon}
-              alt="icon"
-              style={{ marginLeft: "10px" }}
-            />
-          </div>
+          <img
+            src={hoverableImageButtonIcon}
+            alt="icon"
+            style={{ marginLeft: "10px" }}
+          />
         </div>
       </div>
     </div>
