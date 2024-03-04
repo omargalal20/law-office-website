@@ -69,43 +69,46 @@ export default function HeaderBar() {
           background: "white",
         }}
       >
-        <IconButton>
+        <IconButton href="/">
           <img src={mainLogo} alt="Home" />
         </IconButton>
       </Box>
-      <IconButton style={{ color: "white", paddingLeft : "20%" }}>
+      <IconButton style={{ color: "white", paddingLeft: "20%" }}>
         <CloseIcon sx={{ fontSize: 40 }} />
       </IconButton>
       <List style={{ paddingTop: "50px" }}>
-        {["Insights", "About Afifi", "Practice Areas", "Team", "Contacts"].map(
-          (text, index) => (
-            <ListItem
-              key={text}
-              disablePadding
-              style={{
-                width: "25%",
-                paddingLeft: "45px",
-                paddingRight: "45px",
-              }}
-            >
-              <ListItemButton>
-                <ListItemText
-                  primary={text}
-                  style={{
-                    color: "white",
-                  }}
-                  primaryTypographyProps={{
-                    fontSize: "25px",
-                    fontFamily: "Montserrat",
-                  }}
-                />
-                <ListItemIcon>
-                  {<ArrowForwardIcon sx={{ color: "white" }} />}
-                </ListItemIcon>
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
+        {[
+          "Insights",
+          /*"About Afifi",*/ "Practice Areas",
+          "Team",
+          "Contacts",
+        ].map((text, index) => (
+          <ListItem
+            key={text}
+            disablePadding
+            style={{
+              width: "25%",
+              paddingLeft: "45px",
+              paddingRight: "45px",
+            }}
+          >
+            <ListItemButton href={"/" + text}>
+              <ListItemText
+                primary={text}
+                style={{
+                  color: "white",
+                }}
+                primaryTypographyProps={{
+                  fontSize: "25px",
+                  fontFamily: "Montserrat",
+                }}
+              />
+              <ListItemIcon>
+                {<ArrowForwardIcon sx={{ color: "white" }} />}
+              </ListItemIcon>
+            </ListItemButton>
+          </ListItem>
+        ))}
       </List>
       <Divider />
       <List>
@@ -115,7 +118,7 @@ export default function HeaderBar() {
             disablePadding
             style={{ width: "25%", paddingTop: "150px" }}
           >
-            <ListItemButton>
+            <ListItemButton href={"/" + text}>
               <ListItemText
                 primary={text}
                 style={{ color: "white" }}
@@ -141,7 +144,7 @@ export default function HeaderBar() {
       pt={2}
       style={{ justifyContent: "space-between" }}
     >
-      <IconButton>
+      <IconButton href="/">
         <img src={mobLogo} alt="Home" />
       </IconButton>
       <div className={classes.searchContainer}>
@@ -178,7 +181,7 @@ export default function HeaderBar() {
   ) : (
     <Stack direction={"row"} spacing={2} pr={5} pt={5} pl={5}>
       <div>
-        <IconButton>
+        <IconButton href="/">
           <img src={mainLogo} alt="Home" />
         </IconButton>
       </div>

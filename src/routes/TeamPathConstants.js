@@ -1,6 +1,6 @@
 const TeamPathConstants = {
-    HABIL: "team/habil",
-  };
-  
-  export default TeamPathConstants;
-  
+  MAIN: "Team",
+  HABIL: "team/habil",
+};
+
+export default TeamPathConstants;

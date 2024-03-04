@@ -797,7 +797,7 @@ const Landing = () => {
         </p>
       </div>
       <div
-        style={{ position: "relative", background: "white", height: "2000px" }}
+        style={{ position: "relative", background: "white", height: "1150px" }}
       >
         <p
           style={{
@@ -868,6 +868,18 @@ const Landing = () => {
                 to attract a diverse clientele seeking solutions that transcend
                 borders and deliver unparalleled results.
               </p>
+            </div>
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                position: "absolute",
+                left: 1008,
+                top: 1050,
+              }}
+            >
+              <p style={{ margin: 10 }}>Discover Who We Are</p>
+              <EastIcon />
             </div>
           </Stack>
         </Grid>
