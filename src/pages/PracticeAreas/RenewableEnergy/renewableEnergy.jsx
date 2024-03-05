@@ -1,17 +1,18 @@
-import practiceAreaRenewableEnergy from "../../../assets/Images/PracticeArea/RenewableEnergy/RenewableEnergyHeroImage.png"
-import insightsMaritime from '../../../assets/Images/Insights/sustainable-mobility-maritime.jpeg'
-import insightsInfrastructure from '../../../assets/Images/Insights/sustainable-mobility-infrastructure.jpeg'
-import railImage from "../../../assets/Images/PracticeArea/RenewableEnergy/RenewableEnergy-rail.jpeg"
-import electricVehicleImage from "../../../assets/Images/PracticeArea/RenewableEnergy/RenewableEnergy-electric-vehicle.jpeg"
-import publicRenewableEnergyImage from "../../../assets/Images/PracticeArea/RenewableEnergy/RenewableEnergy-public transport.jpeg"
+import practiceAreaRenewableEnergy from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergyHero.jpeg"
+import RenewableEnergyInsightsWaves from '../../../assets/Images/Insights/renewable-energy-waves.jpeg'
+import RenewableEnergyInsightsGreen from '../../../assets/Images/Insights/renewable-energy-green.jpeg'
+
+import renewableEnergySolarEnergy from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergySolarEnergy.jpeg"
+import renewableEnergySolarFarms from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergySolarFarms.jpeg"
+import renewableEnergyBattery from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergyBattery.jpeg"
 
 import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
 
 const RenewableEnergy = () => {
     const sectionHeaders = {
         firstSectionHeader: {
-            sectionHeaderTitle: "Navigate with Us",
-            sectionHeaderText: "Steering Legal Excellence in RenewableEnergy",
+            sectionHeaderTitle: "Sustainable Expertise",
+            sectionHeaderText: " A Renewable Energy Sector  Navigating the Future with",
             sectionStyle: {
                 width: "969px",
                 fontSize: "50px",
@@ -20,8 +21,8 @@ const RenewableEnergy = () => {
             }
         },
         secondSectionHeader: {
-            sectionHeaderTitle: "New Horizon",
-            sectionHeaderText: "Our RenewableEnergy Triumphs Reachs",
+            sectionHeaderTitle: "New Heights",
+            sectionHeaderText: "Our Renewable Energy Achievements Soar to",
             sectionStyle: {
                 width: "430px",
                 fontSize: "60px",
@@ -48,54 +49,54 @@ const RenewableEnergy = () => {
         heroPrimaryHeading: "RenewableEnergy",
         heroSecondaryHeading: "Expertise",
         heroSubHeading:
-            "Governments across the globe are recognizing the vital role of efficient infrastructure in economic growth and global trade, fueling massive investments booming the industry.",
+            "While governments are leading the surge to greener initiatives, these commitments translate to significant investments in renewable energy projects, encompassing a diverse spectrum of technologies",
     };
 
-    const RenewableEnergyImages = [
+    const renewableEnergyImages = [
         {
-            img: insightsMaritime,
-            title: 'Maritime',
-            textLines: ["RenewableEnergy", "Maritime RenewableEnergy", "Advances", "31 January, 2024"]
+            img: RenewableEnergyInsightsWaves,
+            title: 'Wave and Tidal',
+            textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
         },
         {
-            img: insightsInfrastructure,
-            title: 'Infrastructure',
-            textLines: ["RenewableEnergy", "RenewableEnergy", "Infrastructure Renewal", "31 January, 2024"]
+            img: RenewableEnergyInsightsGreen,
+            title: 'Employment',
+            textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
         },
-    ];
+    ]
 
     const genericRenewableEnergyImages = [
         {
-            img: railImage,
+            img: renewableEnergySolarEnergy,
             height: "692px",
             rows: 2,
             cols: 2,
             title: "RenewableEnergy",
             textLines: [
                 "RenewableEnergy",
-                "High-Speed Rail Developmentsn",
+                "Advancements in Solar Energy Technology",
                 "",
                 "31 January, 2024",
             ],
         },
         {
-            img: electricVehicleImage,
+            img: renewableEnergySolarFarms,
             height: "318px",
             title: "RenewableEnergy",
             textLines: [
                 "RenewableEnergy",
-                "Electric Vehicle Expansion",
+                "Floating Solar Farms",
                 "31 January, 2024",
             ],
             cols: 2,
         },
         {
-            img: publicRenewableEnergyImage,
+            img: renewableEnergyBattery,
             height: "318px",
             title: "RenewableEnergy",
             textLines: [
                 "RenewableEnergy",
-                "Upgrading Public Transport",
+                "Battery Storage Solutions",
                 "31 January, 2024"
             ],
             cols: 2,
@@ -105,7 +106,7 @@ const RenewableEnergy = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={RenewableEnergyImages}
+            relatedImages={renewableEnergyImages}
             practiceAreaImages={genericRenewableEnergyImages}
             sectionHeaders={sectionHeaders}
             teamName={"RenewableEnergy"}
@@ -119,12 +120,12 @@ const RenewableEnergy = () => {
                     marginTop: "52px",
                 }}
             >
-                The firm’s RenewableEnergy team of Afifi specializes in providing legal guidance and representation in matters pertaining to RenewableEnergy law. With a focus on practical solutions and industry-specific expertise, our team of attorneys assists clients in navigating the complex regulatory and operational challenges inherent in the RenewableEnergy sector.
+                Afifi Law Office's renewable energy practice focuses on providing comprehensive legal services tailored to the evolving landscape of renewable energy. Our team of seasoned attorneys offers practical solutions and strategic guidance to clients involved in renewable energy projects and initiatives.
 
-                Our attorneys have a deep understanding of the laws and regulations governing various modes of RenewableEnergy, including road, rail, air, and maritime. We offer comprehensive legal services tailored to meet the unique needs of RenewableEnergy companies, logistics providers, carriers, shippers, and other stakeholders.
+                With a deep understanding of renewable energy regulations, industry trends, and technological advancements, our attorneys assist clients in navigating the complexities of renewable energy development, financing, and implementation. From solar and wind to hydroelectric and geothermal projects, we assist and advise across various renewable energy sectors.
 
-                From regulatory compliance and licensing to contract negotiation and dispute resolution, our RenewableEnergy department offers a wide range of services designed to help clients achieve their business objectives while minimizing legal risks.
-                Whether addressing issues related to cargo claims, freight contracts, insurance coverage, or RenewableEnergy safety regulations, our attorneys work diligently to provide strategic advice and practical solutions that align with our clients' goals.
+                Our services encompass a wide range of areas, including project development and permitting, regulatory compliance, power purchase agreements, financing and investment, and merger sand acquisitions within the renewable energy space. We work closely with our clients to identify opportunities, mitigate risks, and ensure the successful execution of renewable energy projects.
+                We are committed to sustainability and environmental stewardship. Our attorneys collaborate closely with clients to navigate the legal and regulatory challenges associated with renewable energy development while promoting responsible and sustainable practices.
             </p>
         </PracticeArea>
     );
