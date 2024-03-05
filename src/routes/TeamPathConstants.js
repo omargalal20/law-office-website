@@ -1,5 +1,4 @@
 const TeamPathConstants = {
-  HABIL: "team/habil",
   PROFILE: "team/:profileName",
 };
 
