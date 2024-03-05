@@ -3,7 +3,7 @@ import HoverableImageWith from "../../../components/Common/HoverableImage/hvImgw
 import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 
-const TripleImageGrid = ({ images }) => {
+const TripleImageGrid = ({ images, width = "518px", bigWidth = "712px" }) => {
     return (
         <ImageList
             cols={4}
@@ -19,8 +19,8 @@ const TripleImageGrid = ({ images }) => {
                     <HoverableImageWith
                         key={item.title}
                         src={item.img}
-                        width={"518px"}
-                        bigWidth={"712px"}
+                        width={width}
+                        bigWidth={bigWidth}
                         height={item.height}
                         text={item.textLines}
                     />

@@ -1,15 +1,15 @@
 import React from "react";
 import Stack from "@mui/material/Stack";
 
-const TextCard = ({ qualif, lang, about }) => {
+const TextCard = ({ educations, languages, admittance = "", biography }) => {
   return (
     <>
       <Stack
         direction={"row"}
         spacing={2}
-        style={{ width: "1258px", height: "396px" }}
+        style={{ width: "1258px" }}
       >
-        <div style={{ width: "425px", height: "159px" }}>
+        <div style={{ width: "35%", height: "159px" }}>
           <p
             style={{
               fontSize: "30px",
@@ -19,6 +19,23 @@ const TextCard = ({ qualif, lang, about }) => {
           >
             Education & Qualifications{" "}
           </p>
+
+          {
+            educations.length !== 0 ? (
+              educations.map(education => (
+                <p
+                  style={{
+                    fontSize: "18px",
+                    fontFamily: "Montserrat",
+                    fontWeight: 400,
+                  }}
+                >
+                  {education.degree} , {education.university} {education.year}
+                </p>
+              )
+              )) : "N/A"
+          }
+
           <p
             style={{
               fontSize: "18px",
@@ -26,7 +43,7 @@ const TextCard = ({ qualif, lang, about }) => {
               fontWeight: 400,
             }}
           >
-            {qualif}
+            {admittance}
           </p>
           <br></br>
           <p
@@ -45,9 +62,18 @@ const TextCard = ({ qualif, lang, about }) => {
               fontWeight: 400,
             }}
           >
-            {lang}
+            {languages.length !== 0 ? (
+              languages.map((language, index) => (
+                <span key={language.language}>
+                  {language.language}
+                  {index !== languages.length - 1 ? (index !== languages.length - 2 ? ", " : " & ") : ""}
+                </span>
+              )
+              )) : "N/A"
+            }
           </p>
         </div>
+
         <div
           style={{
             fontSize: "18px",
@@ -56,7 +82,7 @@ const TextCard = ({ qualif, lang, about }) => {
             width: "801px",
           }}
         >
-          {about}
+          {biography}
         </div>
       </Stack>
     </>

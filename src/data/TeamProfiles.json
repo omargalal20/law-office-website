@@ -1,13 +1,14 @@
 {
-    "Habil Abu El-Kheir": {
+    "habil-abu-el-kheir": {
         "name": "Habil Abu El-Kheir",
         "position": "Managing Associate",
         "address": "Cairo, Egypt",
         "email": "habil.abuelkhair@afifioffice.com",
+        "profilePageImagesKey": "habilAbuElKheir",
         "picture": "https://s3-alpha-sig.figma.com/img/9fd2/315d/c4273cad80633985a89485dee69d9cfa?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NTKKVGH8lbSROw6Rc76QkQKOfwCxIx82kqoxBHVtTsr23X63CUNTTR3o8oUQjUuHtXyc9mPmhGJJv8jhZGowpeecGPhjJY-rusiq3MAqI5BHiRHFLcTbPf-rt6zDjBK9iDxZC234y0kNJ5UXdLKrtlmQkdl0OPxINdRk6hu3JHXcuJyKuDIHjfU8uZ4Z1nytkNYAK-38hyaUGS6cPJ60ONFy9QbNivK~vhtCExemMgIwRRsr8rttsPdXAAFu~BnqPumojxK6YSEIb9fE4Amf3~NM4bz29GP3DkVQJcuXOX-KDzFNcwC7ut6kq6FZ~JhFWpym3oK2MyMQlajVCIW1rw__",
         "phoneNumber": "+20 2 2735 4010 Ext. 134",
         "biography": "Habil is a Managing Associate joined Afifi in 1989. He is specialized in criminal law litigation subject to the Penalties and Criminal Procedures Law of Egypt, with more than 25 years of experience he handled a variety of complex litigation matters, including commercial and corporate litigation, arbitration and mediation, construction litigation, property claims. He is also experienced in dispute resolution in matters related to labor, civil and commercial laws. Due to his experience before the Notary Public of Egypt, he is an expert in the sale and mortgage contract registration. His broad experience in business matters and drafting skills make him particularly able to assist business owners and individuals with estate planning matters. Mr. Habil also has extensive experience with real estate financing, commercial foreclosures, representation of creditors in workouts and bankruptcy reorganization. Habil provides our clients with the utmost legal assistance within the Egyptian judicial system.",
-        "education": [
+        "educations": [
             {
                 "degree": "LLB - Faculty of Law",
                 "university": "Alexandria University",
@@ -21,22 +22,23 @@
             }
         ]
     },
-    "Tamer Kamal": {
+    "tamer-kamal": {
         "name": "Tamer Kamal",
         "position": "Managing Associate",
         "address": "Cairo, Egypt",
         "email": "tamer.kamal@afifioffice.com",
+        "profilePageImagesKey": "tamerKamal",
         "picture": "https://s3-alpha-sig.figma.com/img/63de/6e10/13c3ba03eb66be86a8212ad7b861dedb?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FEzos7J1cwKyciCjtvcGRhfgUvaQMhtp4--dlAYoybEzYN954TwC59UhFFKNOYirpcyn0EwiokVVgXRA7bxbDKq4YkAA~-tBkYrT4CQ5Tsz9MpKhQy0VeBt0NMzGx4ZzG3wmQxkM6viVqIsnAOqGIovvCQ66nvd5nEXfzs532QDc6DcVfzxNtSKR0GF0lK~ITHRksb0ZBHqzau6H35X7qT9QjSFUqmuyDvY6YJ-EBzhc8Fx2oN3~N4IctUw3PvtnMCL4mQyrzZy1gKioZIgPiCVYyiD-m6qKhOlfBsLv2gEQEt4mskD3PJHXbiqLmRw-sDeWjipdufXSr4gCb47EsQ__",
         "phoneNumber": "+20 2 2735 4010 Ext. 134",
         "biography": "Tamer has joined Afifi in 2001 in the dispute resolution department.He has extensive legal experience of more than 23 years in the legal field by providing our clients with a wide a range of legal services in relation to criminal, commercial and civil litigation as well as arbitration and white-collar crime. Tamer has a broad range of experience in complex commercial disputes through representing major multinational corporations in a wide range of industries, including energy, oil and gas, real estate, technology, F&B, insurance, and banking. Tamer has remarkable extended skills and expertise in the litigation field by attending before the competent prosecution offices, courts and with all its kinds and degrees including attending trial investigations, experts’ sessions as well as drafting the memoranda submitted before the courts. He is specialized in the procedures of enforcements of all kinds of Egyptian judgments as well as arbitration awards with all its related contentious matters. He has also been involved in commercial and corporate matters in terms of the negotiation processes and preparation of the relevant reports by working on a number of merger and acquisition transactions, establishing joint ventures and companies, drafting of sale agreements, lease, usufruct, mortgage, franchise and public-private partnerships agreements. His specialization also extends to advising clients on real estate and property matters with all its required procedures and actions. As well as drafting long-term leasehold interests and real estate agreements.",
-        "education": [
+        "educations": [
             {
                 "degree": "LLB - Faculty of Law",
                 "university": "Cairo University",
-                "year": 2018
+                "year": 2000
             }
         ],
-        "admittance": "Admitted before the Court of Cassation",
+        "admittance": "Admitted before the Court of Cassation 2018",
         "languages": [
             {
                 "language": "Arabic"
@@ -46,15 +48,16 @@
             }
         ]
     },
-    "Mohamed Tayel": {
+    "mohamed-tayel": {
         "name": "Mohamed Tayel",
         "position": "Managing Associate",
         "address": "Cairo, Egypt",
         "email": "mohamed.tayel@afifioffice.com",
+        "profilePageImagesKey": "mohamedTayel",
         "picture": "https://s3-alpha-sig.figma.com/img/46cd/df0c/b970a494bb27f4fa4726d98d5e840964?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=MXCmJpY3g7JcOKuF0RMcBDYeOJHbAbmp2p~l9GrpeTcr7hV0789NS1Idg8~sWSBHKsCxl0yEoCt8t3U9mDZG7BaU4wngjyspqj6AHSb1B3569c4lG59vmU0kXTEoOtAcn7jnjLjwkVqZrlYPHxdmUDDJRqqIw3kAKGSWrMqP9d7JXdkuayJWIDqAK1PClx28M1xjdcQ0q2STffiisU~K~7FnaDDLoK2~JHjqvsentLBhnYrrxO5Lb~yW7UDqzIvFSQe9TsAkdzQbczZ9Ody5oZ-PL5gXzFrxe9jPeBRnGjQj4fJ7wtNhUFUT~XsZozUfpJYJuoeBLfqlwn7uyQdqNA__",
         "phoneNumber": "+20 2 2735 4010 Ext. 134",
         "biography": "Tamer has joined Afifi in 2001 in the dispute resolution department.He has extensive legal experience of more than 23 years in the legal field by providing our clients with a wide a range of legal services in relation to criminal, commercial and civil litigation as well as arbitration and white-collar crime. Tamer has a broad range of experience in complex commercial disputes through representing major multinational corporations in a wide range of industries, including energy, oil and gas, real estate, technology, F&B, insurance, and banking. Tamer has remarkable extended skills and expertise in the litigation field by attending before the competent prosecution offices, courts and with all its kinds and degrees including attending trial investigations, experts’ sessions as well as drafting the memoranda submitted before the courts. He is specialized in the procedures of enforcements of all kinds of Egyptian judgments as well as arbitration awards with all its related contentious matters. He has also been involved in commercial and corporate matters in terms of the negotiation processes and preparation of the relevant reports by working on a number of merger and acquisition transactions, establishing joint ventures and companies, drafting of sale agreements, lease, usufruct, mortgage, franchise and public-private partnerships agreements. His specialization also extends to advising clients on real estate and property matters with all its required procedures and actions. As well as drafting long-term leasehold interests and real estate agreements.",
-        "education": [
+        "educations": [
             {
                 "degree": "LLB - Faculty of Law (English Division)",
                 "university": "Alexandria University",
@@ -76,15 +79,16 @@
             }
         ]
     },
-    "Hossam El Sharawi": {
+    "hossam-el-sharawi": {
         "name": "Hossam El Sharawi",
         "position": "Managing Associate",
         "address": "Cairo, Egypt",
         "email": "Hossam.ElSharawi@afifioffice.com",
+        "profilePageImagesKey": "hossamElSharawi",
         "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
         "phoneNumber": "+20 2 2735 4010 Ext. 134",
         "biography": "El Sharawi joined Afifi in 1999 and he is currently Managing Associate in our team. He has an extensive legal experience of more than 20 years in the legal field by providing our clients with a wide a range of legal advice in relation to aviation, labor law, family matters and social insurance regulations. Hossam also specializes in registering and striking-off the airline companies in Egypt and processes all the necessary legal and administrative procedures required for its registration and strike-off with the Egyptian Civil Aviation Authority, which include authorities such as the Ministry of Interior, the General Authority for Investments and Free Zones and the Customs Entities. He has registered over 100 aircraft and struck off approximately 120 aircrafts. As for employment, Hossam is focused on drafting and reviewing all kinds of employment contracts and proceeds with any matter that is concerned with the Egyptian Labour law. This is in addition to his negotiation skills pursued in labour matters.",
-        "education": [],
+        "educations": [],
         "admittance": "",
         "languages": [
             {
@@ -92,6 +96,251 @@
             },
             {
                 "language": "English"
+            }
+        ]
+    },
+    "gamil-dorgham": {
+        "name": "Hossam El Sharawi",
+        "position": "Senior Associate",
+        "address": "Cairo, Egypt",
+        "email": "gamil.dorgham@afifioffice.com",
+        "profilePageImagesKey": "hossamElSharawi",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "Gamil joined Afifi in 2012 in the litigation and real estate department. He is experienced in civil, commercial, labour and criminal litigation by attending and representing multinational clients before the courts with all its kinds and degrees including experts' sessions as well as proceeding with all the required procedures of lawsuits. Gamil is experienced in all types of real estate development, including commercial and industrial projects, residential subdivisions, and condominiums. He has extensive experience in drafting and executing all relevant documents in relation to real estate and property registration. Moreover, he assists our clients navigate local land use regulations to secure the necessary permits, approvals, and adjustments. Gamil has extensive experience in representing clients before zoning boards and planning commissions throughout Egypt. He mainly works with Egyptian legal authorities, including the Real Estate departments, Civil Society Organizations, and other governmental agencies on behalf of the clients.",
+        "educations": [],
+        "admittance": "Admitted before the Court of cassation",
+        "languages": [
+            {
+                "language": "Arabic"
+            }
+        ]
+    },
+    "mahmoud-maher": {
+        "name": "Mahmoud Maher",
+        "position": "Junior Associate",
+        "address": "Cairo, Egypt",
+        "email": "Mahmoud.maher@afifioffice.com",
+        "profilePageImagesKey": "mahmoudMaher",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "Mahmoud joined Afifi in 2023 as a junior associate in the Corporates and Disputes department. He has been involved in providing legal advice for clients and conducting legal research. He has been actively dealing with a number of Egyptian authorities such as the General Authority for Investments and Free Zones, Financial Regulatory Authority, General Organization for Export and Import Control and the Central Bank of Egypt. In addition to this, he is involved in preparing court-related documents as well as attending before the courts including expert sessions as well as proceeding with all the required procedures of lawsuits.",
+        "educations": [
+            {
+                "degree": "LLB",
+                "university": "Ain Shams University, English Department",
+                "year": 2019
+            },
+            {
+                "degree": "LLM - International Legal and Commercial Transactions and Logistics",
+                "university": "International Private Law - Ain Shams University",
+                "year": 2021
+            }
+        ],
+        "admittance": "",
+        "languages": [
+            {
+                "language": "Arabic"
+            },
+            {
+                "language": "English"
+            }
+        ]
+    },
+    "adel-fekry": {
+        "name": "Adel Fekry",
+        "position": "Accountant",
+        "address": "Cairo, Egypt",
+        "email": "adel.fekry@afifioffice.com",
+        "profilePageImagesKey": "adelFekry",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "N/A",
+        "educations": [],
+        "admittance": "",
+        "languages": []
+    },
+    "alia-safei": {
+        "name": "Alia Safei",
+        "position": "Junior Associate",
+        "address": "Cairo, Egypt",
+        "email": "alia.safei@afifioffice.com",
+        "profilePageImagesKey": "aliaSafei",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "Alia joined Afifi in 2022 as a junior associate in the Corporate and Projects team at Afifi's. She has been involved in several transactions, whereby, she participated through providing legal advice and conducting legal research from Egyptian law perspective. Alia provides advisory on day-to-day business to client on doing business in Egypt, this includes but not limited to drafting, reviewing and negotiation of the execution or termination agreements. Alia represents clients before the various governmental entities which include but not limited to the General Authority for Investment, Tax Authority, General Organization for Export and Import Control and the Central Bank of Egypt. She has been involved in preparing and drafting many corporate documents such as EGM, OGM and AOA as well as Share Purchase Agreements and Share Transfer Agreements. Alia participates with our aviation team in several aviation transactions that involve number of leading aircraft lessors.",
+        "educations": [
+            {
+                "degree": "LLB - International Business Law",
+                "university": "Institut des affaires internationales (IDAI)",
+                "year": 2020
+            },
+            {
+                "degree": "LLB",
+                "university": "Cairo University",
+                "year": 2021
+            },
+            {
+                "degree": "LLM - International Business Law",
+                "university": "Université de Pantheon Sorbonne ",
+                "year": 2021
+            }
+        ],
+        "admittance": "",
+        "languages": [
+            {
+                "language": "Arabic"
+            },
+            {
+                "language": "English"
+            },
+            {
+                "language": "French"
+            }
+        ]
+    },
+    "andrew-afifi": {
+        "name": "Andrew afifi",
+        "position": "Associate",
+        "address": "Cairo, Egypt",
+        "email": "andrew.afifi@afifioffice.com",
+        "profilePageImagesKey": "andrewAfifi",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "Andrew joined our office in 2019, since joining he has been extensively involved in commercial transactions and corporate matters, in addition to providing legal analysis from an Egyptian law perspective. Andrew has a diverse practice that includes representing a diverse portfolio of corporations on complex corporate transactions, including mergers and acquisitions, joint ventures, and other complex business matters. He also has experience in advising and representing clients and start-ups on energy-related matters as well as renewable energy sector and infrastructure projects.He has successfully advised and represented major multinational companies in the automotive industry in the past two years in 35+ post-mergers filings before the Egyptian Competition Authority as well as representing many leading aircraft lessors and financiers in the aviation industry on all aspects of aircraft leasing including sale and leaseback transactions, and disposals and cross border leasing transactions. Andrew is also involved in advising international clients in connection with commercial distribution and commercial agency agreements, this includes but is not limited to drafting, reviewing and negotiation of the execution or termination of such agreements.",
+        "educations": [
+            {
+                "degree": "LLB - International and European Law",
+                "university": "Maastricht University",
+                "year": 2018
+            },
+            {
+                "degree": "LLM - Business Law",
+                "university": "Université Paris 1 Panthéon-Sorbonne",
+                "year": 2019
+            },
+            {
+                "degree": "J.D. Juris Doctor",
+                "university": "Université Paris 1 Panthéon-Sorbonne (Candidate)"
+            }
+        ],
+        "admittance": "Admitted before First Instance Court",
+        "languages": [
+            {
+                "language": "Arabic"
+            },
+            {
+                "language": "English"
+            },
+            {
+                "language": "French"
+            }
+        ]
+    },
+    "asser-negm-el-din": {
+        "name": "Asser Negm El Din",
+        "position": "Junior Associate",
+        "address": "Cairo, Egypt",
+        "email": "asser.negmeldin@afifioffice.com",
+        "profilePageImagesKey": "asserNegmEldin",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "Asser joined Afifi in 2023 as a junior associate in the Corporates and Disputes team at Afifi's. He has been involved in providing legal advice for clients and conducting legal research. In addition to participating in reviewing contracts and different practices in litigation as well as advising clients in connection with commercial and contractual matters and representing the clients before the courts and governmental institutions. He represents clients before the various governmental entities which include but not limited to the General Authority for Investment, Tax Authority, General Organization for Export and Import Control and the Central Bank of Egypt.Asser is involved in the incorporation procedures of different types of companies before the General Authority for Investment and Free Zones as well as the preparation of OGM, EGM, and AOA of different entities.",
+        "educations": [
+            {
+                "degree": "LLB",
+                "university": "Tanta University - English department",
+                "year": 2017
+            },
+            {
+                "degree": "LLM",
+                "university": "Private law and International law, Tanta University",
+                "year": 2021
+            },
+            {
+                "degree": "J.D. Juris Doctor",
+                "university": "Université Paris 1 Panthéon-Sorbonne (Candidate)"
+            }
+        ],
+        "admittance": "",
+        "languages": [
+            {
+                "language": "Arabic"
+            },
+            {
+                "language": "English"
+            }
+        ]
+    },
+    "emil-ghobrial": {
+        "name": "Emil Gobrial",
+        "position": "Senior Associate",
+        "address": "Cairo, Egypt",
+        "email": "emil.gobrial@afifioffice.com",
+        "profilePageImagesKey": "emilGhobrial",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "Emil is experienced in Corporate Law, specializing in the incorporation of companies in addition to establishing representative offices and foreign company branches in Egypt. He also works extensively with the General Authority for Investment and Free Zones (GAFI) and the Chamber of Commerce, Ministry of Manpower, for obtaining trade and practice certificates and executing general contracts, registering companies with the commercial register, and obtaining work and residence permits for foreign investors conducting business in Egypt. His broad experience in business matters and drafting skills make him particularly able to assist business owners and individuals with estate planning matters. Emil works extensively with the Egyptian government ministries and officials to facilitate the needs of our clients",
+        "educations": [
+            {
+                "degree": "LLB",
+                "university": "Faculty of Law, Cairo University",
+                "year": 1997
+            }
+        ],
+        "admittance": "Admitted before the Court of Cassation ",
+        "languages": [
+            {
+                "language": "Arabic"
+            },
+            {
+                "language": "English"
+            }
+        ]
+    },
+    "amin-kamal-amin": {
+        "name": "Amin Kamal Amin",
+        "position": "Senior Associate",
+        "address": "Cairo, Egypt",
+        "email": "amin.kamal@afifioffice.com",
+        "profilePageImagesKey": "aminKamalAmin",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "Mr. Kamal joined the litigation team of Afifi in 2007 specializing in civil, commercial, labour and criminal litigation by attending before the courts with all its kinds and degrees including experts' sessions as well as drafting the memoranda submitted before the courts including proceeding with all the required procedures of lawsuits. Mr. Kamal represents individuals and corporations in complex disputes in courts across Egypt, which includes trial, investigations, and pleadings. His work includes legal practice in all transactions concerning real estate and property rights and shares as well as his specialization in the procedures of notarizing, registering and legalizing sale, usufruct, and mortgage contracts. Mr. Kamal also represents major multinational corporations and airlines in high stake civil, commercial and employment cases and advises on all matters related to employment law. He provides advisory on day-to-day business to client in conducting business in Egypt.",
+        "educations": [
+            {
+                "degree": "Member of the Egyptian Bar Association",
+                "university": "",
+                "year": ""
+            }
+        ],
+        "admittance": "Admitted before the Court of Appeal",
+        "languages": [
+            {
+                "language": "Arabic"
+            }
+        ]
+    },
+    "walid-sakr": {
+        "name": "Walid Sakr",
+        "position": "Senior Associate",
+        "address": "Cairo, Egypt",
+        "email": "walid.saqr@afifioffice.com",
+        "profilePageImagesKey": "walidSakr",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "Walid joined Afifi in 1994 with a wide experience in tax, labour, civil, criminal, and corporate laws. Mr. Sakr specifically advises individuals and businesses on a wide variety of complex and ever-changing tax landscape in Egypt, including preparing and filing tax returns, advising on tax planning and compliance, representing clients in tax audits and disputes, and advising on tax aspects of business transactions.Mr. Sakr represents various domestic and international clients before the State Council and the High Administrative Court. Mr. Sakr represents major multinational corporations in litigation and with Egyptian legal authorities, including the Ministries of Tourism, the General Authority of Free Zones and Investment (GAFI) and other governmental agencies on behalf of the clients.",
+        "educations": [
+            {
+                "degree": "LLB - Faculty of Law",
+                "university": "Cairo University",
+                "year": 1992
+            }
+        ],
+        "admittance": "Admitted before the Court of Cassation",
+        "languages": [
+            {
+                "language": "Arabic"
             }
         ]
     }

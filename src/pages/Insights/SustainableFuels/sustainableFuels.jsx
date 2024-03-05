@@ -31,9 +31,9 @@ const SustainableFuels = () => {
     ]
 
     const profiles = [
-        "Habil Abu El-Kheir",
-        "Tamer Kamal",
-        "Hossam El Sharawi"
+        "Habil-Abu-El-Kheir",
+        "Tamer-Kamal",
+        "Hossam-El-Sharawi"
     ]
 
     return (

@@ -75,8 +75,7 @@ const TransportationLogisticsInsights = React.lazy(() =>
 const AviationPracticeArea = React.lazy(() =>
   import("../pages/PracticeAreas/Aviation/aviation.jsx")
 );
-
-const Habil = React.lazy(() => import("../pages/Team/habil.jsx"));
+const TeamProfile = React.lazy(() => import("../pages/Team/teamProfile.jsx"));
 
 const routes = [
   { path: MainPathConstants.LANDING, element: <Landing /> },
@@ -161,8 +160,8 @@ const routes = [
     element: <AviationPracticeArea />,
   },
   {
-    path: TeamPathConstants.HABIL,
-    element: <Habil />,
+    path: TeamPathConstants.PROFILE,
+    element: <TeamProfile />,
   },
 ];
 

@@ -1,6 +1,5 @@
 import React from "react";
 import HeaderBar from "../../Layout/Header/header";
-import { Stack } from "@mui/material";
 
 const HeroTeam = ({
   teamImage,
@@ -64,7 +63,6 @@ const HeroTeam = ({
             fontFamily: "Montserrat",
             top: 369,
             left: 532,
-            width: "460px",
             fontSize: "50px",
             fontWeight: 400,
             height: "498px",
