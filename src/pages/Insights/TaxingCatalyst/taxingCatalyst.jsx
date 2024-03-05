@@ -4,7 +4,7 @@ import mainInsightsTaxingCatalystImage from '../../../assets/Images/Insights/mai
 import taxingCatalystAdaptation from '../../../assets/Images/Insights/taxing-catalyst-adaptation.jpeg'
 import taxingCatalystArbitration from '../../../assets/Images/Insights/taxing-catalyst-arbitration.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import TaxingCatalystText from './taxingCatalystText'
 
 const TaxingCatalyst = () => {

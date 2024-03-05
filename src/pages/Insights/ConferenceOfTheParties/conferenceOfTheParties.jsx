@@ -4,7 +4,7 @@ import mainInsightsGenericInsightsRenewableImage from '../../../assets/Images/In
 import conferenceOfThePartiesInsightsWaves from '../../../assets/Images/Insights/renewable-energy-waves.jpeg'
 import conferenceOfThePartiesInsightsGreen from '../../../assets/Images/Insights/renewable-energy-green.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import ConferenceOfThePartiesText from './conferenceOfThePartiesText'
 
 

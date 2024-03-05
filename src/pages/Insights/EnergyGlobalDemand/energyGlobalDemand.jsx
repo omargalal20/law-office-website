@@ -4,7 +4,7 @@ import mainInsightsEnergyGlobalDemandImage from '../../../assets/Images/Insights
 import insightsElectrificationImage from '../../../assets/Images/Insights/insights-electrification.jpeg'
 import insightsCircularEnergyImage from '../../../assets/Images/Insights/insights-circular-energy.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import EnergyGlobalDemandText from './energyGlobalDemandText'
 
 const EnergyGlobalDemand = () => {

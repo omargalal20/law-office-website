@@ -4,7 +4,7 @@ import mainInsightsMergerControlImage from '../../../assets/Images/Insights/insi
 import mergerControlAdaptation from '../../../assets/Images/Insights/taxing-catalyst-adaptation.jpeg'
 import mergerControlArbitration from '../../../assets/Images/Insights/taxing-catalyst-arbitration.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import MergerControlText from './mergerControlText'
 import Swiper from '../../../components/Common/Swiper/swiper'
 import ProfileCard from '../../../components/Common/ProfileCard/profileCard'

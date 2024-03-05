@@ -4,7 +4,7 @@ import mainInsightsArbitrationResolvingImage from '../../../assets/Images/Insigh
 import insightsArbitration from '../../../assets/Images/Insights/taxing-catalyst-arbitration.jpeg'
 import insightsAdaptation from '../../../assets/Images/Insights/taxing-catalyst-adaptation.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import ArbitrationResolvingText from './arbitrationResolvingText'
 
 const ArbitrationResolving = () => {

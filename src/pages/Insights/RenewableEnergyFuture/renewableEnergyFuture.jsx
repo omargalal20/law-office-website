@@ -4,7 +4,7 @@ import mainInsightsRenewableEnergyFutureImage from '../../../assets/Images/Insig
 import renewableEnergyFutureWaves from '../../../assets/Images/Insights/renewable-energy-waves.jpeg'
 import renewableEnergyFutureGreen from '../../../assets/Images/Insights/renewable-energy-green.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import RenewableEnergyFutureText from './renewableEnergyFutureText'
 
 const RenewableEnergyFuture = () => {

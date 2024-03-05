@@ -4,7 +4,7 @@ import mainInsightsSustainableMobilityImage from '../../../assets/Images/Insight
 import sustainableMobilityMaritime from '../../../assets/Images/Insights/sustainable-mobility-maritime.jpeg'
 import sustainableMobilityInfrastructure from '../../../assets/Images/Insights/sustainable-mobility-infrastructure.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import SustainableMobilityText from './sustainableMobilityText'
 
 const SustainableMobility = () => {

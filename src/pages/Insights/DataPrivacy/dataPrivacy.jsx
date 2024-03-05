@@ -4,7 +4,7 @@ import mainInsightsDataPrivacyImage from '../../../assets/Images/Insights/main-i
 import dataPrivacyInsightAi from '../../../assets/Images/Insights/data-privacy-ai.jpeg'
 import dataPrivacyInsightConnectivity from '../../../assets/Images/Insights/data-privacy-connectivity.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import DataPrivacyText from './dataPrivacyText'
 
 const DataPrivacy = () => {
