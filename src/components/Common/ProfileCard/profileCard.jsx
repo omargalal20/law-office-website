@@ -12,7 +12,7 @@ import Typography from "@mui/material/Typography";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 
-const ProfileCard = ({ profileName }) => {
+const ProfileCard = ({ profileName, profileImage }) => {
   const [profile, setProfile] = useState({});
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const ProfileCard = ({ profileName }) => {
             }}
           >
             <img
-              src={profile.picture}
+              src={profileImage}
               alt={profile.name}
               style={{
                 maxWidth: "100%",
@@ -119,6 +119,7 @@ const ProfileCard = ({ profileName }) => {
               fontWeight: "400",
               fontFamily: "Montserrat",
             }}
+            href={"/team/" + profileName}
           >
             <div>View Profile</div>
             <div>

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
 import HeroMainTeam from "../../components/Common/Hero/heroMainTeam";
 import mainHero from "../../assets/Images/Team/mainhero.png";
 import main1 from "../../assets/Images/Team/main1.png";
@@ -6,6 +7,20 @@ import { Container, Stack, Button } from "@mui/material";
 import ProfileCard from "../../components/Common/ProfileCard/profileCard";
 import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
 import bx6 from "../../assets/Images/Misc/img.svg";
+
+import habilAbuElKheirProfilePic from "../../assets/Images/Team/habil.png";
+import tamerKandilProfileImage from "../../assets/Images/Team/tamerKandilProfilePic.jpeg";
+import mohamedTayelProfileImage from "../../assets/Images/Team/mohamedTayelProfilePic.jpeg";
+import hossamElSharawiProfilePic from "../../assets/Images/Team/hossamElSharawiProfilePic.jpeg";
+import gamilDorghamProfilePic from "../../assets/Images/Team/gamilDorghamProfilePic.jpeg";
+import mahmoudMaherProfilePic from "../../assets/Images/Team/mahmoudMaherProfilePic.png";
+import adelFekryProfilePic from "../../assets/Images/Team/adelFekryProfilePic.jpeg";
+import aliaSafeiProfilePic from "../../assets/Images/Team/aliaSafeiProfilePic.jpeg";
+import andrewAfifiProfilePic from "../../assets/Images/Team/andrewAfifiProfilePic.jpeg";
+import asserNegmEldinProfilePic from "../../assets/Images/Team/asserNegmElDinProfilePic.jpeg";
+import emilGhobrialProfilePic from "../../assets/Images/Team/emilGhorbielProfilePic.jpeg";
+import aminKamalAminProfilePic from "../../assets/Images/Team/aminKamalAminProfilePic.jpeg";
+import walidSakrProfilePic from "../../assets/Images/Team/walidSakrProfilePic.jpeg";
 
 const MainTeam = () => {
   const [isHovered5, setIsHovered5] = useState(false);
@@ -17,27 +32,33 @@ const MainTeam = () => {
     heroSubHeading: "Founded in 1981, Leading through Excellence",
   };
 
-  const profiles = [
-    "Habil Abu El-Kheir",
-    "Tamer Kamal",
-    "Hossam El Sharawi",
-    "Emil maken gobrial",
-    "Amin kamal amin",
-    "Asser negmeldin",
-    "Andrew afifi",
-    "Alia safie",
-    "Adel Fekry",
-    "Mahmoud Maher",
-    "Gamil ibrahim Dorgham",
-    "Walid moneir Sakr",
-    "Mohamed Tayel",
-  ];
+  const profilesWithPhotos = {
+    "habil-abu-el-kheir": habilAbuElKheirProfilePic,
+    "tamer-kamal": tamerKandilProfileImage,
+    "mohamed-tayel": mohamedTayelProfileImage,
+    "hossam-el-sharawi": hossamElSharawiProfilePic,
+    "gamil-dorgham": gamilDorghamProfilePic,
+    "mahmoud-maher": mahmoudMaherProfilePic,
+    "adel-fekry": adelFekryProfilePic,
+    "alia-safei": aliaSafeiProfilePic,
+    "andrew-afifi": andrewAfifiProfilePic,
+    "asser-negm-el-din": asserNegmEldinProfilePic,
+    "emil-ghobrial": emilGhobrialProfilePic,
+    "amin-kamal-amin": aminKamalAminProfilePic,
+    "walid-sakr": walidSakrProfilePic,
+  };
+
+  // Convert the object into an array of key-value pairs
+  const profilesWithPhotosArray = Object.entries(profilesWithPhotos);
 
   // Chunk the profiles into groups of 2 for initial display
-  const initialProfiles = profiles.slice(0, 8); // Display the first 8 profiles initially
+  const initialProfiles = profilesWithPhotosArray.slice(0, 8); // Display the first 8 profiles initially
   const [visibleProfiles, setVisibleProfiles] = useState(initialProfiles);
   const [showLess, setShowLess] = useState(false);
-  const remainingProfiles = profiles.slice(8, profiles.length); // Profiles after the initial ones
+  const remainingProfiles = profilesWithPhotosArray.slice(
+    8,
+    profilesWithPhotosArray.length
+  ); // Profiles after the initial ones
 
   const handleShowMore = () => {
     setVisibleProfiles((prevProfiles) => [
@@ -48,7 +69,7 @@ const MainTeam = () => {
   };
 
   const handleShowLess = () => {
-    const initialProfiles = profiles.slice(0, 8); // Display the first 8 profiles initially
+    const initialProfiles = profilesWithPhotosArray.slice(0, 8); // Display the first 8 profiles initially
     setVisibleProfiles(initialProfiles);
     setShowLess(false);
   };
@@ -152,7 +173,10 @@ const MainTeam = () => {
                 if (index < visibleProfiles.length) {
                   return (
                     <div key={index} style={{ marginRight: "20px" }}>
-                      <ProfileCard profileName={visibleProfiles[index]} />
+                      <ProfileCard
+                        profileName={visibleProfiles[index][0]}
+                        profileImage={visibleProfiles[index][1]}
+                      />
                     </div>
                   );
                 }
@@ -171,7 +195,10 @@ const MainTeam = () => {
                   if (index < visibleProfiles.length) {
                     return (
                       <div key={index} style={{ marginRight: "20px" }}>
-                        <ProfileCard profileName={visibleProfiles[index]} />
+                        <ProfileCard
+                          profileName={visibleProfiles[index][0]}
+                          profileImage={visibleProfiles[index][1]}
+                        />
                       </div>
                     );
                   }
