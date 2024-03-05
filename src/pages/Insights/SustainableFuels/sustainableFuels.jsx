@@ -4,7 +4,7 @@ import mainInsightsSustainableFuelsImage from '../../../assets/Images/Insights/m
 import insightsAdaptationImage from '../../../assets/Images/Insights/taxing-catalyst-adaptation.jpeg'
 import insightsArbitrationImage from '../../../assets/Images/Insights/taxing-catalyst-arbitration.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import SustainableFuelsText from './sustainableFuelsText'
 import Swiper from '../../../components/Common/Swiper/swiper'
 import ProfileCard from '../../../components/Common/ProfileCard/profileCard'
@@ -31,9 +31,9 @@ const SustainableFuels = () => {
     ]
 
     const profiles = [
-        "Habil Abu El-Kheir",
-        "Tamer Kamal",
-        "Hossam El Sharawi"
+        "Habil-Abu-El-Kheir",
+        "Tamer-Kamal",
+        "Hossam-El-Sharawi"
     ]
 
     return (

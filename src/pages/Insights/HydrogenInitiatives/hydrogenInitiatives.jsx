@@ -4,7 +4,7 @@ import mainInsightsHydrogenInitiativesImage from '../../../assets/Images/Insight
 import insightsHydrogenInitiativesImage from '../../../assets/Images/Insights/renewable-energy-waves.jpeg'
 import insightsGreenImage from '../../../assets/Images/Insights/renewable-energy-green.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import HydrogenInitiativesText from './hydrogenInitiativesText'
 import Swiper from '../../../components/Common/Swiper/swiper'
 import ProfileCard from '../../../components/Common/ProfileCard/profileCard'
@@ -31,9 +31,9 @@ const HydrogenInitiatives = () => {
     ]
 
     const profiles = [
-        "Habil Abu El-Kheir",
-        "Tamer Kamal",
-        "Hossam El Sharawi"
+        "Habil-Abu-El-Kheir",
+        "Tamer-Kamal",
+        "Hossam-El-Sharawi"
     ]
 
     return (

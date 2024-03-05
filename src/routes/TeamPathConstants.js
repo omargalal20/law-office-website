@@ -1,6 +1,5 @@
 const TeamPathConstants = {
-  MAIN: "Team",
-  HABIL: "team/habil",
+  PROFILE: "team/:profileName",
 };
 
 export default TeamPathConstants;

@@ -4,7 +4,7 @@ import mainInsightsLegalPerspectiveImage from '../../../assets/Images/Insights/m
 import legalPerspectiveAdaptation from '../../../assets/Images/Insights/taxing-catalyst-adaptation.jpeg'
 import legalPerspectiveArbitration from '../../../assets/Images/Insights/taxing-catalyst-arbitration.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import LegalPerspectiveText from './legalPerspectiveText'
 
 const LegalPerspective = () => {

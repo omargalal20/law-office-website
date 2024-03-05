@@ -4,7 +4,7 @@ import mainInsightsConstructionTrendsImage from '../../../assets/Images/Insights
 import constructionTrendsSmartConstruction from '../../../assets/Images/Insights/insights-smart-construction.jpeg'
 import constructionTrendsAugmentedReality from '../../../assets/Images/Insights/insights-augmented-reality.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import ConstructionTrendsText from './constructionTrendsText'
 
 const ConstructionTrends = () => {

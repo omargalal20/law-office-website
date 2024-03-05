@@ -4,7 +4,7 @@ import mainInsightsGafiImage from '../../../assets/Images/Insights/insights-gafi
 import insightsAiImage from '../../../assets/Images/Insights/data-privacy-ai.jpeg'
 import insightsConnectivityImage from '../../../assets/Images/Insights/data-privacy-connectivity.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import GafiText from './gafiText'
 
 const Gafi = () => {

@@ -4,7 +4,7 @@ import mainInsightsLaborLawImage from '../../../assets/Images/Insights/main-insi
 import laborLawInsightsHybrid from '../../../assets/Images/Insights/labor-law-insights-hybrid.jpeg'
 import laborLawInsightsBenefits from '../../../assets/Images/Insights/labor-law-insights-1.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import LaborLawText from './laborLawText'
 
 const LaborLaw = () => {

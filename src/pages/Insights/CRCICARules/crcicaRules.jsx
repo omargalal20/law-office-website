@@ -4,7 +4,7 @@ import mainInsightsCrcicaRulesImage from '../../../assets/Images/Insights/main-i
 import crciraRulesAdaptation from '../../../assets/Images/Insights/taxing-catalyst-adaptation.jpeg'
 import crciraRulesArbitration from '../../../assets/Images/Insights/taxing-catalyst-arbitration.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import CrcicaRulesText from './crcicaRulesText'
 
 const CrcicaRules = () => {

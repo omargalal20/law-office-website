@@ -4,7 +4,7 @@ import mainInsightsInternationalFinanceImage from '../../../assets/Images/Insigh
 import mainInsightsLawLaborImage from '../../../assets/Images/Insights/main-insights-law-labor.jpeg'
 import mainInsightsFinanceImage from '../../../assets/Images/Insights/insights-finance.jpeg'
 
-import PersonalRelatedInsights from '../personalRelatedInsights'
+import PersonalRelatedInsights from '../../../components/Common/PersonalRelatedInsight/personalRelatedInsights'
 import InternationalFinanceText from './internationalFinanceText'
 
 const InternationalFinance = () => {

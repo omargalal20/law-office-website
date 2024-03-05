@@ -4,17 +4,14 @@ import InsightsPathConstants from "./InsightsPathConstants";
 import PracticeAreasConstants from "./PracticeAreasConstants";
 import TeamPathConstants from "./TeamPathConstants";
 
-const AviationPracticeArea = React.lazy(() =>
-  import("../pages/PracticeArea/Aviation/aviation.jsx")
-);
 
-const MainTeam = React.lazy(() => import("../pages/Team/mainTeam.jsx"));
-const Habil = React.lazy(() => import("../pages/Team/habil.jsx"));
 const Landing = React.lazy(() => import("../pages/Landing/landing"));
 const Contact = React.lazy(() => import("../pages/Contact/contact"));
 const About = React.lazy(() => import("../pages/About/about"));
 const Dentons = React.lazy(() => import("../pages/Dentons/dentons"));
-const Practice = React.lazy(() => import("../pages/PracticeArea/practiceArea"));
+const Practice = React.lazy(() =>
+  import("../pages/PracticeAreas/MainPracticeArea/practiceArea.jsx")
+);
 const Maps = React.lazy(() => import("../pages/maps"));
 
 const MainInsights = React.lazy(() =>
@@ -75,6 +72,14 @@ const RenewableEnergyFutureInsights = React.lazy(() =>
 const TransportationLogisticsInsights = React.lazy(() =>
   import("../pages/Insights/TransportationLogistics/transportationLogistics")
 );
+
+const AviationPracticeArea = React.lazy(() =>
+  import("../pages/PracticeAreas/Aviation/aviation.jsx")
+);
+
+
+const MainTeam = React.lazy(() => import("../pages/Team/mainTeam.jsx"));
+const TeamProfile = React.lazy(() => import("../pages/Team/teamProfile.jsx"));
 
 const routes = [
   { path: MainPathConstants.LANDING, element: <Landing /> },
@@ -159,8 +164,8 @@ const routes = [
     element: <AviationPracticeArea />,
   },
   {
-    path: TeamPathConstants.HABIL,
-    element: <Habil />,
+    path: TeamPathConstants.PROFILE,
+    element: <TeamProfile />,
   },
   {
     path: TeamPathConstants.MAIN,
