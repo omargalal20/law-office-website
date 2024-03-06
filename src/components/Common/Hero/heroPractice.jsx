@@ -1,6 +1,5 @@
 import React from "react";
 
-import HeaderBar from "../../Layout/Header/header";
 import BlackHeaderBar from "../../Layout/Header/blackHeader";
 
 const HeroPractice = ({
