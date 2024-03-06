@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import React, { useState } from "react";
 import HeroMainTeam from "../../components/Common/Hero/heroMainTeam";
 import mainHero from "../../assets/Images/Team/mainhero.png";
 import main1 from "../../assets/Images/Team/main1.png";

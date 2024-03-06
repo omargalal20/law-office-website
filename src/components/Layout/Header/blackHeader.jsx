@@ -10,7 +10,6 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import MailIcon from "@mui/icons-material/Mail";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
 import { makeStyles } from "@mui/styles";

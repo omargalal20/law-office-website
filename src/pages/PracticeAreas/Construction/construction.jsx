@@ -1,4 +1,4 @@
-import practiceAreaConstruction from "../../../assets/Images/PracticeArea/Construction/banking-and-finance-hero-image.jpeg"
+import practiceAreaConstruction from "../../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-hero-image.jpeg"
 import constructionTrendsSmartConstruction from '../../../assets/Images/Insights/insights-smart-construction.jpeg'
 import constructionTrendsAugmentedReality from '../../../assets/Images/Insights/insights-augmented-reality.jpeg'
 import threeDModelingImage from "../../../assets/Images/PracticeArea/Construction/construction3d.jpeg"
