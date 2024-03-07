@@ -76,38 +76,35 @@ export default function HeaderBar() {
         <CloseIcon sx={{ fontSize: 40 }} />
       </IconButton>
       <List style={{ paddingTop: "50px" }}>
-        {[
-          "Insights",
-          /*"About Afifi",*/ "Practice Areas",
-          "Team",
-          "Contacts",
-        ].map((text, index) => (
-          <ListItem
-            key={text}
-            disablePadding
-            style={{
-              width: "25%",
-              paddingLeft: "45px",
-              paddingRight: "45px",
-            }}
-          >
-            <ListItemButton href={"/" + text}>
-              <ListItemText
-                primary={text}
-                style={{
-                  color: "white",
-                }}
-                primaryTypographyProps={{
-                  fontSize: "25px",
-                  fontFamily: "Montserrat",
-                }}
-              />
-              <ListItemIcon>
-                {<ArrowForwardIcon sx={{ color: "white" }} />}
-              </ListItemIcon>
-            </ListItemButton>
-          </ListItem>
-        ))}
+        {["Insights", "About", "Practice Areas", "Team", "Contacts"].map(
+          (text, index) => (
+            <ListItem
+              key={text}
+              disablePadding
+              style={{
+                width: "25%",
+                paddingLeft: "45px",
+                paddingRight: "45px",
+              }}
+            >
+              <ListItemButton href={"/" + text}>
+                <ListItemText
+                  primary={text}
+                  style={{
+                    color: "white",
+                  }}
+                  primaryTypographyProps={{
+                    fontSize: "25px",
+                    fontFamily: "Montserrat",
+                  }}
+                />
+                <ListItemIcon>
+                  {<ArrowForwardIcon sx={{ color: "white" }} />}
+                </ListItemIcon>
+              </ListItemButton>
+            </ListItem>
+          )
+        )}
       </List>
       <Divider />
       <List>

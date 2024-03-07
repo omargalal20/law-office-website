@@ -1,7 +1,7 @@
 const MainPathConstants = {
   LANDING: "/",
   CONTACT: "Contacts",
-  ABOUT: "about",
+  ABOUT: "About",
   DENTONS: "Dentons Partnership",
   PRACTICE_AREAS: "Practice Areas",
 };

@@ -22,6 +22,17 @@ import ImageList from "@mui/material/ImageList";
 import ImageListItem from "@mui/material/ImageListItem";
 import Container from "@mui/material/Container";
 
+import imga from "./Stack2/Group 175.png";
+import imgb from "./Stack2/Group 176.png";
+import imgc from "./Stack2/Group 179.png";
+import imgd from "./Stack2/Group 180.png";
+import imge from "./Stack2/Group 181.png";
+import imgf from "./Stack2/Group 182.png";
+import imgg from "./Stack2/Group 183.png";
+import imgh from "./Stack2/Group 193.png";
+import imgi from "./Stack2/Group 393.png";
+import imgj from "./Stack2/Group 394.png";
+
 const Practice = () => {
   return (
     <Stack direction={"column"} spacing={0}>
@@ -192,7 +203,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/oilAndGas">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
@@ -210,7 +223,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/renewableEnergy">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
@@ -228,7 +243,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/transportation">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
@@ -246,7 +263,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/construction">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
@@ -264,7 +283,7 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/energy">See what is ahead{"->"}</a>
                   </p>
                 </div>
               </ImageList>
@@ -288,7 +307,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/aviation">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
@@ -306,7 +327,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/realEstate">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
@@ -324,7 +347,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/technology">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
@@ -342,7 +367,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/bankingAndFinance">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
@@ -360,7 +387,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/whiteCollarCrime">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
               </ImageList>
@@ -385,7 +414,7 @@ const Practice = () => {
               >
                 <div>
                   <ImageListItem>
-                    <img src={img1} alt="practice" />
+                    <img src={imga} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -398,12 +427,14 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/arbitration">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
                   <ImageListItem>
-                    <img src={img2} alt="practice" />
+                    <img src={imgb} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -416,12 +447,14 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/employment">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
                   <ImageListItem>
-                    <img src={img3} alt="practice" />
+                    <img src={imgc} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -434,12 +467,14 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/joinVentures">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
                   <ImageListItem>
-                    <img src={img4} alt="practice" />
+                    <img src={imgd} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -452,12 +487,14 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/mergerAndAcquisition">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
                   <ImageListItem>
-                    <img src={img5} alt="practice" />
+                    <img src={imge} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -470,7 +507,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/oilAndGas">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
               </ImageList>
@@ -481,7 +520,7 @@ const Practice = () => {
               >
                 <div>
                   <ImageListItem>
-                    <img src={img6} alt="practice" />
+                    <img src={imgf} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -494,12 +533,14 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/corporate">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
                   <ImageListItem>
-                    <img src={img7} alt="practice" />
+                    <img src={imgg} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -512,12 +553,14 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/corporateGovernance">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
                   <ImageListItem>
-                    <img src={img8} alt="practice" />
+                    <img src={imgh} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -530,12 +573,14 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/competition">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
                   <ImageListItem>
-                    <img src={img9} alt="practice" />
+                    <img src={imgi} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -548,12 +593,14 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/litigation">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
                 <div>
                   <ImageListItem>
-                    <img src={img10} alt="practice" />
+                    <img src={imgj} alt="practice" />
                   </ImageListItem>
                   <p
                     style={{
@@ -566,7 +613,9 @@ const Practice = () => {
                       marginLeft: "75px",
                     }}
                   >
-                    See what is ahead{" -"}
+                    <a href="/practiceAreas/insolvency">
+                      See what is ahead{"->"}
+                    </a>
                   </p>
                 </div>
               </ImageList>

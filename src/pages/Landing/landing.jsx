@@ -22,6 +22,7 @@ import bx5 from "../../assets/Images/Landing/box5.svg";
 import bx6 from "../../assets/Images/Misc/img.svg";
 import bx7 from "../../assets/Images/Misc/Rectangle 18.svg";
 import "./landing.css";
+import rec5 from "./Rectangle 5.png";
 
 const Landing = () => {
   const theme = useTheme();
@@ -417,7 +418,7 @@ const Landing = () => {
             fontWeight: "200",
           }}
         >
-          Recent Insights
+          <a href="/Insights">Recent Insights</a>
         </p>
       </div>
       <div
@@ -782,18 +783,22 @@ const Landing = () => {
               transition: "margin-right 0.3s",
             }}
           >
-            <strong>Find Us</strong>
+            <strong>
+              <a href="/Contacts">Find Us</a>
+            </strong>
           </span>
-          <ChangeHistoryIcon
-            style={{
-              color: "white",
-              transform: isHovered6
-                ? "translateX(-5px) rotateZ(90deg)"
-                : "rotateZ(90deg)", // Adjust transform on hover
-              width: "15px",
-              transition: "transform 0.3s", // Apply transition to transform property
-            }}
-          />
+          <IconButton href="/Contacts">
+            <ChangeHistoryIcon
+              style={{
+                color: "white",
+                transform: isHovered6
+                  ? "translateX(-5px) rotateZ(90deg)"
+                  : "rotateZ(90deg)", // Adjust transform on hover
+                width: "15px",
+                transition: "transform 0.3s", // Apply transition to transform property
+              }}
+            />
+          </IconButton>
         </p>
       </div>
       <div
@@ -878,11 +883,89 @@ const Landing = () => {
                 top: 1050,
               }}
             >
-              <p style={{ margin: 10 }}>Discover Who We Are</p>
-              <EastIcon />
+              <p
+                style={{
+                  width: "350px",
+                  fontSize: 25,
+                  fontWeight: 400,
+                  fontStyle: "italic",
+                  fontFamily: "Montserrat",
+                }}
+              >
+                <a href="/about">Discover Who We Are</a>
+                <IconButton href="/about">
+                  <EastIcon />
+                </IconButton>
+              </p>
             </div>
           </Stack>
         </Grid>
+      </div>
+      <div
+        style={{ position: "relative", background: "white", height: "753px" }}
+      >
+        <p
+          style={{
+            width: "520px",
+            height: "244px",
+            fontSize: 100,
+            fontWeight: 400,
+            fontFamily: "Montserrat",
+            paddingLeft: "80px",
+          }}
+        >
+          We Are{" "}
+          <span
+            style={{
+              fontStyle: "italic",
+              fontWeight: 100,
+              fontFamily: "Montserrat",
+            }}
+          >
+            Dentons
+          </span>
+        </p>
+        <p
+          style={{
+            width: "605px",
+            position: "absolute",
+            left: 80,
+            top: 340,
+            fontSize: 18,
+            fontWeight: 200,
+          }}
+        >
+          In 80+ countries, Dentons empowers your every move. Growth,
+          protection, operations, finance – we navigate the global legal maze
+          with unparalleled solutions, woven from local expertise and global
+          reach. Our polycentric approach dances to your unique rhythm, guided
+          by the unwavering pulse of inclusion, diversity, and sustainability.
+          We relentlessly prioritize what matters most, becoming your strategic
+          partner, not just your counsel. Choose Dentons, and compose your
+          success on a world stage.
+        </p>
+        <p
+          style={{
+            width: "250px",
+            fontSize: 25,
+            fontWeight: 400,
+            fontStyle: "italic",
+            fontFamily: "Montserrat",
+            position: "absolute",
+            left: 80,
+            top: 600,
+          }}
+        >
+          <a href="Dentons Partnership">
+            Our Partnership
+            <EastIcon />
+          </a>
+        </p>
+        <img
+          src={rec5}
+          alt="rec"
+          style={{ position: "absolute", right: 80, top: 50 }}
+        />
       </div>
       <div
         style={{
