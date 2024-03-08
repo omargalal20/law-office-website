@@ -66,7 +66,7 @@ const TeamProfile = () => {
             </p>
             <RelatedImagesSection insightImages={profileImages.relatedPracticeAreasImages} />
           </div>
-          <div style={{ paddingLeft: "125px", marginTop: "50px" }}>
+          <div style={{ paddingLeft: "100px", marginTop: "50px" }}>
             <p
               style={{
                 fontSize: "50px",
@@ -82,7 +82,7 @@ const TeamProfile = () => {
               </span>
             </p>
 
-            <TripleImageGrid images={profileImages.latestNewsImages} width="560px" bigWidth="712px" />
+            <TripleImageGrid images={profileImages.latestNewsImages} width="569px" bigWidth="712px" />
           </div>
         </div>
       </div>

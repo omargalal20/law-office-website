@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import hoverableImageButtonIcon from "../../../assets/Images/Misc/hoverable-image-button-icon.svg";
 
 import profilesData from "../../../data/TeamProfiles.json";
+import { profileImagesData } from "../../../pages/Team/profileImages";
 
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -14,9 +15,12 @@ import Box from "@mui/material/Box";
 
 const ProfileCard = ({ profileName, profileImage }) => {
   const [profile, setProfile] = useState({});
+  const [profileImages, setProfileImages] = useState({});
 
   useEffect(() => {
     setProfile(profilesData[profileName] || {});
+    const profilePageImagesKey = profilesData[profileName]?.profilePageImagesKey;
+    setProfileImages(profilePageImagesKey ? profileImagesData[profilePageImagesKey] : {});
   }, [profileName]);
 
   if (!profile) {
@@ -25,7 +29,7 @@ const ProfileCard = ({ profileName, profileImage }) => {
 
   return (
     <Card sx={{ height: "220px", width: "567px", padding: "16px" }}>
-      <Grid container spacing={2} height={"100%"}>
+      <Grid container spacing={2} height={"90%"}>
         <Grid item xs={4} style={{ position: "relative" }}>
           <div
             style={{
@@ -37,7 +41,7 @@ const ProfileCard = ({ profileName, profileImage }) => {
             }}
           >
             <img
-              src={profileImage}
+              src={profileImages.profileImage}
               alt={profile.name}
               style={{
                 maxWidth: "100%",

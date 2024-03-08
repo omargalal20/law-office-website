@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import clockIcon from "../../../assets/Images/Insights/main-insights-clock-icon.svg";
 import hoverableImageButtonIcon from "../../../assets/Images/Misc/hoverable-image-button-icon.svg";
@@ -12,11 +12,6 @@ const HoverableImageWith = ({
   buttonEnabled = true,
 }) => {
   const [isHovered, setIsHovered] = useState(false);
-  const [isButtonEnabled, setIsButtonEnabled] = useState(buttonEnabled);
-
-  useEffect(() => {
-    setIsButtonEnabled(buttonEnabled);
-  }, [buttonEnabled]);
 
   const isBigImage = height === "692px"; // Assuming 678px is the height of the bigger image
   const imageWidth = isBigImage ? bigWidth : width;
