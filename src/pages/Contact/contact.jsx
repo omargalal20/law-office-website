@@ -1,15 +1,87 @@
-import React from "react";
 import contactbg from "../../assets/Images/Contact/contact.svg";
-import Stack from "@mui/material/Stack";
+
 import HeaderBar from "../../components/Layout/Header/header";
-import { Input, Typography } from "antd";
-import CloseIcon from "@mui/icons-material/Close";
-import map from "../../assets/Images/Contact/Rectangle.png";
-import line from "../../assets/Images/Misc/Line 7.png";
+import CustomInput from "../../components/Common/Input/CustomInput";
+import SectionHeaderWithoutArrow from "../../components/Common/Section/sectionHeaderWithoutArrow";
+import Maps from "../../components/Page/Contact/Maps";
+import HoverableButton from "../../components/Common/Button/HoverableButton";
+
+import { FormConstants } from "../../constants/Constants";
+
+import Stack from "@mui/material/Stack";
+import createTheme from '@mui/material/styles/createTheme';
+import ThemeProvider from '@mui/material/styles/ThemeProvider';
+import Container from '@mui/material/Container';
+
+const theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 300,
+      md: 660,
+      lg: 1350,
+      xl: 1620,
+    },
+  },
+});
 
 const Contact = () => {
+  const firstSectionHeader = {
+    sectionHeaderTitle: "The Form Below",
+    sectionHeaderText: "For Any Other Questions Or Requests, Kindly Fill Out",
+    sectionStyle: {
+      fontSize: "50px",
+      width: "969px",
+      height: "122px",
+      marginBottom: 78,
+      fontWeight: 400,
+    }
+  };
+
+  const formInputs = [
+    {
+      inputType: FormConstants.TEXT,
+      inputTitle: "Name",
+      largeInput: false
+    },
+    {
+      inputType: FormConstants.TEXT,
+      inputTitle: "Email Address",
+      largeInput: false
+    },
+    {
+      inputType: FormConstants.TEXT,
+      inputTitle: "Nearest Office",
+      largeInput: false
+    },
+    {
+      inputType: FormConstants.TEXT,
+      inputTitle: "Expertise",
+      largeInput: false
+    },
+    {
+      inputType: FormConstants.TEXT,
+      inputTitle: "Enquiry Type",
+      largeInput: false
+    },
+    {
+      inputType: FormConstants.TEXT,
+      inputTitle: "Nearest Office",
+      largeInput: false
+    },
+    {
+      inputType: FormConstants.TEXT,
+      inputTitle: "Your Message",
+      largeInput: true
+    },
+    {
+      inputType: FormConstants.CHECKER,
+    }
+  ]
+
+
   return (
-    <Stack direction={"column"} spacing={4}>
+    <>
       <div
         style={{
           position: "relative",
@@ -43,6 +115,21 @@ const Contact = () => {
             <HeaderBar />
           </div>
         </div>
+
+        <p
+          style={{
+            position: "absolute",
+            top: 200,
+            left: 85,
+            right: 0,
+            color: "white",
+            fontSize: "1rem",
+            fontWeight: "100",
+          }}
+        >
+          Contact
+        </p>
+
         <p
           style={{
             position: "absolute",
@@ -73,231 +160,27 @@ const Contact = () => {
           Thank you for considering Afifi Law Office
         </p>
       </div>
-      <div>
-        <p
-          style={{
-            fontSize: "50px",
-            width: "969px",
-            height: "122px",
-            paddingLeft: "80px",
-            marginBottom: 78,
-            fontWeight: 400,
-          }}
-        >
-          For Any Other Questions Or Requests, Kindly Fill Out{" "}
-          <span
-            style={{
-              fontStyle: "italic",
-              fontWeight: 100,
-            }}
-          >
-            The Form Below
-          </span>
-        </p>
-      </div>
-      <Stack direction={"row"} spacing={8}>
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            paddingLeft: "79px",
-          }}
-        >
-          <Typography.Title
-            style={{
-              fontSize: "25px",
-              fontFamily: "Montserrat",
-              fontWeight: 400,
-              marginTop: "20px",
-            }}
-          >
-            Name
-          </Typography.Title>
-          <Input
-            style={{
-              borderColor: "#09283F",
-              width: "648px",
-              height: "64px",
-              border: "2px solid",
-            }}
-          />
-          <Typography.Title
-            style={{
-              fontSize: "25px",
-              fontFamily: "Montserrat",
-              fontWeight: 400,
-              marginTop: "20px",
-            }}
-          >
-            Email Address
-          </Typography.Title>
-          <Input
-            style={{
-              borderColor: "#09283F",
-              width: "648px",
-              height: "64px",
-              border: "2px solid",
-            }}
-          />
-          <Typography.Title
-            style={{
-              fontSize: "25px",
-              fontFamily: "Montserrat",
-              fontWeight: 400,
-              marginTop: "20px",
-            }}
-          >
-            Nearest Office
-          </Typography.Title>
-          <Input
-            style={{
-              borderColor: "#09283F",
-              width: "648px",
-              height: "64px",
-              border: "2px solid",
-            }}
-          />
-          <Typography.Title
-            style={{
-              fontSize: "25px",
-              fontFamily: "Montserrat",
-              fontWeight: 400,
-              marginTop: "20px",
-            }}
-          >
-            Expertise
-          </Typography.Title>
-          <Input
-            style={{
-              borderColor: "#09283F",
-              width: "648px",
-              height: "64px",
-              border: "2px solid",
-            }}
-          />
-          <Typography.Title
-            style={{
-              fontSize: "25px",
-              fontFamily: "Montserrat",
-              fontWeight: 400,
-              marginTop: "20px",
-            }}
-          >
-            Enquiry Type
-          </Typography.Title>
-          <Input
-            style={{
-              borderColor: "#09283F",
-              width: "648px",
-              height: "64px",
-              border: "2px solid",
-            }}
-          />
-          <Typography.Title
-            style={{
-              fontSize: "25px",
-              fontFamily: "Montserrat",
-              fontWeight: 400,
-              marginTop: "20px",
-            }}
-          >
-            Nearest Office
-          </Typography.Title>
-          <Input
-            style={{
-              borderColor: "#09283F",
-              width: "648px",
-              height: "64px",
-              border: "2px solid",
-            }}
-          />
-          <Typography.Title
-            style={{
-              fontSize: "25px",
-              fontFamily: "Montserrat",
-              fontWeight: 400,
-              marginTop: "20px",
-            }}
-          >
-            Your Message
-          </Typography.Title>
-          <Input
-            style={{
-              borderColor: "#09283F",
-              width: "648px",
-              height: "131px",
-              border: "2px solid",
-            }}
-          />
-        </div>
-        <div>
-          <p
-            style={{
-              fontWeight: 400,
-              fontSize: "40px",
-              fontFamily: "Montserrat",
-            }}
-          >
-            Cairo, Egypt
-          </p>
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <div></div>
-            <div>
-              <CloseIcon style={{ width: "30px", height: "30px" }} />
-            </div>
-          </div>
-          <div>
-            <p
-              style={{
-                fontWeight: 400,
-                fontSize: "20px",
-                fontFamily: "Montserrat",
-              }}
-            >
-              6 Salah El Din St. Zamalek
-            </p>
-            <p
-              style={{
-                fontWeight: 400,
-                fontSize: "20px",
-                fontFamily: "Montserrat",
-              }}
-            >
-              11211 Cairo
-            </p>
-            <p
-              style={{
-                fontWeight: 400,
-                fontSize: "20px",
-                fontFamily: "Montserrat",
-              }}
-            >
-              Egypt
-            </p>
-            <p
-              style={{
-                fontWeight: 400,
-                fontSize: "20px",
-                fontFamily: "Montserrat",
-              }}
-            >
-              T +20 2 2735 4010F +20 2736 7717
-            </p>
-            <p
-              style={{
-                fontWeight: 400,
-                fontSize: "20px",
-                fontFamily: "Montserrat",
-              }}
-            >
-              info@afifioffice.com
-            </p>
-            <img src={line} alt="line" style={{marginTop : 23}}/>
-            <img src={map} alt="map" style={{marginTop : 50}}/>
-          </div>
-        </div>
-      </Stack>
-    </Stack>
+
+      <ThemeProvider theme={theme}>
+        <Container maxWidth="lg" style={{ marginTop: "10vh", marginBottom: "10vh" }}>
+
+          <SectionHeaderWithoutArrow key={"Contacts-First-SectionHeaderWithoutArrow"} sectionInfo={firstSectionHeader} />
+
+          <Stack direction={"row"} spacing={8}>
+
+            <Stack direction={"column"} spacing={3}>
+              {formInputs.map((input, index) => (
+                <CustomInput key={index} inputType={input.inputType} inputTitle={input.inputTitle} largeInput={input.largeInput} />
+              ))}
+
+              <HoverableButton buttonText={"Send Message"} />
+            </Stack>
+
+            <Maps />
+          </Stack>
+        </Container>
+      </ThemeProvider>
+    </>
   );
 };
 

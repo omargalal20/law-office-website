@@ -13,7 +13,6 @@ const PersonalRelatedInsights = () => {
     const [insight, setInsight] = useState({});
 
     useEffect(() => {
-        console.log(InsightsInfo[insightName])
         setInsight(InsightsInfo[insightName] || {});
     }, [insightName]);
 
