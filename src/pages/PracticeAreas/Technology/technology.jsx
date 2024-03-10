@@ -5,7 +5,7 @@ import autonomousImage from "../../../assets/Images/PracticeArea/Technology/tech
 import quantumComputing from "../../../assets/Images/PracticeArea/Technology/technology-quantum-computing.jpeg"
 import arImage from "../../../assets/Images/PracticeArea/Technology/technology-ar.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Technology = () => {
     const sectionHeaders = {

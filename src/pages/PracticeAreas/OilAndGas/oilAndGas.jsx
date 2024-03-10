@@ -5,7 +5,7 @@ import energyDecarbonizationImage from "../../../assets/Images/PracticeArea/OilA
 import geoPoliticsImage from "../../../assets/Images/PracticeArea/OilAndGas/oil-gas-energy-decarbonization.jpeg"
 import oilPricingImage from "../../../assets/Images/PracticeArea/OilAndGas/oil-gas-pricing.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const OilAndGas = () => {
     const sectionHeaders = {

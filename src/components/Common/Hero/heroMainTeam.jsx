@@ -73,7 +73,7 @@ const HeroMainTeam = ({
         }}
       >
         {/* Rendering first part */}
-        {firstPart}
+        {firstPart} {" "}
         {/* Rendering second part in italic */}
         <span style={{ fontStyle: "italic", fontWeight: 100 }}>
           {secondPart}

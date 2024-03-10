@@ -5,7 +5,7 @@ import img3 from "../../../assets/Images/PracticeArea/Aviation/Rectangle 20.png"
 import img4 from "../../../assets/Images/PracticeArea/Aviation/Group 59.png";
 import img5 from "../../../assets/Images/PracticeArea/Aviation/Group 58.png";
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Aviation = () => {
   const sectionHeaders = {

@@ -1,7 +1,7 @@
-import HeroPractice from "../../../components/Common/Hero/heroPractice";
-import TripleImageGrid from "../../../components/Common/Section/tripleImageGrid";
-import SectionHeaderWithoutArrow from "../Section/sectionHeaderWithoutArrow";
-import RelatedImagesSection from "../Section/relatedImagesSection";
+import HeroPractice from "../../Common/Hero/heroPractice";
+import TripleImageGrid from "../../Common/Section/tripleImageGrid";
+import SectionHeaderWithoutArrow from "../../Common/Section/sectionHeaderWithoutArrow";
+import RelatedImagesSection from "../../Common/Section/relatedImagesSection";
 
 import createTheme from '@mui/material/styles/createTheme'
 import ThemeProvider from '@mui/material/styles/ThemeProvider'

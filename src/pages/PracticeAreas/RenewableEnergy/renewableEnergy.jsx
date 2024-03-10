@@ -6,7 +6,7 @@ import renewableEnergySolarEnergy from "../../../assets/Images/PracticeArea/Rene
 import renewableEnergySolarFarms from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergySolarFarms.jpeg"
 import renewableEnergyBattery from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergyBattery.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const RenewableEnergy = () => {
     const sectionHeaders = {

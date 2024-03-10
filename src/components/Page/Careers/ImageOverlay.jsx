@@ -2,31 +2,44 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 
-const ImageOverlay = ({ alt, src, text, toPage }) => {
+const ImageOverlay = ({ alt, src, primaryText, secondaryText, toPage }) => {
+    // const toPagePath = toPage.split('/').pop();
     return (
-        <Link to={toPage}>
-            <Box
-                sx={{
-                    width: '100%',
-                    position: 'relative',
-                    cursor: 'pointer',
-                }}
-            >
-                <img src={src} alt={alt} style={{ height: 442, width: '100%' }} />
+        <Box
+            sx={{
+                width: '100%',
+                position: 'relative',
+                cursor: 'pointer',
+            }}
+        >
+            <Link to={"/" + toPage}>
+                <img src={src} alt={alt} style={{ height: 442, width: "100%" }} />
                 <div
                     style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        padding: '8px',
-                        color: 'white',
-                        backgroundColor: 'rgba(0, 0, 0, 0.5)',
+                        position: "absolute",
+                        bottom: "0",
+                        left: "0",
+                        color: "white",
+                        fontFamily: "Montserrat",
+                        fontSize: "40px",
+                        fontWeight: "500",
+                        lineHeight: '49px',
+                        letterSpacing: '0em',
+                        paddingBottom: "20px",
+                        paddingLeft: "20px",
                     }}
                 >
-                    {text}
+                    {primaryText} {" "}
+                    <span
+                        style={{
+                            fontWeight: 100,
+                            fontStyle: "italic"
+                        }}>
+                        {secondaryText}
+                    </span>
                 </div>
-            </Box>
-        </Link>
+            </Link>
+        </Box>
     );
 };
 

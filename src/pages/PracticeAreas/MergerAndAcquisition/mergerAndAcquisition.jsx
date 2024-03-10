@@ -5,7 +5,7 @@ import mergerAndAcquisitionFintech from "../../../assets/Images/PracticeArea/Mer
 import mergerAndAcquisitionEquity from "../../../assets/Images/PracticeArea/MergerAndAcquisition/mergerAndAcquisitionEquity.jpeg"
 import mergerAndAcquisitionSustainable from "../../../assets/Images/PracticeArea/MergerAndAcquisition/mergerAndAcquisitionSustainable.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const mergerAndAcquisition = () => {
     const sectionHeaders = {

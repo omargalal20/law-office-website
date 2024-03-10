@@ -5,7 +5,7 @@ import remoteWorkImage from "../../../assets/Images/PracticeArea/RealEstate/real
 import technologyImage from "../../../assets/Images/PracticeArea/RealEstate/real-estate-technology.jpeg"
 import smartHomesImage from "../../../assets/Images/PracticeArea/RealEstate/real-estate-smart-homes.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const RealEstate = () => {
     const sectionHeaders = {

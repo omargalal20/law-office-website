@@ -5,7 +5,7 @@ import corporateSupplyChainImage from "../../../assets/Images/Team/corporateSupp
 import corporateBiImage from "../../../assets/Images/Team/corporateBi.jpeg"
 import corporateDigitalTransformationImage from "../../../assets/Images/Team/corporateDigitalTransformation.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Corporate = () => {
     const sectionHeaders = {

@@ -27,7 +27,7 @@ const MainTeam = () => {
 
   const heroDetails = {
     heroPrimaryHeading: "Meet Our Legal / Pioneers",
-    heroSecondaryHeading: "Team",
+    heroSecondaryHeading: "",
     heroSubHeading: "Founded in 1981, Leading through Excellence",
   };
 

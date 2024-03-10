@@ -5,7 +5,7 @@ import ArbitrationSupplyChainImage from "../../../assets/Images/Team/corporateSu
 import ArbitrationBiImage from "../../../assets/Images/Team/corporateBi.jpeg"
 import ArbitrationDigitalTransformationImage from "../../../assets/Images/Team/corporateDigitalTransformation.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Competition = () => {
     const sectionHeaders = {

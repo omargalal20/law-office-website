@@ -1,4 +1,12 @@
-import React from "react";
+import logoMain from "../../../assets/Images/Misc/logo-main9 2.svg";
+import fbIcon from "../../../assets/Images/Misc/facebook.svg";
+import xIcon from "../../../assets/Images/Misc/x.svg";
+
+import MainPathConstants from "../../../routes/MainPathConstants";
+import CareersPathConstants from "../../../routes/CareersPathConstants";
+import TeamPathConstants from "../../../routes/TeamPathConstants";
+import PracticeAreasConstants from "../../../routes/PracticeAreasConstants";
+
 import {
   MDBFooter,
   MDBContainer,
@@ -6,11 +14,9 @@ import {
   MDBCol,
 } from "mdb-react-ui-kit";
 import { MDBBtn } from "mdb-react-ui-kit";
-import logoMain from "../../../assets/Images/Misc/logo-main9 2.svg";
-import fbIcon from "../../../assets/Images/Misc/facebook.svg";
-import xIcon from "../../../assets/Images/Misc/x.svg";
-import { TextField } from "@mui/material";
-import { useTheme } from "@mui/material/styles";
+
+import TextField from "@mui/material/TextField";
+import useTheme from "@mui/material/styles/useTheme";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import IconButton from "@mui/material/IconButton";
 import Stack from "@mui/material/Stack";
@@ -265,27 +271,27 @@ export default function Footer() {
                 <strong>Navigation</strong>
               </p>
               <p>
-                <a href="#!" style={{ fontStyle: "italic", color: "black" }}>
+                <a href={MainPathConstants.LANDING} style={{ fontStyle: "italic", color: "black" }}>
                   Home
                 </a>
               </p>
               <p>
-                <a href="#!" style={{ fontStyle: "italic", color: "black" }}>
+                <a href={PracticeAreasConstants.MAIN_PRACTICE_AREA} style={{ fontStyle: "italic", color: "black" }}>
                   Practices
                 </a>
               </p>
               <p>
-                <a href="#!" style={{ fontStyle: "italic", color: "black" }}>
+                <a href={MainPathConstants.ABOUT} style={{ fontStyle: "italic", color: "black" }}>
                   Our Story
                 </a>
               </p>
               <p>
-                <a href="#!" style={{ fontStyle: "italic", color: "black" }}>
+                <a href={CareersPathConstants.CAREERS} style={{ fontStyle: "italic", color: "black" }}>
                   Careers
                 </a>
               </p>
               <p>
-                <a href="#!" style={{ fontStyle: "italic", color: "black" }}>
+                <a href={TeamPathConstants.MAIN} style={{ fontStyle: "italic", color: "black" }}>
                   Team
                 </a>
               </p>

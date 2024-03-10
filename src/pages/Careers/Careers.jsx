@@ -118,13 +118,15 @@ const Careers = () => {
                     <ImageOverlay
                         alt="Careers Professionals"
                         src={CareersProfessionalsImage}
-                        text="Join As Professional"
+                        primaryText="Join As"
+                        secondaryText={"Professional"}
                         toPage={CareersPathConstants.PROFESSIONALS}
                     />
                     <ImageOverlay
                         alt="Careers Interns"
                         src={CareersInternsImage}
-                        text="Join As Intern"
+                        primaryText="Join As"
+                        secondaryText={"Intern"}
                         toPage={CareersPathConstants.INTERNS}
                     />
                 </Stack>

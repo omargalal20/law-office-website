@@ -5,7 +5,7 @@ import EnergySupplyChainImage from "../../../assets/Images/Team/corporateSupplyC
 import EnergyBiImage from "../../../assets/Images/Team/corporateBi.jpeg"
 import EnergyDigitalTransformationImage from "../../../assets/Images/Team/corporateDigitalTransformation.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Energy = () => {
     const sectionHeaders = {

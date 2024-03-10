@@ -5,7 +5,7 @@ import machineLearningimage from "../../../assets/Images/PracticeArea/BankingAnd
 import centralBankImage from "../../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-central-bank.jpeg"
 import blockchainImage from "../../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-blockchaing.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const BankingAndFinance = () => {
     const sectionHeaders = {

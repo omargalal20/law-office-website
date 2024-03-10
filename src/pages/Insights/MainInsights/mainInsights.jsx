@@ -24,7 +24,7 @@ import mainInsightsArbitrationRules from "../../../assets/Images/Insights/taxing
 
 import Hero from "../../../components/Common/Hero";
 import HoverableImage from "../../../components/Common/HoverableImage/hoverableImage";
-import ViewMoreInsights from "../../../components/Common/ViewMoreInsights/viewMoreInsights";
+import ViewMoreInsights from "../../../components/Page/Insights/viewMoreInsights";
 
 import createTheme from "@mui/material/styles/createTheme";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";

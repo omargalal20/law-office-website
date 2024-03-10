@@ -5,7 +5,7 @@ import railImage from "../../../assets/Images/PracticeArea/Transportation/transp
 import electricVehicleImage from "../../../assets/Images/PracticeArea/Transportation/transportation-electric-vehicle.jpeg"
 import publicTransportationImage from "../../../assets/Images/PracticeArea/Transportation/transportation-public transport.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Transportation = () => {
     const sectionHeaders = {

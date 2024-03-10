@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 
-import Insight from "../../../components/Common/Insight/Insight";
+import Insight from "../../../components/Layout/Insights/Insight";
 import Swiper from '../../../components/Common/Swiper/swiper';
 import ProfileCard from "../../../components/Common/ProfileCard/profileCard";
 

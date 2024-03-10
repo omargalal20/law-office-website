@@ -1,8 +1,8 @@
 import React from 'react'
 
-import Hero from '../Hero'
-import SectionHeader from '../Section/sectionHeader'
-import RelatedImagesSection from '../Section/relatedImagesSection'
+import Hero from '../../Common/Hero'
+import SectionHeader from '../../Common/Section/sectionHeader'
+import RelatedImagesSection from '../../Common/Section/relatedImagesSection'
 
 import createTheme from '@mui/material/styles/createTheme'
 import ThemeProvider from '@mui/material/styles/ThemeProvider'

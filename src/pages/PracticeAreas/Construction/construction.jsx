@@ -5,7 +5,7 @@ import threeDModelingImage from "../../../assets/Images/PracticeArea/Constructio
 import automationImage from "../../../assets/Images/PracticeArea/Construction/constructionAutomation.jpeg"
 import resilientImage from "../../../assets/Images/PracticeArea/Construction/constructionResilient.jpeg"
 
-import PracticeArea from "../../../components/Common/PracticeArea/practiceArea";
+import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Construction = () => {
     const sectionHeaders = {
