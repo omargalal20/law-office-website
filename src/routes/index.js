@@ -3,7 +3,7 @@ import MainPathConstants from "./MainPathConstants";
 import InsightsPathConstants from "./InsightsPathConstants";
 import PracticeAreasConstants from "./PracticeAreasConstants";
 import TeamPathConstants from "./TeamPathConstants";
-
+import CareersPathConstants from "./CareersPathConstants.js";
 
 // Main
 const Landing = React.lazy(() => import("../pages/Landing/landing"));
@@ -108,6 +108,14 @@ const TechnologyPracticeArea = React.lazy(() =>
 const MainTeam = React.lazy(() => import("../pages/Team/mainTeam.jsx"));
 const TeamProfile = React.lazy(() => import("../pages/Team/teamProfile.jsx"));
 
+const Careers = React.lazy(() => import("../pages/Careers/Careers.jsx"));
+const Interns = React.lazy(() =>
+  import("../pages/Careers/Interns/Interns.jsx")
+);
+const Professionals = React.lazy(() =>
+  import("../pages/Careers/Professionals/Professionals.jsx")
+);
+
 const routes = [
   // Main paths
   { path: MainPathConstants.LANDING, element: <Landing /> },
@@ -117,7 +125,10 @@ const routes = [
   { path: MainPathConstants.PRACTICE_AREAS, element: <Practice /> },
 
   // Insights paths
-  { path: InsightsPathConstants.PERSONAL_RELATED_INSIGHTS, element: <PersonalRelatedInsights /> },
+  {
+    path: InsightsPathConstants.PERSONAL_RELATED_INSIGHTS,
+    element: <PersonalRelatedInsights />,
+  },
   { path: InsightsPathConstants.MAIN, element: <MainInsights /> },
 
   // Team paths
@@ -125,27 +136,85 @@ const routes = [
   { path: TeamPathConstants.MAIN, element: <MainTeam /> },
 
   // Practice Areas paths
-  { path: PracticeAreasConstants.ARBITRATION, element: <ArbitrationPracticeArea /> },
-  { path: PracticeAreasConstants.COMPETITION, element: <CompetitionPracticeArea /> },
-  { path: PracticeAreasConstants.CORPORATE_GOVERNANCE, element: <CorporateGovernancePracticeArea /> },
-  { path: PracticeAreasConstants.INSOLVENCY, element: <InsolvencyPracticeArea /> },
-  { path: PracticeAreasConstants.MAIN_PRACTICE_AREA, element: <MainPracticeAreaPracticeArea /> },
-  { path: PracticeAreasConstants.REAL_ESTATE, element: <RealEstatePracticeArea /> },
-  { path: PracticeAreasConstants.TRANSPORTATION, element: <TransportationPracticeArea /> },
+  {
+    path: PracticeAreasConstants.ARBITRATION,
+    element: <ArbitrationPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.COMPETITION,
+    element: <CompetitionPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.CORPORATE_GOVERNANCE,
+    element: <CorporateGovernancePracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.INSOLVENCY,
+    element: <InsolvencyPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.MAIN_PRACTICE_AREA,
+    element: <MainPracticeAreaPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.REAL_ESTATE,
+    element: <RealEstatePracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.TRANSPORTATION,
+    element: <TransportationPracticeArea />,
+  },
   { path: PracticeAreasConstants.AVIATION, element: <AviationPracticeArea /> },
-  { path: PracticeAreasConstants.CONSTRUCTION, element: <ConstructionPracticeArea /> },
-  { path: PracticeAreasConstants.EMPLOYMENT, element: <EmploymentPracticeArea /> },
-  { path: PracticeAreasConstants.JOIN_VENTURES, element: <JoinVenturesPracticeArea /> },
-  { path: PracticeAreasConstants.MERGER_AND_ACQUISITION, element: <MergerAndAcquisitionPracticeArea /> },
-  { path: PracticeAreasConstants.RENEWABLE_ENERGY, element: <RenewableEnergyPracticeArea /> },
-  { path: PracticeAreasConstants.WHITE_COLLAR_CRIME, element: <WhiteCollarCrimePracticeArea /> },
-  { path: PracticeAreasConstants.BANKING_AND_FINANCE, element: <BankingAndFinancePracticeArea /> },
-  { path: PracticeAreasConstants.CORPORATE, element: <CorporatePracticeArea /> },
+  {
+    path: PracticeAreasConstants.CONSTRUCTION,
+    element: <ConstructionPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.EMPLOYMENT,
+    element: <EmploymentPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.JOIN_VENTURES,
+    element: <JoinVenturesPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.MERGER_AND_ACQUISITION,
+    element: <MergerAndAcquisitionPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.RENEWABLE_ENERGY,
+    element: <RenewableEnergyPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.WHITE_COLLAR_CRIME,
+    element: <WhiteCollarCrimePracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.BANKING_AND_FINANCE,
+    element: <BankingAndFinancePracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.CORPORATE,
+    element: <CorporatePracticeArea />,
+  },
   { path: PracticeAreasConstants.ENERGY, element: <EnergyPracticeArea /> },
-  { path: PracticeAreasConstants.LITIGATION, element: <LitigationPracticeArea /> },
-  { path: PracticeAreasConstants.OIL_AND_GAS, element: <OilAndGasPracticeArea /> },
-  { path: PracticeAreasConstants.TECHNOLOGY, element: <TechnologyPracticeArea /> },
+  {
+    path: PracticeAreasConstants.LITIGATION,
+    element: <LitigationPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.OIL_AND_GAS,
+    element: <OilAndGasPracticeArea />,
+  },
+  {
+    path: PracticeAreasConstants.TECHNOLOGY,
+    element: <TechnologyPracticeArea />,
+  },
+
+  // Careers
+  { path: CareersPathConstants.CAREERS, element: <Careers /> },
+  { path: CareersPathConstants.INTERNS, element: <Interns /> },
+  { path: CareersPathConstants.PROFESSIONALS, element: <Professionals /> },
 ];
 
 export default routes;
-
