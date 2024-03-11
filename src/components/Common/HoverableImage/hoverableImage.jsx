@@ -26,7 +26,7 @@ const HoverableImage = ({
           alt={alt}
           style={{
             width: width,
-            height: "75%",
+            height: height,
             objectFit: "cover",
           }}
         />
