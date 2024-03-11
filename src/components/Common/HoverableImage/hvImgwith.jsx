@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import clockIcon from "../../../assets/Images/Insights/main-insights-clock-icon.svg";
 import hoverableImageButtonIcon from "../../../assets/Images/Misc/hoverable-image-button-icon.svg";
@@ -9,7 +10,7 @@ const HoverableImageWith = ({
   bigWidth,
   height,
   text,
-  buttonEnabled = true,
+  toPage
 }) => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -22,7 +23,6 @@ const HoverableImageWith = ({
         display: "flex",
         flexDirection: "column",
         height: height + 20,
-        overflow: "hidden",
       }}
     >
       <div style={{ position: "relative", display: "inline-block" }}>
@@ -91,12 +91,14 @@ const HoverableImageWith = ({
         style={{
           display: "flex",
           alignItems: "center",
-          overflowX: "hidden", // Prevent horizontal scrolling
+          justifyContent: "flex-end",
         }}
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <button>See what is ahead</button>
+        <Link to={toPage}>
+          <button>See what is ahead</button>
+        </Link>
         <div
           style={{
             transition: "transform 0.5s ease",
@@ -106,7 +108,7 @@ const HoverableImageWith = ({
           <img
             src={hoverableImageButtonIcon}
             alt="icon"
-            style={{ marginLeft: "10px" }}
+            style={{ marginLeft: "10px", marginTop: "2px" }}
           />
         </div>
       </div>
