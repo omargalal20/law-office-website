@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Hero from '../../Common/Hero'
+import HeroInsights from '../../Common/Hero/HeroInsights'
 import SectionHeader from '../../Common/Section/sectionHeader'
 import RelatedImagesSection from '../../Common/Section/relatedImagesSection'
 
@@ -25,13 +25,13 @@ const Insight = ({ key, heroDetails, headerText, insightImages, teamName, childr
 
     return (
         <>
-            <Hero
+            <HeroInsights
                 backgroundImage={heroImage}
                 primaryHeading={heroPrimaryHeading}
                 secondaryHeading={heroSecondaryHeading}
             >
                 {headerText}
-            </Hero>
+            </HeroInsights>
             <ThemeProvider theme={theme}>
                 <Container maxWidth="lg" style={{ marginTop: "10vh", marginBottom: "10vh" }}>
                     {children}

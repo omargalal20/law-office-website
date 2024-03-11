@@ -3,7 +3,7 @@ import React from 'react'
 import HeaderBar from "../../Layout/Header/header";
 
 const HeroInsights = ({ backgroundImage, primaryHeading, secondaryHeading, children }) => {
-  console.log(children)
+  console.log("Hero Children ", children)
   return (
     <div
       style={{
@@ -36,38 +36,38 @@ const HeroInsights = ({ backgroundImage, primaryHeading, secondaryHeading, child
         <div style={{ position: "absolute", top: 0, left: 0, right: 0 }}>
           <HeaderBar />
         </div>
+
+        <p
+          style={{
+            position: "absolute",
+            top: 200,
+            left: 85,
+            right: 0,
+            color: "white",
+            fontSize: "1rem",
+            fontWeight: "100",
+          }}
+        >
+          {secondaryHeading}
+        </p>
+
+        <p
+          style={{
+            position: "absolute",
+            top: 450,
+            left: 85,
+            right: 0,
+            color: "white",
+            fontSize: "50px",
+            width: "800px",
+            fontWeight: "400",
+          }}
+        >
+          {primaryHeading}
+        </p>
+
+        {children} {/* Moved inside the div with absolute positioning */}
       </div>
-
-      <p
-        style={{
-          position: "absolute",
-          top: 200,
-          left: 85,
-          right: 0,
-          color: "white",
-          fontSize: "1rem",
-          fontWeight: "100",
-        }}
-      >
-        {secondaryHeading}
-      </p>
-
-      <p
-        style={{
-          position: "absolute",
-          top: 450,
-          left: 85,
-          right: 0,
-          color: "white",
-          fontSize: "50px",
-          width: "800px",
-          fontWeight: "400",
-        }}
-      >
-        {primaryHeading}
-      </p>
-
-      {children}
     </div>
   )
 }

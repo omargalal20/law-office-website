@@ -10,7 +10,7 @@ import mainInsightsGenericInsightsOilGasImage from "../../../assets/Images/Insig
 
 import { practiceRelatedInsightsImages, exploreMoreInsightsImages } from "./MainInsightsImages";
 
-import Hero from "../../../components/Common/Hero";
+import HeroInsights from "../../../components/Common/Hero/HeroInsights";
 import HoverableImage from "../../../components/Common/HoverableImage/hvImgwith";
 import ViewMoreInsights from "../../../components/Page/Insights/viewMoreInsights";
 
@@ -41,14 +41,32 @@ const MainInsights = () => {
 
   return (
     <>
-      <Hero
+      <HeroInsights
         backgroundImage={insightsOfficeAdvantagePrimaryImage}
         primaryHeading={"Insights"}
         secondaryHeading={"Insights"}
-        subHeading={
-          "At Afifi Law Office, we blend deep legal expertise with personalized service. Our team stays ahead of legal trends to offer you innovative, effective solutions for your unique challenges. Choose us for strategic guidance and the confidence that your legal matters are in expert hands"
-        }
-      />
+      >
+        <div>
+          <h1
+            style={{
+              position: "absolute",
+              color: "white",
+              width: "65%",
+              top: 571,
+              left: 85,
+              right: 0,
+              fontFamily: "Montserrat",
+              fontSize: "20px",
+              fontWeight: 400,
+              lineHeight: "24.38px",
+              letterSpacing: "0em",
+              textAlign: "left"
+            }}
+          >
+            At Afifi Law Office, we blend deep legal expertise with personalized service. Our team stays ahead of legal trends to offer you innovative, effective solutions for your unique challenges. Choose us for strategic guidance and the confidence that your legal matters are in expert hands
+          </h1>
+        </div>
+      </HeroInsights>
 
       <ThemeProvider theme={theme}>
         <Container maxWidth="lg" style={{ marginTop: "56px" }}>
