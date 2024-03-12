@@ -1,25 +1,33 @@
 import { useState, useEffect } from "react";
 import { useParams } from 'react-router-dom';
 
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
 import Insight from "../../../components/Layout/Insights/Insight";
 import Swiper from '../../../components/Common/Swiper/swiper';
 import ProfileCard from "../../../components/Common/ProfileCard/profileCard";
 
-import { InsightsInfo } from "../InsightsInfos";
+import { InsightsInfo, RelatedInsightsImages } from "../InsightsInfos";
 
 const PersonalRelatedInsights = () => {
     const { insightName } = useParams();
 
     const [insight, setInsight] = useState({});
+    const [relatedInsightsImages, setRelatedInsightsImages] = useState([]);
+
+    const numberOfRelatedInsightImages = 2
 
     useEffect(() => {
+        const suffledArray = shuffleArray(RelatedInsightsImages);
+        console.log(InsightsInfo[insightName])
         setInsight(InsightsInfo[insightName] || {});
+        setRelatedInsightsImages(suffledArray.slice(0, numberOfRelatedInsightImages))
     }, [insightName]);
 
     return (
         ((Object.keys(insight).length !== 0)) && (
             <>
-                <Insight heroDetails={insight.heroDetails} headerText={insight.headertext} insightImages={insight.relatedInsights} teamName={insight.teamName}>
+                <Insight heroDetails={insight.heroDetails} headerText={insight.headertext} insightImages={relatedInsightsImages} teamName={insight.teamName}>
                     {insight.insightInfo}
                 </Insight>
 

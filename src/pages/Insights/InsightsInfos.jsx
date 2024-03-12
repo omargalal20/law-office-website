@@ -109,6 +109,7 @@ import mergerControlArbitration from '../../assets/Images/Insights/taxing-cataly
 import MergerControlText from './InsightsTexts/MergerControl/MergerControlText'
 import MergerControlHeaderText from './InsightsTexts/MergerControl/MergerControlHeaderText'
 
+
 export const InsightsInfo = {
     arbitrationResolving: {
         heroDetails: {
@@ -563,3 +564,186 @@ export const InsightsInfo = {
         headertext: <HydrogenInitiativesHeaderText />
     }
 }
+
+export const RelatedInsightsImages = [
+    {
+        img: insightsAdaptation,
+        title: 'Adaptions',
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+    },
+    {
+        img: insightsArbitration,
+        title: 'Arbitration',
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+    },
+    {
+        img: mainInsightsLawLaborImage,
+        title: 'Banking & Finance',
+        textLines: ["Banking & Finance", "Digital", "Banking Transformation", "31 January, 2024"]
+    },
+    {
+        img: mainInsightsFinanceImage,
+        title: 'Green Finance',
+        textLines: ["Banking & Finance", "Sustainable", "and Green Finance", "31 January, 2024"]
+    },
+    {
+        img: conferenceOfThePartiesInsightsWaves,
+        title: 'Wave and Tidal',
+        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
+    },
+    {
+        img: conferenceOfThePartiesInsightsGreen,
+        title: 'Employment',
+        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
+    },
+    {
+        img: constructionTrendsSmartConstruction,
+        title: 'Smart Construction',
+        textLines: ["Construction", "Smart Construction", "Technologies", "31 January, 2024"]
+    },
+    {
+        img: constructionTrendsAugmentedReality,
+        title: 'Augmented Reality',
+        textLines: ["Construction", "Augmented Reality in", "Construction", "31 January, 2024"]
+    },
+    {
+        img: crciraRulesAdaptation,
+        title: 'Adaptions',
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+    },
+    {
+        img: crciraRulesArbitration,
+        title: 'Arbitration',
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+    },
+    {
+        img: insightsCircularEnergyImage,
+        title: 'Electrification',
+        textLines: ["Energy", "Electrification of", "Everything", "31 January, 2024"]
+    },
+    {
+        img: insightsElectrificationImage,
+        title: 'Circular Energy',
+        textLines: ["Energy", "Circular Economy", "Energy", "31 January, 2024"]
+    },
+    {
+        img: insightsAiImage,
+        title: 'AI',
+        textLines: ["Technology", "Artifical Intelligence", "Advancements", "31 January, 2024"]
+    },
+    {
+        img: insightsConnectivityImage,
+        title: 'Connectivity',
+        textLines: ["Technology", "5G and Advanced", "Connectivity", "31 January, 2024"]
+    },
+    {
+        img: mainInsightsLawLaborImage,
+        title: 'Banking & Finance',
+        textLines: ["Banking & Finance", "Digital", "Banking Transformation", "31 January, 2024"]
+    },
+    {
+        img: mainInsightsFinanceImage,
+        title: 'Green Finance',
+        textLines: ["Banking & Finance", "Sustainable", "and Green Finance", "31 January, 2024"]
+    },
+    {
+        img: laborLawInsightsHybrid,
+        title: 'Hybrid Work',
+        textLines: ["Employment", "Hybrid Work", "Models", "31 January, 2024"]
+    },
+    {
+        img: laborLawInsightsBenefits,
+        title: 'Employment',
+        textLines: ["Employment", "Flexible Benefits", "Packages", "31 January, 2024"]
+    },
+    {
+        img: legalPerspectiveAdaptation,
+        title: 'Adaptions',
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+    },
+    {
+        img: legalPerspectiveArbitration,
+        title: 'Arbitration',
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+    },
+    {
+        img: RenewableEnergyInsightsWaves,
+        title: 'Wave and Tidal',
+        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
+    },
+    {
+        img: RenewableEnergyInsightsGreen,
+        title: 'Employment',
+        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
+    },
+    {
+        img: renewableEnergyFutureWaves,
+        title: 'Wave and Tidal',
+        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
+    },
+    {
+        img: renewableEnergyFutureGreen,
+        title: 'Employment',
+        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
+    },
+    {
+        img: sustainableMobilityMaritime,
+        title: 'Maritime',
+        textLines: ["Transportation", "Maritime Transportation", "Advances", "31 January, 2024"]
+    },
+    {
+        img: sustainableMobilityInfrastructure,
+        title: 'Infrastructure',
+        textLines: ["Transportation", "Transportation", "Infrastructure Renewal", "31 January, 2024"]
+    },
+    {
+        img: taxingCatalystAdaptation,
+        title: 'Adaptions',
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+    },
+    {
+        img: taxingCatalystArbitration,
+        title: 'Arbitration',
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+    },
+    {
+        img: insightsMaritime,
+        title: 'Maritime',
+        textLines: ["Transportation", "Maritime Transportation", "Advances", "31 January, 2024"]
+    },
+    {
+        img: insightsInfrastructure,
+        title: 'Infrastructure',
+        textLines: ["Transportation", "Transportation", "Infrastructure Renewal", "31 January, 2024"]
+    },
+    {
+        img: insightsAdaptationImage,
+        title: 'Adaptions',
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+    },
+    {
+        img: insightsArbitrationImage,
+        title: 'Arbitration',
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+    },
+    {
+        img: mergerControlAdaptation,
+        title: 'Adaptions',
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+    },
+    {
+        img: mergerControlArbitration,
+        title: 'Arbitration',
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+    },
+    {
+        img: insightsHydrogenInitiativesImage,
+        title: 'Wave and Tidal',
+        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
+    },
+    {
+        img: insightsGreenImage,
+        title: 'Employment',
+        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
+    },
+]
