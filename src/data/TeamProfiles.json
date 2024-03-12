@@ -343,5 +343,208 @@
                 "language": "Arabic"
             }
         ]
+    },
+
+    
+    "adel-rasheed": {
+        "name": "Adel Rasheed",
+        "position": "Of Counsel",
+        "address": "Alexandria, Egypt",
+        "email": "N/A",
+        "profilePageImagesKey": "adelRasheed",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 111",
+        "biography": "Adel is a qualified litigator before the Egyptian courts with a depth knowledge in civil, criminal, and corporate laws while acting as our point of contact in Alexandria. Adel has remarkable extended skills and expertise in the litigation field as well as white collar-crime. With a track record of handling high profile investigations and prosecutions, Adel advises corporations on all issues concerning white-collar crime, ranging from preliminary proceedings to enforcement measures. While known as a renowned trial lawyer, Adel represents major multinationals in complex business litigation disputes, including intellectual property matters, contractual disputes and unfair competition, in addition to attending trial investigations and experts’ sessions. ",
+        "educations": [],
+        "admittance": "Admitted before the Court of Cassation",
+        "languages": [
+            {
+                "language": "Arabic"
+            }
+        ]
+    },
+    "emil-labib-hana": {
+        "name": "Emil Labib Hana",
+        "position": "Of Counsel",
+        "address": "",
+        "email": "N/A",
+        "profilePageImagesKey": "emilLabibhana",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 111",
+        "biography": "Emil is a highly regarded litigator representing and advising a wide array of clientele before the courts with all its kinds and degrees including attending trial investigations, experts' sessions as well as drafting all legal documents submitted before the courts. Emil is constantly advising clients in connection with commercial and contractual matters and representing clients before various governmental institutions, including but not limited to the General Authority for Investment, Tax Authority, General Organization for Export and Import Control and the Central Bank of Egypt.Addition to attending trial investigations and experts' sessions. ",
+        "educations": [],
+        "admittance": "Admitted before the Court of Cassation",
+        "languages": [
+            {
+                "language": "Arabic"
+            }
+        ]
+    },
+    "gamal-abdel-razak": {
+        "name": "Gamal Abdel Razak",
+        "position": "Of Counsel",
+        "address": "",
+        "email": "N/A",
+        "profilePageImagesKey": "gamalAbdelRazak",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 111",
+        "biography": "Mr. Gamal has represented major multinational corporations in cases involving breach of contract, mergers and acquisitions, employment, and fraud. He represents clients through all stages of litigation before the courts in addition to representing clients in bankruptcy litigation proceedings. Mr. Gamal’s practice extends to representing clients in real estate closings and assisting in negotiating and resolving real estate disputes. In addition, he is regularly involved in reviewing and drafting real estate contracts, such as purchase agreements as well as advising clients on real estate taxes and other financial matters.",
+        "educations": [],
+        "admittance": "Admitted before the Court of Cassation",
+        "languages": [
+            {
+                "language": "Arabic"
+            }
+        ]
+    },
+    "hany-edward": {
+        "name": "Hany Edward",
+        "position": "Of Counsel",
+        "address": "",
+        "email": "N/A",
+        "profilePageImagesKey": "adelRasheed",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 111",
+        "biography": "Hany is a highly regarded litigation lawyer with over 20 years of experience navigating the complexities of the Egyptian legal system. Based in Luxor, he has a proven track record of success in representing both local and international clients in a wide range of disputes, including commercial disputes such as breach of contract, shareholder disagreements, commercial fraud, and debt collection. Hany has honed his remarkable extended skills and expertise in the litigation field by attending before the competent prosecution offices, courts and with all its kinds and degrees including attending trial investigations, experts’ sessions as well as drafting the memoranda submitted before the courts. His experience extends to advising and representing various clients on real estate disputes including property ownership issues, zoning regulations and construction defects. Hany served as the vice-president to the Egyptian Bar Association up until 2020.",
+        "educations": [],
+        "admittance": "Admitted before the Court of Cassation",
+        "languages": [
+            {
+                "language": "Arabic"
+            }
+        ]
+    },
+    "nancy-nashat": {
+        "name": "Nancy Nashaat",
+        "position": "Office Manager",
+        "address": "",
+        "email": "nancy.nashaat@afifioffice.com",
+        "profilePageImagesKey": "nancyNashaat",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 111",
+        "biography": "Nancy is currently our Cairo office manager, with more than 11 years of experience in several administrative roles with major institutions, she provides a supportive role in every aspect of the functioning of the firm, ranging from internal and external communications to the internal administrative workflow of the firm. Nancy assists with document production, drafting pleadings and court applications, preparing lists of documents and communicating with clients and related parties. ",
+        "educations": [
+            {
+                "degree": "Bachelor of Commerce",
+                "university": "Cairo University",
+                "year": ""
+            }
+        ],
+        "admittance": "",
+        "languages": [
+            {
+                "language": "English"
+            },
+            {
+                "language": "Arabic"
+            }
+        ]
+    },
+    "mary-rizkalla": {
+        "name": "Mary Rizkalla",
+        "position": "Legal Secretary",
+        "address": "",
+        "email": "mary.rizkalla@afifioffice.com",
+        "profilePageImagesKey": "maryRizkalla",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 111",
+        "biography": "Mary is a legal secretary with more than 22 years of experience in administrative and managerial roles with major institutions. Mary plays an effective role in all administrative support assistance with documentation, corresponding with clients, organizing and scheduling appointments to the firm’s professionals. Mary assists in drafting memorandums, setting up meetings, translating contracts and letters, acting as the point of contact for internal and external clients, and providing support to all foreign and local professional attorneys.",
+        "educations": [
+            {
+                "degree": "Bachelor of Commerce",
+                "university": "Ain Shams University",
+                "year": ""
+            }
+        ],
+        "admittance": "",
+        "languages": [
+            {
+                "language": "English"
+            },
+            {
+                "language": "Arabic"
+            },
+            {
+                "language": "French"
+            }
+        ]
+    },
+    "beshoy-melad": {
+        "name": "Beshoy Melad",
+        "position": "Accountant",
+        "address": "Cairo, Egypt",
+        "email": "N/A",
+        "profilePageImagesKey": "beshoyMelad",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "N/A",
+        "educations": [],
+        "admittance": "",
+        "languages": []
+    },
+    "amal-afifi": {
+        "name": "Amal Afifi",
+        "position": "Founding and Managing Partner",
+        "address": "",
+        "email": "amal.afifi@afifioffice.com",
+        "profilePageImagesKey": "amalAfifi",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "N/A",
+        "educations": [],
+        "admittance": "",
+        "languages": []
+    },
+    "fady-seif": {
+        "name": "Fady Seif",
+        "position": "Senior Associate",
+        "address": "",
+        "email": "fady.seif@afifioffice.com",
+        "profilePageImagesKey": "fadySeif",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "N/A",
+        "educations": [],
+        "admittance": "",
+        "languages": []
+    },
+    "ahmed-rasheed": {
+        "name": "Ahmad Rashed",
+        "position": "Managing Associate",
+        "address": "",
+        "email": "ahmad.rashed@afifioffice.com",
+        "profilePageImagesKey": "ahmedRasheed",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "N/A",
+        "educations": [],
+        "admittance": "",
+        "languages": []
+    },
+    "abanoub-tharwat": {
+        "name": "Abanoub Tharwat",
+        "position": "Junior Associate",
+        "address": "",
+        "email": "abanoub.tharwat@afifioffice.com",
+        "profilePageImagesKey": "abanoubTharwat",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "N/A",
+        "educations": [],
+        "admittance": "",
+        "languages": []
+    },
+    "mahrous-shafik": {
+        "name": "Mahrous Shafik",
+        "position": "Real Estate Consultant",
+        "address": "",
+        "email": "mahrous.shafik@afifioffice.com",
+        "profilePageImagesKey": "mahrousShafik",
+        "picture": "https://s3-alpha-sig.figma.com/img/7d2f/db71/d3b63db5e78967fcaa0ff121398d7033?Expires=1710115200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H-8-owweZAal2LICsb5-IdJ6RT-5QoLpob3QWAP9~MrkI6DyXvVjAm4PBqEn7vQ6m-LQi1XvUmNAYw9aR8rYx~CWaOpofvqWQlnplTRVKTVSZR90u7amkL357qWGUXBUREZaZPgWQzJNPIvmAklJnAu4ZaFCcJIlUpZWfqARVoKBBI8Gqqi17Jc73B26JJgkV1oT23PuRv2qHjpiaONkPvh57W~3d3tWbz4mOsyershe~7Gn30BTDHCZI~rVedkKZfBITPPqiBzx1FbhMlWAlLgFn~XOOUPSmWuIpvznS0NOSrvG0nDlsROuLT9Kurxg5eO14Xz-PgvxlwxsDRhU7w__",
+        "phoneNumber": "+20 2 2735 4010 Ext. 134",
+        "biography": "N/A",
+        "educations": [],
+        "admittance": "",
+        "languages": []
     }
 }

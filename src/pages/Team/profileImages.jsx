@@ -12,6 +12,19 @@ import emilGhobrialProfilePic from "../../assets/Images/Team/emilGhorbielProfile
 import aminKamalAminProfilePic from "../../assets/Images/Team/aminKamalAminProfilePic.jpeg";
 import walidSakrProfilePic from "../../assets/Images/Team/walidSakrProfilePic.jpeg";
 
+// Change Request From Client
+import amalAfifiProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import fadySeifProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import ahmedRashedProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import mahrousShafikProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import abanoubTharwatProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import beshoyMeladProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import nancyNashaatProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import maryRizkallaProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import adelRasheedProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import emilLabibHanaProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import gamalAbdelRazakProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
+import hanyEdwardProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
 
 import antitrustChallengesImage from "../../assets/Images/Team/Rectangle 20 (1).png";
 import eCommerceImage from "../../assets/Images/Team/Group 58 (1).png";
@@ -826,5 +839,750 @@ export const profileImagesData = {
                 cols: 2,
             },
         ]
-    }
+    },
+    // Change Requests
+    adelRasheed: {
+        profileImage: adelRasheedProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    emilLabibhana: {
+        profileImage: emilLabibHanaProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    gamalAbdelRazak: {
+        profileImage: gamalAbdelRazakProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    hanyEdward: {
+        profileImage: hanyEdwardProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    nancyNashaat: {
+        profileImage: nancyNashaatProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    maryRizkalla: {
+        profileImage: maryRizkallaProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    beshoyMelad: {
+        profileImage: beshoyMeladProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    amalAfifi: {
+        profileImage: amalAfifiProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    fadySeif: {
+        profileImage: fadySeifProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    ahmedRashed: {
+        profileImage: ahmedRashedProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    abanoubTharwat: {
+        profileImage: abanoubTharwatProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
+    mahrousShafik: {
+        profileImage: mahrousShafikProfilePic,
+        relatedPracticeAreasImages: [
+            {
+                img: corporateWorkImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Remote and Hybrid Work",
+                    "Models",
+                    "31 January, 2024"
+                ],
+            },
+            {
+                img: corporateRegulatoryImage,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Regulatory Compliance",
+                    "and Changes",
+                    "31 January, 2024",
+                ],
+            },
+        ],
+        latestNewsImages: [
+            {
+                img: corporateSupplyChainImage,
+                height: "692px",
+                rows: 2,
+                cols: 2,
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Global Supply Chain Resilience",
+                    "",
+                    "31 January, 2024",
+                ],
+            },
+            {
+                img: corporateBiImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "BI Analytics",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+            {
+                img: corporateDigitalTransformationImage,
+                height: "318px",
+                title: "Corporate",
+                textLines: [
+                    "Corporate",
+                    "Digital Transformation",
+                    "31 January, 2024",
+                ],
+                cols: 2,
+            },
+        ]
+    },
 }
