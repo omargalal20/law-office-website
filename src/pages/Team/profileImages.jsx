@@ -43,7 +43,79 @@ import corporateSupplyChainImage from "../../assets/Images/Team/corporateSupplyC
 import corporateBiImage from "../../assets/Images/Team/corporateBi.jpeg"
 import corporateDigitalTransformationImage from "../../assets/Images/Team/corporateDigitalTransformation.jpeg"
 
-export const profileImagesData = {
+export const LatestNewsImages = [
+    {
+        img: antitrustChallengesImage,
+        height: "692px",
+        rows: 2,
+        cols: 2,
+        title: "Competition & Anti-trust ",
+        textLines: [
+            "Competition & Anti-trust ",
+            "Antitrust Challenges Post-Pandemic Era",
+            "",
+            "31 January, 2024",
+        ],
+    },
+    {
+        img: eCommerceImage,
+        height: "318px",
+        title: "Competition & Anti-trust ",
+        textLines: [
+            "Competition & Anti-trust ",
+            "E-commerce Competition",
+            "31 January, 2024",
+        ],
+        cols: 2,
+    },
+    {
+        img: globalMergerControlImage,
+        height: "318px",
+        title: "Competition & Anti-trust ",
+        textLines: [
+            "Competition & Anti-trust ",
+            "Global Merger Control",
+            "31 January, 2024",
+        ],
+        cols: 2,
+    },
+    {
+        img: corporateSupplyChainImage,
+        height: "692px",
+        rows: 2,
+        cols: 2,
+        title: "Corporate",
+        textLines: [
+            "Corporate",
+            "Global Supply Chain Resilience",
+            "",
+            "31 January, 2024",
+        ],
+    },
+    {
+        img: corporateBiImage,
+        height: "318px",
+        title: "Corporate",
+        textLines: [
+            "Corporate",
+            "BI Analytics",
+            "31 January, 2024",
+        ],
+        cols: 2,
+    },
+    {
+        img: corporateDigitalTransformationImage,
+        height: "318px",
+        title: "Corporate",
+        textLines: [
+            "Corporate",
+            "Digital Transformation",
+            "31 January, 2024",
+        ],
+        cols: 2,
+    },
+]
+export const ProfileImagesData = {
     habilAbuElKheir: {
         profileImage: habilAbuElKheirProfilePic,
         relatedPracticeAreasImages: [

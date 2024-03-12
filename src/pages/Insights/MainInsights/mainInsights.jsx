@@ -11,13 +11,13 @@ import mainInsightsGenericInsightsOilGasImage from "../../../assets/Images/Insig
 import { practiceRelatedInsightsImages, exploreMoreInsightsImages } from "./MainInsightsImages";
 
 import HeroInsights from "../../../components/Common/Hero/HeroInsights";
-import HoverableImage from "../../../components/Common/HoverableImage/hvImgwith";
+import HoverableImageWith from "../../../components/Common/HoverableImage/hvImgwith";
 import ViewMoreInsights from "../../../components/Page/Insights/viewMoreInsights";
 
 import createTheme from "@mui/material/styles/createTheme";
 import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import Container from "@mui/material/Container";
-import Stack from "@mui/material/Stack"
+import Stack from "@mui/material/Stack";
 
 const theme = createTheme({
   breakpoints: {
@@ -133,7 +133,7 @@ const MainInsights = () => {
           </div>
 
           <Stack direction={"row"} spacing={4} sx={{ marginBottom: "20px" }}>
-            <HoverableImage
+            <HoverableImageWith
               key={"Technology"}
               src={mainInsightsGenericInsightsImage}
               width={"100%"}
@@ -142,7 +142,7 @@ const MainInsights = () => {
             />
 
             <Stack spacing={4}>
-              <HoverableImage
+              <HoverableImageWith
                 key={"Oil & Gas"}
                 src={mainInsightsGenericInsightsOilGasImage}
                 width={"100%"}
@@ -150,7 +150,7 @@ const MainInsights = () => {
                 text={["Oil & Gas", "Energy Transition Strategies", "", "31 January, 2024"]}
               />
 
-              <HoverableImage
+              <HoverableImageWith
                 key={"Renewable Energy"}
                 src={mainInsightsGenericInsightsRenewableImage}
                 width={"100%"}

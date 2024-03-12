@@ -1,32 +1,38 @@
-import HoverableImageWith from "../../../components/Common/HoverableImage/hvImgwith";
+import HoverableImageWith from "../HoverableImage/hvImgwith"
 
-import ImageList from "@mui/material/ImageList";
-import ImageListItem from "@mui/material/ImageListItem";
+import Stack from "@mui/material/Stack"
 
 const TripleImageGrid = ({ images, width = "518px", bigWidth = "712px" }) => {
+    const [firstImage, secondImage, thirdImage] = images
+
     return (
-        <ImageList
-            cols={4}
-            gap={32}
-            sx={{ marginBottom: "20px", marginTop: "22px", width: "100%" }}
-        >
-            {images.map((item) => (
-                <ImageListItem
-                    key={item.img}
-                    cols={item.cols || 1}
-                    rows={item.rows || 1}
-                >
-                    <HoverableImageWith
-                        key={item.title}
-                        src={item.img}
-                        width={width}
-                        bigWidth={bigWidth}
-                        height={item.height}
-                        text={item.textLines}
-                    />
-                </ImageListItem>
-            ))}
-        </ImageList>
+        <Stack direction={"row"} spacing={4} sx={{ marginBottom: "20px" }}>
+            <HoverableImageWith
+                key={"Technology"}
+                src={firstImage.img}
+                width={"100%"}
+                height={"692px"}
+                text={firstImage.textLines}
+            />
+
+            <Stack spacing={4}>
+                <HoverableImageWith
+                    key={"Oil & Gas"}
+                    src={secondImage.img}
+                    width={"100%"}
+                    height={"318px"}
+                    text={secondImage.textLines}
+                />
+
+                <HoverableImageWith
+                    key={"Renewable Energy"}
+                    src={thirdImage.img}
+                    width={"100%"}
+                    height={"318px"}
+                    text={thirdImage.textLines}
+                />
+            </Stack>
+        </Stack>
     )
 }
 

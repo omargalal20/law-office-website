@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import hoverableImageButtonIcon from "../../../assets/Images/Misc/hoverable-image-button-icon.svg";
 
 import profilesData from "../../../data/TeamProfiles.json";
-import { profileImagesData } from "../../../pages/Team/profileImages";
+import { ProfileImagesData } from "../../../pages/Team/profileImages";
 
 import Card from "@mui/material/Card";
 import CardActions from "@mui/material/CardActions";
@@ -20,7 +20,7 @@ const ProfileCard = ({ profileName, profileImage }) => {
   useEffect(() => {
     setProfile(profilesData[profileName] || {});
     const profilePageImagesKey = profilesData[profileName]?.profilePageImagesKey;
-    setProfileImages(profilePageImagesKey ? profileImagesData[profilePageImagesKey] : {});
+    setProfileImages(profilePageImagesKey ? ProfileImagesData[profilePageImagesKey] : {});
   }, [profileName]);
 
   if (!profile) {

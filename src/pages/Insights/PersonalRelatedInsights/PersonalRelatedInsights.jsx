@@ -19,9 +19,8 @@ const PersonalRelatedInsights = () => {
 
     useEffect(() => {
         const suffledArray = shuffleArray(RelatedInsightsImages);
-        console.log(InsightsInfo[insightName])
         setInsight(InsightsInfo[insightName] || {});
-        setRelatedInsightsImages(suffledArray.slice(0, numberOfRelatedInsightImages))
+        setRelatedInsightsImages(suffledArray.slice(0, numberOfRelatedInsightImages));
     }, [insightName]);
 
     return (
