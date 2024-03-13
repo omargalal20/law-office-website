@@ -1,3 +1,5 @@
+import InsightsPathConstants from '../../routes/InsightsPathConstants'
+
 import mainInsightsArbitrationResolvingImage from '../../assets/Images/Insights/main-insights-arbitration-resolving.jpeg'
 import insightsArbitration from '../../assets/Images/Insights/taxing-catalyst-arbitration.jpeg'
 import insightsAdaptation from '../../assets/Images/Insights/taxing-catalyst-adaptation.jpeg'
@@ -569,181 +571,217 @@ export const RelatedInsightsImages = [
     {
         img: insightsAdaptation,
         title: 'Adaptions',
-        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"],
+        toPage: InsightsPathConstants.ARBITRATION_RESOLVING
     },
     {
         img: insightsArbitration,
         title: 'Arbitration',
-        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"],
+        toPage: InsightsPathConstants.ARBITRATION_RESOLVING
     },
     {
         img: mainInsightsLawLaborImage,
         title: 'Banking & Finance',
-        textLines: ["Banking & Finance", "Digital", "Banking Transformation", "31 January, 2024"]
+        textLines: ["Banking & Finance", "Digital", "Banking Transformation", "31 January, 2024"],
+        toPage: InsightsPathConstants.LABOR_LAW
     },
     {
         img: mainInsightsFinanceImage,
         title: 'Green Finance',
-        textLines: ["Banking & Finance", "Sustainable", "and Green Finance", "31 January, 2024"]
+        textLines: ["Banking & Finance", "Sustainable", "and Green Finance", "31 January, 2024"],
+        toPage: InsightsPathConstants.INTERNATIONAL_FINANCE
     },
     {
         img: conferenceOfThePartiesInsightsWaves,
         title: 'Wave and Tidal',
-        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
+        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"],
+        toPage: InsightsPathConstants.CONFERENCE_OF_THE_PARTIES
     },
     {
         img: conferenceOfThePartiesInsightsGreen,
         title: 'Employment',
-        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
+        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"],
+        toPage: InsightsPathConstants.CONFERENCE_OF_THE_PARTIES
     },
     {
         img: constructionTrendsSmartConstruction,
         title: 'Smart Construction',
-        textLines: ["Construction", "Smart Construction", "Technologies", "31 January, 2024"]
+        textLines: ["Construction", "Smart Construction", "Technologies", "31 January, 2024"],
+        toPage: InsightsPathConstants.CONSTRUCTION_TRENDS
     },
     {
         img: constructionTrendsAugmentedReality,
         title: 'Augmented Reality',
-        textLines: ["Construction", "Augmented Reality in", "Construction", "31 January, 2024"]
+        textLines: ["Construction", "Augmented Reality in", "Construction", "31 January, 2024"],
+        toPage: InsightsPathConstants.CONSTRUCTION_TRENDS
     },
     {
         img: crciraRulesAdaptation,
         title: 'Adaptions',
-        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"],
+        toPage: InsightsPathConstants.CRCICA_RULES
     },
     {
         img: crciraRulesArbitration,
         title: 'Arbitration',
-        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"],
+        toPage: InsightsPathConstants.CRCICA_RULES
     },
     {
         img: insightsCircularEnergyImage,
         title: 'Electrification',
-        textLines: ["Energy", "Electrification of", "Everything", "31 January, 2024"]
+        textLines: ["Energy", "Electrification of", "Everything", "31 January, 2024"],
+        toPage: InsightsPathConstants.RENEWABLE_ENERGY
     },
     {
         img: insightsElectrificationImage,
         title: 'Circular Energy',
-        textLines: ["Energy", "Circular Economy", "Energy", "31 January, 2024"]
+        textLines: ["Energy", "Circular Economy", "Energy", "31 January, 2024"],
+        toPage: InsightsPathConstants.RENEWABLE_ENERGY
     },
     {
         img: insightsAiImage,
         title: 'AI',
-        textLines: ["Technology", "Artifical Intelligence", "Advancements", "31 January, 2024"]
+        textLines: ["Technology", "Artifical Intelligence", "Advancements", "31 January, 2024"],
+        toPage: InsightsPathConstants.DATA_PRIVACY
     },
     {
         img: insightsConnectivityImage,
         title: 'Connectivity',
-        textLines: ["Technology", "5G and Advanced", "Connectivity", "31 January, 2024"]
+        textLines: ["Technology", "5G and Advanced", "Connectivity", "31 January, 2024"],
+        toPage: InsightsPathConstants.DATA_PRIVACY
     },
     {
         img: mainInsightsLawLaborImage,
         title: 'Banking & Finance',
-        textLines: ["Banking & Finance", "Digital", "Banking Transformation", "31 January, 2024"]
+        textLines: ["Banking & Finance", "Digital", "Banking Transformation", "31 January, 2024"],
+        toPage: InsightsPathConstants.INTERNATIONAL_FINANCE
     },
     {
         img: mainInsightsFinanceImage,
         title: 'Green Finance',
-        textLines: ["Banking & Finance", "Sustainable", "and Green Finance", "31 January, 2024"]
+        textLines: ["Banking & Finance", "Sustainable", "and Green Finance", "31 January, 2024"],
+        toPage: InsightsPathConstants.INTERNATIONAL_FINANCE
     },
     {
         img: laborLawInsightsHybrid,
         title: 'Hybrid Work',
-        textLines: ["Employment", "Hybrid Work", "Models", "31 January, 2024"]
+        textLines: ["Employment", "Hybrid Work", "Models", "31 January, 2024"],
+        toPage: InsightsPathConstants.LABOR_LAW
     },
     {
         img: laborLawInsightsBenefits,
         title: 'Employment',
-        textLines: ["Employment", "Flexible Benefits", "Packages", "31 January, 2024"]
+        textLines: ["Employment", "Flexible Benefits", "Packages", "31 January, 2024"],
+        toPage: InsightsPathConstants.LABOR_LAW
     },
     {
         img: legalPerspectiveAdaptation,
         title: 'Adaptions',
-        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"],
+        toPage: InsightsPathConstants.LEGAL_PERSPECTIVE
     },
     {
         img: legalPerspectiveArbitration,
         title: 'Arbitration',
-        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"],
+        toPage: InsightsPathConstants.LEGAL_PERSPECTIVE
     },
     {
         img: RenewableEnergyInsightsWaves,
         title: 'Wave and Tidal',
-        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
+        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"],
+        toPage: InsightsPathConstants.RENEWABLE_ENERGY
     },
     {
         img: RenewableEnergyInsightsGreen,
         title: 'Employment',
-        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
+        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"],
+        toPage: InsightsPathConstants.RENEWABLE_ENERGY
     },
     {
         img: renewableEnergyFutureWaves,
         title: 'Wave and Tidal',
-        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
+        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"],
+        toPage: InsightsPathConstants.RENEWABLE_ENERGY_FUTURE
     },
     {
         img: renewableEnergyFutureGreen,
         title: 'Employment',
-        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
+        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"],
+        toPage: InsightsPathConstants.RENEWABLE_ENERGY_FUTURE
     },
     {
         img: sustainableMobilityMaritime,
         title: 'Maritime',
-        textLines: ["Transportation", "Maritime Transportation", "Advances", "31 January, 2024"]
+        textLines: ["Transportation", "Maritime Transportation", "Advances", "31 January, 2024"],
+        toPage: InsightsPathConstants.SUSTAINABLE_MOBILITY
     },
     {
         img: sustainableMobilityInfrastructure,
         title: 'Infrastructure',
-        textLines: ["Transportation", "Transportation", "Infrastructure Renewal", "31 January, 2024"]
+        textLines: ["Transportation", "Transportation", "Infrastructure Renewal", "31 January, 2024"],
+        toPage: InsightsPathConstants.SUSTAINABLE_MOBILITY
     },
     {
         img: taxingCatalystAdaptation,
         title: 'Adaptions',
-        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"],
+        toPage: InsightsPathConstants.TAXING_CATALYST
     },
     {
         img: taxingCatalystArbitration,
         title: 'Arbitration',
-        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"],
+        toPage: InsightsPathConstants.TAXING_CATALYST
     },
     {
         img: insightsMaritime,
         title: 'Maritime',
-        textLines: ["Transportation", "Maritime Transportation", "Advances", "31 January, 2024"]
+        textLines: ["Transportation", "Maritime Transportation", "Advances", "31 January, 2024"],
+        toPage: InsightsPathConstants.TRANSPORTATION_LOGISTICS
     },
     {
         img: insightsInfrastructure,
         title: 'Infrastructure',
-        textLines: ["Transportation", "Transportation", "Infrastructure Renewal", "31 January, 2024"]
+        textLines: ["Transportation", "Transportation", "Infrastructure Renewal", "31 January, 2024"],
+        toPage: InsightsPathConstants.TRANSPORTATION_LOGISTICS
     },
     {
         img: insightsAdaptationImage,
         title: 'Adaptions',
-        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"],
+        toPage: InsightsPathConstants.ARBITRATION_RESOLVING
     },
     {
         img: insightsArbitrationImage,
         title: 'Arbitration',
-        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"],
+        toPage: InsightsPathConstants.ARBITRATION_RESOLVING
     },
     {
         img: mergerControlAdaptation,
         title: 'Adaptions',
-        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"]
+        textLines: ["Arbitration", "Adaptions in Arbitration", "Rules", "31 January, 2024"],
+        toPage: InsightsPathConstants.MERGER_CONTROL
     },
     {
         img: mergerControlArbitration,
         title: 'Arbitration',
-        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"]
+        textLines: ["Arbitration", "Arbitration in Specifc", "Sectors", "31 January, 2024"],
+        toPage: InsightsPathConstants.MERGER_CONTROL
     },
     {
         img: insightsHydrogenInitiativesImage,
         title: 'Wave and Tidal',
-        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
+        textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"],
+        toPage: InsightsPathConstants.HYDROGEN_INITIATIVES
     },
     {
         img: insightsGreenImage,
         title: 'Employment',
-        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
+        textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"],
+        toPage: InsightsPathConstants.HYDROGEN_INITIATIVES
     },
 ]

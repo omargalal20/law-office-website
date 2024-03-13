@@ -1,6 +1,6 @@
 import React from "react";
 
-import HoverableImage from "../../../components/Common/HoverableImage/hoverableImage";
+import HoverableImageWith from "../HoverableImage/hvImgwith";
 
 import Stack from "@mui/material/Stack";
 import Box from "@mui/material/Box";
@@ -9,14 +9,15 @@ const RelatedImagesSection = ({ insightImages, teamName = "Employment" }) => {
   return (
     <Stack direction="row" spacing={2} sx={{ height: "100%" }}>
       {/* Labor law images */}
-      {insightImages.map((item) => (
-        <HoverableImage
-          key={item.title}
-          src={item.img}
-          width="503px"
+      {insightImages.map((insightImage) => (
+        <HoverableImageWith
+          key={insightImage.title}
+          src={insightImage.img}
+          width="523px"
           height="534px"
-          text={item.textLines}
+          text={insightImage.textLines}
           buttonEnabled={false}
+          toPage={insightImage.toPage}
         />
       ))}
 

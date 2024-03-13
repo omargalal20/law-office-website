@@ -13,6 +13,7 @@ const TripleImageGrid = ({ images, width = "518px", bigWidth = "712px" }) => {
                 width={"100%"}
                 height={"692px"}
                 text={firstImage.textLines}
+                toPage={firstImage.toPage}
             />
 
             <Stack spacing={4}>
@@ -22,6 +23,7 @@ const TripleImageGrid = ({ images, width = "518px", bigWidth = "712px" }) => {
                     width={"100%"}
                     height={"318px"}
                     text={secondImage.textLines}
+                    toPage={secondImage.toPage}
                 />
 
                 <HoverableImageWith
@@ -30,6 +32,7 @@ const TripleImageGrid = ({ images, width = "518px", bigWidth = "712px" }) => {
                     width={"100%"}
                     height={"318px"}
                     text={thirdImage.textLines}
+                    toPage={thirdImage.toPage}
                 />
             </Stack>
         </Stack>

@@ -1,3 +1,5 @@
+import PracticeAreasConstants from "../../routes/PracticeAreasConstants";
+
 import habilAbuElKheirProfilePic from "../../assets/Images/Team/habil.png";
 import tamerKandilProfileImage from "../../assets/Images/Team/tamerKandilProfilePic.jpeg";
 import mohamedTayelProfileImage from "../../assets/Images/Team/mohamedTayelProfilePic.jpeg";
@@ -12,7 +14,7 @@ import emilGhobrialProfilePic from "../../assets/Images/Team/emilGhorbielProfile
 import aminKamalAminProfilePic from "../../assets/Images/Team/aminKamalAminProfilePic.jpeg";
 import walidSakrProfilePic from "../../assets/Images/Team/walidSakrProfilePic.jpeg";
 
-// Change Request From Client
+// Change Request
 import amalAfifiProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
 import fadySeifProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
 import ahmedRashedProfilePic from "../../assets/Images/Misc/Image-Not-Found.jpg"
@@ -123,6 +125,7 @@ export const ProfileImagesData = {
                 img: hybridWorkModelsImage,
                 title: "Employment",
                 textLines: ["Employment", "Hybrid Work Models", "", "31 January, 2024"],
+                toPage: PracticeAreasConstants.EMPLOYMENT
             },
             {
                 img: flexibleBenefitsPackagesImages,
@@ -133,6 +136,7 @@ export const ProfileImagesData = {
                     "",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.EMPLOYMENT
             },
         ],
         latestNewsImages: [
@@ -180,6 +184,7 @@ export const ProfileImagesData = {
                 img: hybridWorkModelsImage,
                 title: "Employment",
                 textLines: ["Employment", "Hybrid Work Models", "", "31 January, 2024"],
+                toPage: PracticeAreasConstants.EMPLOYMENT
             },
             {
                 img: flexibleBenefitsPackagesImages,
@@ -190,6 +195,7 @@ export const ProfileImagesData = {
                     "",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.EMPLOYMENT
             },
         ],
         latestNewsImages: [
@@ -242,6 +248,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -252,6 +259,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -304,6 +312,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -314,6 +323,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -366,6 +376,7 @@ export const ProfileImagesData = {
                     "",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: interestRateImage,
@@ -376,6 +387,7 @@ export const ProfileImagesData = {
                     "",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -428,6 +440,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -438,6 +451,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -490,6 +504,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -500,6 +515,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -552,6 +568,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -562,6 +579,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -614,6 +632,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -624,6 +643,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -676,6 +696,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -686,6 +707,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -738,6 +760,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -748,6 +771,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -800,6 +824,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -810,6 +835,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -862,6 +888,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -872,6 +899,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -925,6 +953,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -935,6 +964,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -987,6 +1017,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -997,6 +1028,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1049,6 +1081,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1059,6 +1092,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1111,6 +1145,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1121,6 +1156,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1173,6 +1209,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1183,6 +1220,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1235,6 +1273,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1245,6 +1284,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1297,6 +1337,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1307,6 +1348,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1359,6 +1401,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1369,6 +1412,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1421,6 +1465,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1431,6 +1476,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1483,6 +1529,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1493,6 +1540,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1545,6 +1593,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1555,6 +1604,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
@@ -1607,6 +1657,7 @@ export const ProfileImagesData = {
                     "Models",
                     "31 January, 2024"
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
             {
                 img: corporateRegulatoryImage,
@@ -1617,6 +1668,7 @@ export const ProfileImagesData = {
                     "and Changes",
                     "31 January, 2024",
                 ],
+                toPage: PracticeAreasConstants.CORPORATE
             },
         ],
         latestNewsImages: [
