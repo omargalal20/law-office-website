@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import practiceAreaOilAndGas from "../../../assets/Images/PracticeArea/OilAndGas/oil-gas-hero-image.jpeg"
-import energyTransitionImage from "../../../assets/Images/PracticeArea/OilAndGas/oil-gas-energy-transition.jpeg"
-import drillingPracticeImage from "../../../assets/Images/PracticeArea/OilAndGas/oil-gas-drilling.jpeg"
 import energyDecarbonizationImage from "../../../assets/Images/PracticeArea/OilAndGas/oil-gas-energy-decarbonization.jpeg"
 import geoPoliticsImage from "../../../assets/Images/PracticeArea/OilAndGas/oil-gas-energy-decarbonization.jpeg"
 import oilPricingImage from "../../../assets/Images/PracticeArea/OilAndGas/oil-gas-pricing.jpeg"
@@ -8,6 +12,15 @@ import oilPricingImage from "../../../assets/Images/PracticeArea/OilAndGas/oil-g
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const OilAndGas = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Transaction Complexities",
@@ -51,29 +64,6 @@ const OilAndGas = () => {
             "The global oil and gas landscape demands more than mere legal acumen; it necessitates comprehensive expertise coupled with a knowledge-based approach at the heart of the industry",
     };
 
-    const OilAndGasImages = [
-        {
-            img: energyTransitionImage,
-            title: "Oil & Gas",
-            textLines: [
-                "Oil & Gas",
-                "Energy Transition and Renewable Integration",
-                "",
-                "31 January, 2024",
-            ],
-        },
-        {
-            img: drillingPracticeImage,
-            title: "Oil & Gas",
-            textLines: [
-                "Oil & Gas",
-                "Eco-Friendly Drilling Practices",
-                "",
-                "31 January, 2024",
-            ],
-        },
-    ];
-
     const genericOilAndGasImages = [
         {
             img: energyDecarbonizationImage,
@@ -115,7 +105,7 @@ const OilAndGas = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={OilAndGasImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericOilAndGasImages}
             sectionHeaders={sectionHeaders}
             teamName={"Oil & Gas"}

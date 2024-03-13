@@ -1,13 +1,27 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import ArbitrationHero from "../../../assets/Images/PracticeArea/Arbitration/arbitrationHero.jpeg"
-import ArbitrationWorkImage from "../../../assets/Images/Team/corporateWork.jpeg"
-import ArbitrationRegulatoryImage from "../../../assets/Images/Team/corporateRegulatory.jpeg"
 import ArbitrationSupplyChainImage from "../../../assets/Images/Team/corporateSupplyChain.jpeg"
 import ArbitrationBiImage from "../../../assets/Images/Team/corporateBi.jpeg"
 import ArbitrationDigitalTransformationImage from "../../../assets/Images/Team/corporateDigitalTransformation.jpeg"
 
+
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Arbitration = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Experts in Law",
@@ -51,29 +65,6 @@ const Arbitration = () => {
             "Our highly regarded arbitration practice delivers a customized service, precisely tailored to meet the unique requirements of each disputes and representing a wide array of clientele, raging from corporations and investors to financial institutions, governments and state-owned entities.",
     };
 
-    const arbitrationImages = [
-        {
-            img: ArbitrationWorkImage,
-            title: "Arbitration",
-            textLines: [
-                "Arbitration",
-                "Remote and Hybrid Work",
-                "Models",
-                "31 January, 2024"
-            ],
-        },
-        {
-            img: ArbitrationRegulatoryImage,
-            title: "Arbitration",
-            textLines: [
-                "Arbitration",
-                "Regulatory Compliance",
-                "and Changes",
-                "31 January, 2024",
-            ],
-        },
-    ]
-
     const genericArbitrationImages = [
         {
             img: ArbitrationSupplyChainImage,
@@ -115,7 +106,7 @@ const Arbitration = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={arbitrationImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericArbitrationImages}
             sectionHeaders={sectionHeaders}
             teamName={"Arbitration"}

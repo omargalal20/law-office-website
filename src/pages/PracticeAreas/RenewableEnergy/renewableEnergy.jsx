@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import practiceAreaRenewableEnergy from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergyHero.jpeg"
-import RenewableEnergyInsightsWaves from '../../../assets/Images/Insights/renewable-energy-waves.jpeg'
-import RenewableEnergyInsightsGreen from '../../../assets/Images/Insights/renewable-energy-green.jpeg'
 
 import renewableEnergySolarEnergy from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergySolarEnergy.jpeg"
 import renewableEnergySolarFarms from "../../../assets/Images/PracticeArea/RenewableEnergy/renewableEnergySolarFarms.jpeg"
@@ -9,6 +13,15 @@ import renewableEnergyBattery from "../../../assets/Images/PracticeArea/Renewabl
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const RenewableEnergy = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Sustainable Expertise",
@@ -52,19 +65,6 @@ const RenewableEnergy = () => {
             "While governments are leading the surge to greener initiatives, these commitments translate to significant investments in renewable energy projects, encompassing a diverse spectrum of technologies",
     };
 
-    const renewableEnergyImages = [
-        {
-            img: RenewableEnergyInsightsWaves,
-            title: 'Wave and Tidal',
-            textLines: ["Renewable Energy", "Wave and Tidal", "Energy", "31 January, 2024"]
-        },
-        {
-            img: RenewableEnergyInsightsGreen,
-            title: 'Employment',
-            textLines: ["Renewable Energy", "Green Hydrogen", "Production", "31 January, 2024"]
-        },
-    ]
-
     const genericRenewableEnergyImages = [
         {
             img: renewableEnergySolarEnergy,
@@ -106,7 +106,7 @@ const RenewableEnergy = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={renewableEnergyImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericRenewableEnergyImages}
             sectionHeaders={sectionHeaders}
             teamName={"RenewableEnergy"}

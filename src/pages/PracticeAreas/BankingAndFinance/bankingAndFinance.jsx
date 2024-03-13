@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import practiceAreaBankingAndFinance from "../../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-hero-image.jpeg"
-import mainInsightsLawLaborImage from '../../../assets/Images/Insights/main-insights-law-labor.jpeg'
-import mainInsightsFinanceImage from '../../../assets/Images/Insights/insights-finance.jpeg'
 import machineLearningimage from "../../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-machine-learning.jpeg"
 import centralBankImage from "../../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-central-bank.jpeg"
 import blockchainImage from "../../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-blockchaing.jpeg"
@@ -8,6 +12,15 @@ import blockchainImage from "../../../assets/Images/PracticeArea/BankingAndFinan
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const BankingAndFinance = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Financial Domains",
@@ -51,19 +64,6 @@ const BankingAndFinance = () => {
             "Expert guidance to client on a global scale, advising on the intricacies of banking and finance matters",
     };
 
-    const BankingAndFinanceImages = [
-        {
-            img: mainInsightsLawLaborImage,
-            title: 'Banking & Finance',
-            textLines: ["Banking & Finance", "Digital", "Banking Transformation", "31 January, 2024"]
-        },
-        {
-            img: mainInsightsFinanceImage,
-            title: 'Green Finance',
-            textLines: ["Banking & Finance", "Sustainable", "and Green Finance", "31 January, 2024"]
-        },
-    ];
-
     const genericBankingAndFinanceImages = [
         {
             img: machineLearningimage,
@@ -105,7 +105,7 @@ const BankingAndFinance = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={BankingAndFinanceImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericBankingAndFinanceImages}
             sectionHeaders={sectionHeaders}
             teamName={"Banking & Finance"}

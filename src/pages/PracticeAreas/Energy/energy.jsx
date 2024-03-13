@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import EnergyHero from "../../../assets/Images/PracticeArea/Energy/energyHero.jpeg"
-import EnergyWorkImage from "../../../assets/Images/Team/corporateWork.jpeg"
-import EnergyRegulatoryImage from "../../../assets/Images/Team/corporateRegulatory.jpeg"
 import EnergySupplyChainImage from "../../../assets/Images/Team/corporateSupplyChain.jpeg"
 import EnergyBiImage from "../../../assets/Images/Team/corporateBi.jpeg"
 import EnergyDigitalTransformationImage from "../../../assets/Images/Team/corporateDigitalTransformation.jpeg"
@@ -8,6 +12,15 @@ import EnergyDigitalTransformationImage from "../../../assets/Images/Team/corpor
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Energy = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Strategies for Success",
@@ -51,29 +64,6 @@ const Energy = () => {
             "From regulatory compliance and environmental considerations to renewable energy projects and international energy transactions. Our deep understanding of the industry's legal,commercial, and technological aspects positions us to offer strategic advice and innovative solutions.",
     };
 
-    const EnergyImages = [
-        {
-            img: EnergyWorkImage,
-            title: "Energy",
-            textLines: [
-                "Energy",
-                "Remote and Hybrid Work",
-                "Models",
-                "31 January, 2024"
-            ],
-        },
-        {
-            img: EnergyRegulatoryImage,
-            title: "Energy",
-            textLines: [
-                "Energy",
-                "Regulatory Compliance",
-                "and Changes",
-                "31 January, 2024",
-            ],
-        },
-    ]
-
     const genericEnergyImages = [
         {
             img: EnergySupplyChainImage,
@@ -115,7 +105,7 @@ const Energy = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={EnergyImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericEnergyImages}
             sectionHeaders={sectionHeaders}
             teamName={"Energy"}

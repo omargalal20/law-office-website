@@ -1,13 +1,26 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import mergerAndAcquisitionHero from "../../../assets/Images/PracticeArea/MergerAndAcquisition/mergerAndAcquisitionHero.jpeg"
-import mergerAndAcquisitionHealthCareSectorImage from '../../../assets/Images/PracticeArea/MergerAndAcquisition/mergerAndAcquisitionHealthCareSector.jpeg'
-import mergerAndAcquisitionSupplyChain from '../../../assets/Images/PracticeArea/MergerAndAcquisition/mergerAndAcquisitionSupplyChain.jpeg'
 import mergerAndAcquisitionFintech from "../../../assets/Images/PracticeArea/MergerAndAcquisition/mergerAndAcquisitionFintech.jpeg"
 import mergerAndAcquisitionEquity from "../../../assets/Images/PracticeArea/MergerAndAcquisition/mergerAndAcquisitionEquity.jpeg"
 import mergerAndAcquisitionSustainable from "../../../assets/Images/PracticeArea/MergerAndAcquisition/mergerAndAcquisitionSustainable.jpeg"
 
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
-const mergerAndAcquisition = () => {
+const MergerAndAcquisition = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Business Growth",
@@ -51,19 +64,6 @@ const mergerAndAcquisition = () => {
             "Navigating the complexities of mergers and acquisitions, we provide practical solutions to an array of business transactions.",
     };
 
-    const mergerAndAcquisitionImages = [
-        {
-            img: mergerAndAcquisitionHealthCareSectorImage,
-            title: 'Healthcore',
-            textLines: ["Merger & Acquisitions", "Healthcare Sector", "Consolidation", "31 January, 2024"]
-        },
-        {
-            img: mergerAndAcquisitionSupplyChain,
-            title: 'Employment',
-            textLines: ["Merger & Acquisitions", "Supply Chain Resilience", "and M&A", "31 January, 2024"]
-        },
-    ]
-
     const genericMergerAndAcquisitionImages = [
         {
             img: mergerAndAcquisitionFintech,
@@ -105,7 +105,7 @@ const mergerAndAcquisition = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={mergerAndAcquisitionImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericMergerAndAcquisitionImages}
             sectionHeaders={sectionHeaders}
             teamName={"mergerAndAcquisition"}
@@ -131,4 +131,4 @@ const mergerAndAcquisition = () => {
     );
 }
 
-export default mergerAndAcquisition
+export default MergerAndAcquisition

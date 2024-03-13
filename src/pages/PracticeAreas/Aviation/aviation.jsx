@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import practiceAreaAviation from "../../../assets/Images/PracticeArea/Aviation/hero.svg";
-import img1 from "../../../assets/Images/PracticeArea/Aviation/Group 87.svg";
-import img2 from "../../../assets/Images/PracticeArea/Aviation/Group 88.png";
 import img3 from "../../../assets/Images/PracticeArea/Aviation/Rectangle 20.png";
 import img4 from "../../../assets/Images/PracticeArea/Aviation/Group 59.png";
 import img5 from "../../../assets/Images/PracticeArea/Aviation/Group 58.png";
@@ -8,6 +12,15 @@ import img5 from "../../../assets/Images/PracticeArea/Aviation/Group 58.png";
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Aviation = () => {
+  const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+  const numberOfPracticeAreaImages = 2
+
+  useEffect(() => {
+      const suffledArray = shuffleArray(PracticeAreaImages);
+      setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+  }, []);
+
   const sectionHeaders = {
     firstSectionHeader: {
       sectionHeaderTitle: "Industry Sector",
@@ -51,29 +64,6 @@ const Aviation = () => {
       "Operating seamlessly, Afifi Law Office aviation practice is highly regarded globally and recognized as the preeminent aviation law firm",
   };
 
-  const AviationImages = [
-    {
-      img: img1,
-      title: "Aviation",
-      textLines: [
-        "Aviation",
-        "A New Acquisition Leading The Egyptian Market",
-        "",
-        "31 January, 2024",
-      ],
-    },
-    {
-      img: img2,
-      title: "Aviation",
-      textLines: [
-        "Employment",
-        "Logistics Changing the scene",
-        "",
-        "31 January, 2024",
-      ],
-    },
-  ];
-
   const genericAviationImages = [
     {
       img: img3,
@@ -111,7 +101,7 @@ const Aviation = () => {
   return (
     <PracticeArea
       heroDetails={heroDetails}
-      relatedImages={AviationImages}
+      relatedImages={practiceAreaImages}
       practiceAreaImages={genericAviationImages}
       sectionHeaders={sectionHeaders}
       teamName={"Aviation"}

@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import corporateHero from "../../../assets/Images/PracticeArea/Corporate/corporatehero.jpeg"
-import corporateWorkImage from "../../../assets/Images/Team/corporateWork.jpeg"
-import corporateRegulatoryImage from "../../../assets/Images/Team/corporateRegulatory.jpeg"
 import corporateSupplyChainImage from "../../../assets/Images/Team/corporateSupplyChain.jpeg"
 import corporateBiImage from "../../../assets/Images/Team/corporateBi.jpeg"
 import corporateDigitalTransformationImage from "../../../assets/Images/Team/corporateDigitalTransformation.jpeg"
@@ -8,6 +12,15 @@ import corporateDigitalTransformationImage from "../../../assets/Images/Team/cor
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Corporate = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Business Journey",
@@ -51,29 +64,6 @@ const Corporate = () => {
             "Delivering comprehensive and intricate advise on a wide spectrum of corporate affairs to clients entrenched in pivotal sectors within established and burgeoning markets",
     };
 
-    const corporateImages = [
-        {
-            img: corporateWorkImage,
-            title: "Corporate",
-            textLines: [
-                "Corporate",
-                "Remote and Hybrid Work",
-                "Models",
-                "31 January, 2024"
-            ],
-        },
-        {
-            img: corporateRegulatoryImage,
-            title: "Corporate",
-            textLines: [
-                "Corporate",
-                "Regulatory Compliance",
-                "and Changes",
-                "31 January, 2024",
-            ],
-        },
-    ]
-
     const genericCorporateImages = [
         {
             img: corporateSupplyChainImage,
@@ -115,7 +105,7 @@ const Corporate = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={corporateImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericCorporateImages}
             sectionHeaders={sectionHeaders}
             teamName={"Corporate"}

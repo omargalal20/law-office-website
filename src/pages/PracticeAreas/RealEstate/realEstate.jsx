@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import practiceAreaRealEstate from "../../../assets/Images/PracticeArea/RealEstate/real-estate-hero-image.jpeg"
-import greenLivingImage from "../../../assets/Images/PracticeArea/RealEstate/real-estate-green-living.jpeg"
-import interestRateImage from "../../../assets/Images/PracticeArea/RealEstate/real-estate-interest-rates.jpeg"
 import remoteWorkImage from "../../../assets/Images/PracticeArea/RealEstate/real-estate-remote-work.jpeg"
 import technologyImage from "../../../assets/Images/PracticeArea/RealEstate/real-estate-technology.jpeg"
 import smartHomesImage from "../../../assets/Images/PracticeArea/RealEstate/real-estate-smart-homes.jpeg"
@@ -8,6 +12,15 @@ import smartHomesImage from "../../../assets/Images/PracticeArea/RealEstate/real
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const RealEstate = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Securing Your Future",
@@ -51,29 +64,6 @@ const RealEstate = () => {
             "The global oil and gas landscape demands more than mere legal acumen; it necessitates comprehensive expertise coupled with a knowledge-based approach at the heart of the industry",
     };
 
-    const RealEstateImages = [
-        {
-            img: greenLivingImage,
-            title: "Real Estate",
-            textLines: [
-                "Real Estate",
-                "Sustainable and Green Living",
-                "",
-                "31 January, 2024",
-            ],
-        },
-        {
-            img: interestRateImage,
-            title: "Real Estate",
-            textLines: [
-                "Real Estate",
-                "Impact of Changing Interest Rates",
-                "",
-                "31 January, 2024",
-            ],
-        },
-    ];
-
     const genericRealEstateImages = [
         {
             img: remoteWorkImage,
@@ -115,7 +105,7 @@ const RealEstate = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={RealEstateImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericRealEstateImages}
             sectionHeaders={sectionHeaders}
             teamName={"Real Estate"}

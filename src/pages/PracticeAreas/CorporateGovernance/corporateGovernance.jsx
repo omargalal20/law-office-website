@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import CorporateGovernanceHero from "../../../assets/Images/PracticeArea/CorporateGovernance/CorporateGovernanceHero.jpeg"
-import ArbitrationWorkImage from "../../../assets/Images/Team/corporateWork.jpeg"
-import ArbitrationRegulatoryImage from "../../../assets/Images/Team/corporateRegulatory.jpeg"
 import ArbitrationSupplyChainImage from "../../../assets/Images/Team/corporateSupplyChain.jpeg"
 import ArbitrationBiImage from "../../../assets/Images/Team/corporateBi.jpeg"
 import ArbitrationDigitalTransformationImage from "../../../assets/Images/Team/corporateDigitalTransformation.jpeg"
@@ -8,6 +12,15 @@ import ArbitrationDigitalTransformationImage from "../../../assets/Images/Team/c
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const CorporateGovernance = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Strategies for Success",
@@ -51,29 +64,6 @@ const CorporateGovernance = () => {
             "From regulatory compliance and environmental considerations to renewable CorporateGovernance projects and international CorporateGovernance transactions. Our deep understanding of the industry's legal,commercial, and technological aspects positions us to offer strategic advice and innovative solutions.",
     };
 
-    const CorporateGovernanceImages = [
-        {
-            img: ArbitrationWorkImage,
-            title: "Arbitration",
-            textLines: [
-                "Arbitration",
-                "Remote and Hybrid Work",
-                "Models",
-                "31 January, 2024"
-            ],
-        },
-        {
-            img: ArbitrationRegulatoryImage,
-            title: "Arbitration",
-            textLines: [
-                "Arbitration",
-                "Regulatory Compliance",
-                "and Changes",
-                "31 January, 2024",
-            ],
-        },
-    ]
-
     const genericCorporateGovernanceImages = [
         {
             img: ArbitrationSupplyChainImage,
@@ -115,7 +105,7 @@ const CorporateGovernance = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={CorporateGovernanceImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericCorporateGovernanceImages}
             sectionHeaders={sectionHeaders}
             teamName={"CorporateGovernance"}

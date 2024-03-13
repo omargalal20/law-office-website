@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import practiceAreaConstruction from "../../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-hero-image.jpeg"
-import constructionTrendsSmartConstruction from '../../../assets/Images/Insights/insights-smart-construction.jpeg'
-import constructionTrendsAugmentedReality from '../../../assets/Images/Insights/insights-augmented-reality.jpeg'
 import threeDModelingImage from "../../../assets/Images/PracticeArea/Construction/construction3d.jpeg"
 import automationImage from "../../../assets/Images/PracticeArea/Construction/constructionAutomation.jpeg"
 import resilientImage from "../../../assets/Images/PracticeArea/Construction/constructionResilient.jpeg"
@@ -8,6 +12,15 @@ import resilientImage from "../../../assets/Images/PracticeArea/Construction/con
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Construction = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Construction Industry",
@@ -51,19 +64,6 @@ const Construction = () => {
             "Expert guidance to client on a global scale, advising on the intricacies of banking and finance matters",
     };
 
-    const ConstructionImages = [
-        {
-            img: constructionTrendsSmartConstruction,
-            title: 'Smart Construction',
-            textLines: ["Construction", "Smart Construction", "Technologies", "31 January, 2024"]
-        },
-        {
-            img: constructionTrendsAugmentedReality,
-            title: 'Augmented Reality',
-            textLines: ["Construction", "Augmented Reality in", "Construction", "31 January, 2024"]
-        },
-    ];
-
     const genericConstructionImages = [
         {
             img: threeDModelingImage,
@@ -105,7 +105,7 @@ const Construction = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={ConstructionImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericConstructionImages}
             sectionHeaders={sectionHeaders}
             teamName={"Construction"}

@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import practiceAreaTransportation from "../../../assets/Images/PracticeArea/Transportation/transportationHeroImage.png"
-import insightsMaritime from '../../../assets/Images/Insights/sustainable-mobility-maritime.jpeg'
-import insightsInfrastructure from '../../../assets/Images/Insights/sustainable-mobility-infrastructure.jpeg'
 import railImage from "../../../assets/Images/PracticeArea/Transportation/transportation-rail.jpeg"
 import electricVehicleImage from "../../../assets/Images/PracticeArea/Transportation/transportation-electric-vehicle.jpeg"
 import publicTransportationImage from "../../../assets/Images/PracticeArea/Transportation/transportation-public transport.jpeg"
@@ -8,6 +12,15 @@ import publicTransportationImage from "../../../assets/Images/PracticeArea/Trans
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Transportation = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Navigate with Us",
@@ -51,19 +64,6 @@ const Transportation = () => {
             "Governments across the globe are recognizing the vital role of efficient infrastructure in economic growth and global trade, fueling massive investments booming the industry.",
     };
 
-    const TransportationImages = [
-        {
-            img: insightsMaritime,
-            title: 'Maritime',
-            textLines: ["Transportation", "Maritime Transportation", "Advances", "31 January, 2024"]
-        },
-        {
-            img: insightsInfrastructure,
-            title: 'Infrastructure',
-            textLines: ["Transportation", "Transportation", "Infrastructure Renewal", "31 January, 2024"]
-        },
-    ];
-
     const genericTransportationImages = [
         {
             img: railImage,
@@ -105,7 +105,7 @@ const Transportation = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={TransportationImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericTransportationImages}
             sectionHeaders={sectionHeaders}
             teamName={"Transportation"}

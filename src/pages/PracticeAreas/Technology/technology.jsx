@@ -1,6 +1,10 @@
+import { useState, useEffect } from "react";
+
+import { shuffleArray } from "../../../utils/ShuffleArray";
+
+import { PracticeAreaImages } from "../Images/PracticeAreaImages"
+
 import practiceAreaTechnology from "../../../assets/Images/PracticeArea/Technology/technology-hero-image.jpeg"
-import aiImage from "../../../assets/Images/PracticeArea/Technology/technology-ai.jpeg"
-import advancedConnectivityImage from "../../../assets/Images/PracticeArea/Technology/technology-advanced-connectivity.jpeg"
 import autonomousImage from "../../../assets/Images/PracticeArea/Technology/technology-autonomous.jpeg"
 import quantumComputing from "../../../assets/Images/PracticeArea/Technology/technology-quantum-computing.jpeg"
 import arImage from "../../../assets/Images/PracticeArea/Technology/technology-ar.jpeg"
@@ -8,6 +12,15 @@ import arImage from "../../../assets/Images/PracticeArea/Technology/technology-a
 import PracticeArea from "../../../components/Layout/PracticeArea/practiceArea";
 
 const Technology = () => {
+    const [practiceAreaImages, setPracticeAreaImages] = useState([]);
+
+    const numberOfPracticeAreaImages = 2
+
+    useEffect(() => {
+        const suffledArray = shuffleArray(PracticeAreaImages);
+        setPracticeAreaImages(suffledArray.slice(0, numberOfPracticeAreaImages));
+    }, []);
+
     const sectionHeaders = {
         firstSectionHeader: {
             sectionHeaderTitle: "Innovate Today",
@@ -51,29 +64,6 @@ const Technology = () => {
             "Support and guidance throughout the digital transformation process are paramount as organizations across various industry sectors increasingly embrace and enhance IT systems",
     };
 
-    const TechnologyImages = [
-        {
-            img: aiImage,
-            title: "Technology",
-            textLines: [
-                "Technology",
-                "Artificial Intelligence Advancements",
-                "",
-                "31 January, 2024",
-            ],
-        },
-        {
-            img: advancedConnectivityImage,
-            title: "Technology",
-            textLines: [
-                "Technology",
-                "5G and Advanced Connectivity",
-                "",
-                "31 January, 2024",
-            ],
-        },
-    ];
-
     const genericTechnologyImages = [
         {
             img: autonomousImage,
@@ -115,7 +105,7 @@ const Technology = () => {
     return (
         <PracticeArea
             heroDetails={heroDetails}
-            relatedImages={TechnologyImages}
+            relatedImages={practiceAreaImages}
             practiceAreaImages={genericTechnologyImages}
             sectionHeaders={sectionHeaders}
             teamName={"Technology"}
