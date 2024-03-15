@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
-import clockIcon from "../../../assets/Images/Insights/main-insights-clock-icon.svg";
-import hoverableImageButtonIcon from "../../../assets/Images/Misc/hoverable-image-button-icon.svg";
+import clockIcon from '../../../assets/Images/Insights/main-insights-clock-icon.svg';
+import hoverableImageButtonIcon from '../../../assets/Images/Misc/hoverable-image-button-icon.svg';
 const HoverableImage = ({
   src,
   alt,
   width,
-  bigWidth,
   height,
   text,
   buttonEnabled = true,
@@ -19,42 +19,41 @@ const HoverableImage = ({
   }, [buttonEnabled]);
 
   return (
-    <div style={{ display: "flex", flexDirection: "column", height: height }}>
-      <div style={{ position: "relative", display: "inline-block" }}>
+    <div style={{ display: 'flex', flexDirection: 'column', height: height }}>
+      <div style={{ position: 'relative', display: 'inline-block' }}>
         <img
           src={src}
           alt={alt}
           style={{
             width: width,
             height: height,
-            objectFit: "cover",
+            objectFit: 'cover',
           }}
         />
         {text && (
           <div
             style={{
-              position: "absolute",
-              bottom: "0",
-              left: "0",
-              color: "white",
-              fontSize: "24px",
-              fontWeight: "400",
-              fontFamily: "Montserrat",
-              paddingLeft: "29px",
-              paddingBottom: "42px",
-            }}
-          >
+              position: 'absolute',
+              bottom: '0',
+              left: '0',
+              color: 'white',
+              fontSize: '24px',
+              fontWeight: '400',
+              fontFamily: 'Montserrat',
+              paddingLeft: '29px',
+              paddingBottom: '42px',
+            }}>
             {text.map((line, index) => {
               let fontSize;
               let fontWeight;
               if (index === 0) {
-                fontSize = "25px";
+                fontSize = '25px';
                 fontWeight = 200;
               } else if (index === 1) {
-                fontSize = "35px";
+                fontSize = '35px';
                 fontWeight = 400;
               } else {
-                fontSize = "15px";
+                fontSize = '15px';
                 fontWeight = 200;
               }
 
@@ -62,17 +61,16 @@ const HoverableImage = ({
                 <div
                   key={index}
                   style={{
-                    display: "flex",
-                    alignItems: "center",
+                    display: 'flex',
+                    alignItems: 'center',
                     fontSize: fontSize,
                     fontWeight: fontWeight,
-                  }}
-                >
+                  }}>
                   {index === text.length - 1 && (
                     <img
                       src={clockIcon}
                       alt="Clock Icon"
-                      style={{ marginRight: "5px" }}
+                      style={{ marginRight: '5px' }}
                     />
                   )}
                   {line}
@@ -85,32 +83,39 @@ const HoverableImage = ({
       {isButtonEnabled && (
         <div
           style={{
-            display: "flex",
-            alignSelf: "flex-end",
-            justifyContent: "center",
-            alignItems: "center",
-            overflowX: "hidden", // Prevent horizontal scrolling
+            display: 'flex',
+            alignSelf: 'flex-end',
+            justifyContent: 'center',
+            alignItems: 'center',
+            overflowX: 'hidden', // Prevent horizontal scrolling
           }}
           onMouseEnter={() => setIsHovered(true)}
-          onMouseLeave={() => setIsHovered(false)}
-        >
+          onMouseLeave={() => setIsHovered(false)}>
           <button>See what is ahead</button>
           <div
             style={{
-              transition: "transform 0.5s ease",
-              transform: isHovered ? "translateX(5px)" : "translateX(0)",
-            }}
-          >
+              transition: 'transform 0.5s ease',
+              transform: isHovered ? 'translateX(5px)' : 'translateX(0)',
+            }}>
             <img
               src={hoverableImageButtonIcon}
               alt="icon"
-              style={{ marginLeft: "10px" }}
+              style={{ marginLeft: '10px' }}
             />
           </div>
         </div>
       )}
     </div>
   );
+};
+
+HoverableImage.propTypes = {
+  src: PropTypes.string.isRequired,
+  alt: PropTypes.string.isRequired,
+  width: PropTypes.string.isRequired,
+  height: PropTypes.string.isRequired,
+  text: PropTypes.arrayOf(PropTypes.string),
+  buttonEnabled: PropTypes.bool,
 };
 
 export default HoverableImage;

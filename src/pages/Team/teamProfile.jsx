@@ -1,22 +1,22 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 
-import { shuffleArray } from "../../utils/ShuffleArray";
+import { shuffleArray } from '../../utils/ShuffleArray';
 
-import hero from "../../assets/Images/Team/hero.png";
+import hero from '../../assets/Images/Team/hero.png';
 
-import TextCard from "../../components/Common/TextCard/TextCard";
-import HeroTeam from "../../components/Common/Hero/heroTeam";
-import RelatedImagesSection from "../../components/Common/Section/relatedImagesSection";
-import TripleImageGrid from "../../components/Common/Section/tripleImageGrid";
+import TextCard from '../../components/Common/TextCard/TextCard';
+import HeroTeam from '../../components/Common/Hero/heroTeam';
+import RelatedImagesSection from '../../components/Common/Section/relatedImagesSection';
+import TripleImageGrid from '../../components/Common/Section/tripleImageGrid';
 
-import profilesData from "../../data/TeamProfiles.json";
-import { ProfileImagesData } from "./profileImages";
-import { RelatedInsightsImages } from "../Insights/InsightsInfos";
+import profilesData from '../../data/TeamProfiles.json';
+import { ProfileImagesData } from './profileImages';
+import { RelatedInsightsImages } from '../Insights/InsightsInfos';
 
-import createTheme from "@mui/material/styles/createTheme";
-import ThemeProvider from "@mui/material/styles/ThemeProvider";
-import Container from "@mui/material/Container";
+import createTheme from '@mui/material/styles/createTheme';
+import ThemeProvider from '@mui/material/styles/ThemeProvider';
+import Container from '@mui/material/Container';
 
 const theme = createTheme({
   breakpoints: {
@@ -30,40 +30,50 @@ const theme = createTheme({
   },
 });
 
-
 const TeamProfile = () => {
   const { profileName } = useParams();
 
-  const [profile, setProfile] = useState({})
-  const [profileImages, setProfileImages] = useState({})
-  const [latestNewsImages, setLatestNewsImages] = useState([])
+  const [profile, setProfile] = useState({});
+  const [profileImages, setProfileImages] = useState({});
+  const [latestNewsImages, setLatestNewsImages] = useState([]);
 
-  const numberOfLatestNewsImages = 3
+  const numberOfLatestNewsImages = 3;
 
   useEffect(() => {
-    const profilePageImagesKey = profilesData[profileName]?.profilePageImagesKey;
+    const profilePageImagesKey =
+      profilesData[profileName]?.profilePageImagesKey;
     const suffledArray = shuffleArray(RelatedInsightsImages);
 
     setProfile(profilesData[profileName] || {});
-    setProfileImages(profilePageImagesKey ? ProfileImagesData[profilePageImagesKey] : {});
-    setLatestNewsImages(suffledArray.slice(0, numberOfLatestNewsImages))
+    setProfileImages(
+      profilePageImagesKey ? ProfileImagesData[profilePageImagesKey] : {}
+    );
+    setLatestNewsImages(suffledArray.slice(0, numberOfLatestNewsImages));
   }, [profileName]);
 
   return (
-    ((Object.keys(profile).length !== 0) && (Object.keys(profileImages).length !== 0)) && (
+    Object.keys(profile).length !== 0 &&
+    Object.keys(profileImages).length !== 0 && (
       <div>
         <HeroTeam
           backgroundImage={hero}
           teamImage={profileImages.profileImage}
           teamName={profile.name}
           teamPosition={profile.position}
-          teamInfo={profile.address + " / " + profile.email + " / " + profile.phoneNumber}
+          teamInfo={
+            profile.address +
+            ' / ' +
+            profile.email +
+            ' / ' +
+            profile.phoneNumber
+          }
         />
 
         <ThemeProvider theme={theme}>
-          <Container maxWidth="lg" style={{ marginTop: "56px" }}>
-            <div style={{ marginTop: "50px" }}>
-              <TextCard educations={profile.educations}
+          <Container maxWidth="lg" style={{ marginTop: '56px' }}>
+            <div style={{ marginTop: '50px' }}>
+              <TextCard
+                educations={profile.educations}
                 languages={profile.languages}
                 admittance={profile.admittance}
                 biography={profile.biography}
@@ -72,37 +82,47 @@ const TeamProfile = () => {
             <div>
               <p
                 style={{
-                  fontSize: "50px",
+                  fontSize: '50px',
                   fontWeight: 400,
-                  fontFamily: "Montserrat",
-                }}
-              >
-                Related{" "}
+                  fontFamily: 'Montserrat',
+                }}>
+                Related{' '}
                 <span
-                  style={{ fontSize: "50px", fontWeight: 100, fontStyle: "italic" }}
-                >
+                  style={{
+                    fontSize: '50px',
+                    fontWeight: 100,
+                    fontStyle: 'italic',
+                  }}>
                   Practice Areas
                 </span>
               </p>
-              <RelatedImagesSection insightImages={profileImages.relatedPracticeAreasImages} />
+              <RelatedImagesSection
+                insightImages={profileImages.relatedPracticeAreasImages}
+              />
             </div>
             <p
               style={{
-                fontSize: "50px",
+                fontSize: '50px',
                 fontWeight: 400,
-                fontFamily: "Montserrat",
-                marginTop: "20px"
-              }}
-            >
-              Latest{" "}
+                fontFamily: 'Montserrat',
+                marginTop: '20px',
+              }}>
+              Latest{' '}
               <span
-                style={{ fontSize: "50px", fontWeight: 100, fontStyle: "italic" }}
-              >
+                style={{
+                  fontSize: '50px',
+                  fontWeight: 100,
+                  fontStyle: 'italic',
+                }}>
                 News
               </span>
             </p>
 
-            <TripleImageGrid images={latestNewsImages} width="569px" bigWidth="712px" />
+            <TripleImageGrid
+              images={latestNewsImages}
+              width="569px"
+              bigWidth="712px"
+            />
           </Container>
         </ThemeProvider>
       </div>

@@ -1,29 +1,28 @@
 .image-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* Initially transparent */
-    transition: background-color 0.3s ease; /* Smooth transition */
-  }
-  
-  .text {
-    text-decoration: none; /* Initially no underline */
-    color: white; /* Example text color */
-    transition: text-decoration 0.3s ease; /* Smooth transition */
-  }
-  
-  .image-container:hover .overlay {
-    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
-  }
-  
-  .image-container:hover .text {
-    text-decoration: underline; /* Underline text on hover */
-  }
-  
+  position: relative;
+  display: inline-block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0); /* Initially transparent */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.text {
+  text-decoration: none; /* Initially no underline */
+  color: white; /* Example text color */
+  transition: text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.image-container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+}
+
+.image-container:hover .text {
+  text-decoration: underline; /* Underline text on hover */
+}

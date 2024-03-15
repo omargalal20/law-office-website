@@ -1,11 +1,10 @@
-import React from "react";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
-import { register } from "swiper/element/bundle";
+import { register } from 'swiper/element/bundle';
 
-import Layout from "./components/Layout/Layout.jsx";
-import NotFound from "./pages/NotFound/NotFound.jsx";
-import routes from "./routes/index.js";
+import Layout from './components/Layout/Layout.jsx';
+import NotFound from './pages/NotFound/NotFound.jsx';
+import routes from './routes/index.js';
 
 function App() {
   register();
