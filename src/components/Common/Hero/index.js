@@ -1,1 +1,1 @@
-export { default } from './HeroInsights'
+export { default } from './HeroInsights';

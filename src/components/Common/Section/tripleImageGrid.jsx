@@ -1,42 +1,54 @@
-import HoverableImageWith from "../HoverableImage/hvImgwith"
+import PropTypes from 'prop-types';
 
-import Stack from "@mui/material/Stack"
+import HoverableImageWith from '../HoverableImage/hvImgwith';
 
-const TripleImageGrid = ({ images, width = "518px", bigWidth = "712px" }) => {
-    const [firstImage, secondImage, thirdImage] = images
+import Stack from '@mui/material/Stack';
 
-    return (
-        <Stack direction={"row"} spacing={4} sx={{ marginBottom: "20px" }}>
-            <HoverableImageWith
-                key={"Technology"}
-                src={firstImage.img}
-                width={"100%"}
-                height={"692px"}
-                text={firstImage.textLines}
-                toPage={firstImage.toPage}
-            />
+const TripleImageGrid = ({ images }) => {
+  const [firstImage, secondImage, thirdImage] = images;
 
-            <Stack spacing={4}>
-                <HoverableImageWith
-                    key={"Oil & Gas"}
-                    src={secondImage.img}
-                    width={"100%"}
-                    height={"318px"}
-                    text={secondImage.textLines}
-                    toPage={secondImage.toPage}
-                />
+  return (
+    <Stack direction={'row'} spacing={4} sx={{ marginBottom: '20px' }}>
+      <HoverableImageWith
+        key={'Technology'}
+        src={firstImage.img}
+        width={'100%'}
+        height={'692px'}
+        text={firstImage.textLines}
+        toPage={firstImage.toPage}
+      />
 
-                <HoverableImageWith
-                    key={"Renewable Energy"}
-                    src={thirdImage.img}
-                    width={"100%"}
-                    height={"318px"}
-                    text={thirdImage.textLines}
-                    toPage={thirdImage.toPage}
-                />
-            </Stack>
-        </Stack>
-    )
-}
+      <Stack spacing={4}>
+        <HoverableImageWith
+          key={'Oil & Gas'}
+          src={secondImage.img}
+          width={'100%'}
+          height={'318px'}
+          text={secondImage.textLines}
+          toPage={secondImage.toPage}
+        />
 
-export default TripleImageGrid
+        <HoverableImageWith
+          key={'Renewable Energy'}
+          src={thirdImage.img}
+          width={'100%'}
+          height={'318px'}
+          text={thirdImage.textLines}
+          toPage={thirdImage.toPage}
+        />
+      </Stack>
+    </Stack>
+  );
+};
+
+TripleImageGrid.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      img: PropTypes.string.isRequired,
+      textLines: PropTypes.arrayOf(PropTypes.string).isRequired,
+      toPage: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
+
+export default TripleImageGrid;

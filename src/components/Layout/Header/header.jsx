@@ -1,105 +1,102 @@
-import React from "react";
-import mainLogo from "../../../assets/Images/Misc/main.svg";
-import drawerLogo from "../../../assets/Images/Misc/drawerLogo.svg";
-import mobLogo from "../../../assets/Images/Misc/mobLogo.svg";
-import Box from "@mui/material/Box";
-import Drawer from "@mui/material/Drawer";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import IconButton from "@mui/material/IconButton";
-import Stack from "@mui/material/Stack";
-import { makeStyles } from "@mui/styles";
-import SearchIcon from "@mui/icons-material/Search";
-import TextField from "@mui/material/TextField";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-import MenuIcon from "@mui/icons-material/Menu";
-import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import CloseIcon from "@mui/icons-material/Close";
+import React from 'react';
+import mainLogo from '../../../assets/Images/Misc/main.svg';
+import drawerLogo from '../../../assets/Images/Misc/drawerLogo.svg';
+import mobLogo from '../../../assets/Images/Misc/mobLogo.svg';
+import Box from '@mui/material/Box';
+import Drawer from '@mui/material/Drawer';
+import List from '@mui/material/List';
+import Divider from '@mui/material/Divider';
+import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import ListItemText from '@mui/material/ListItemText';
+import IconButton from '@mui/material/IconButton';
+import Stack from '@mui/material/Stack';
+import { makeStyles } from '@mui/styles';
+import SearchIcon from '@mui/icons-material/Search';
+import TextField from '@mui/material/TextField';
+import { useTheme } from '@mui/material/styles';
+import useMediaQuery from '@mui/material/useMediaQuery';
+import MenuIcon from '@mui/icons-material/Menu';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import CloseIcon from '@mui/icons-material/Close';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   root: {
-    display: "flex",
-    justifyContent: "flex-end", // Aligns content to the end (right)
-    alignItems: "flex-start", // Aligns content to the start (top)
+    display: 'flex',
+    justifyContent: 'flex-end', // Aligns content to the end (right)
+    alignItems: 'flex-start', // Aligns content to the start (top)
     flexGrow: 1,
   },
   center: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
     flexGrow: 1,
   },
   searchContainer: {
-    display: "flex",
-    alignItems: "center",
+    display: 'flex',
+    alignItems: 'center',
   },
 }));
 
 export default function HeaderBar() {
   const theme = useTheme();
-  const isSmallScreen = useMediaQuery(theme.breakpoints.down("lg"));
+  const isSmallScreen = useMediaQuery(theme.breakpoints.down('lg'));
 
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
-  const toggleDrawer = (newOpen) => () => {
+  const toggleDrawer = newOpen => () => {
     setOpen(newOpen);
   };
 
   const DrawerList = (
     <Box
       sx={{
-        width: "100vw",
-        height: "100vh",
-        background: "linear-gradient(to right,#09283F 25%, white 25%)",
+        width: '100vw',
+        height: '100vh',
+        background: 'linear-gradient(to right,#09283F 25%, white 25%)',
       }}
       role="presentation"
-      onClick={toggleDrawer(false)}
-    >
+      onClick={toggleDrawer(false)}>
       <Box
         sx={{
-          width: "100vw",
-          height: "10vh",
-          background: "white",
-        }}
-      >
+          width: '100vw',
+          height: '10vh',
+          background: 'white',
+        }}>
         <IconButton href="/">
           <img src={mainLogo} alt="Home" />
         </IconButton>
       </Box>
-      <IconButton style={{ color: "white", paddingLeft: "20%" }}>
+      <IconButton style={{ color: 'white', paddingLeft: '20%' }}>
         <CloseIcon sx={{ fontSize: 40 }} />
       </IconButton>
-      <List style={{ paddingTop: "50px" }}>
-        {["Insights", "About", "Practice Areas", "Team", "Contacts"].map(
-          (text, index) => (
+      <List style={{ paddingTop: '50px' }}>
+        {['Insights', 'About', 'Practice Areas', 'Team', 'Contacts'].map(
+          text => (
             <ListItem
               key={text}
               disablePadding
               style={{
-                width: "25%",
-                paddingLeft: "45px",
-                paddingRight: "45px",
-              }}
-            >
-              <ListItemButton href={"/" + text}>
+                width: '25%',
+                paddingLeft: '45px',
+                paddingRight: '45px',
+              }}>
+              <ListItemButton href={'/' + text}>
                 <ListItemText
                   primary={text}
                   style={{
-                    color: "white",
+                    color: 'white',
                   }}
                   primaryTypographyProps={{
-                    fontSize: "25px",
-                    fontFamily: "Montserrat",
+                    fontSize: '25px',
+                    fontFamily: 'Montserrat',
                   }}
                 />
                 <ListItemIcon>
-                  {<ArrowForwardIcon sx={{ color: "white" }} />}
+                  {<ArrowForwardIcon sx={{ color: 'white' }} />}
                 </ListItemIcon>
               </ListItemButton>
             </ListItem>
@@ -108,23 +105,22 @@ export default function HeaderBar() {
       </List>
       <Divider />
       <List>
-        {["Dentons Partnership"].map((text, index) => (
+        {['Dentons Partnership'].map(text => (
           <ListItem
             key={text}
             disablePadding
-            style={{ width: "25%", paddingTop: "150px" }}
-          >
-            <ListItemButton href={"/" + text}>
+            style={{ width: '25%', paddingTop: '150px' }}>
+            <ListItemButton href={'/' + text}>
               <ListItemText
                 primary={text}
-                style={{ color: "white" }}
+                style={{ color: 'white' }}
                 primaryTypographyProps={{
-                  fontSize: "25px",
-                  fontFamily: "Montserrat",
+                  fontSize: '25px',
+                  fontFamily: 'Montserrat',
                 }}
               />
               <ListItemIcon>
-                {<ArrowForwardIcon sx={{ color: "white" }} />}
+                {<ArrowForwardIcon sx={{ color: 'white' }} />}
               </ListItemIcon>
             </ListItemButton>
           </ListItem>
@@ -138,8 +134,7 @@ export default function HeaderBar() {
       direction="row"
       spacing={2}
       pt={2}
-      style={{ justifyContent: "space-between" }}
-    >
+      style={{ justifyContent: 'space-between' }}>
       <IconButton href="/">
         <img src={mobLogo} alt="Home" />
       </IconButton>
@@ -151,23 +146,23 @@ export default function HeaderBar() {
           style={{ width: 180 }}
           InputProps={{
             sx: {
-              color: "white",
-              "& .MuiInputBase-root": {
-                color: "white", // To change input text color
+              color: 'white',
+              '& .MuiInputBase-root': {
+                color: 'white', // To change input text color
               },
             },
           }}
           InputLabelProps={{
             style: {
-              color: "white",
-              fontSize: "14px",
+              color: 'white',
+              fontSize: '14px',
             },
           }}
         />
       </div>
       <div>
         <IconButton onClick={toggleDrawer(true)}>
-          <MenuIcon style={{ color: "white" }} />
+          <MenuIcon style={{ color: 'white' }} />
         </IconButton>
         <Drawer open={open} onClose={toggleDrawer(false)}>
           {DrawerList}
@@ -175,7 +170,7 @@ export default function HeaderBar() {
       </div>
     </Stack>
   ) : (
-    <Stack direction={"row"} spacing={2} pr={5} pt={5} pl={5}>
+    <Stack direction={'row'} spacing={2} pr={5} pt={5} pl={5}>
       <div>
         <IconButton href="/">
           <img src={mainLogo} alt="Home" />
@@ -183,8 +178,8 @@ export default function HeaderBar() {
       </div>
       <div className={classes.center}>
         <SearchIcon
-          sx={{ transform: "translate(-10px, 10px)" }}
-          style={{ color: "white" }}
+          sx={{ transform: 'translate(-10px, 10px)' }}
+          style={{ color: 'white' }}
         />
         <TextField
           id="input-with-sx"
@@ -192,14 +187,14 @@ export default function HeaderBar() {
           variant="standard"
           style={{ width: 630 }}
           sx={{
-            border: "none",
-            "& .MuiTextField-root": {
-              color: "white",
+            border: 'none',
+            '& .MuiTextField-root': {
+              color: 'white',
             },
           }}
           InputLabelProps={{
             style: {
-              color: "white",
+              color: 'white',
             },
           }}
         />
@@ -212,8 +207,7 @@ export default function HeaderBar() {
       <Drawer
         open={open}
         onClose={toggleDrawer(false)}
-        anchor="top                                                                                                 "
-      >
+        anchor="top                                                                                                 ">
         {DrawerList}
       </Drawer>
     </Stack>

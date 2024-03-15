@@ -1,50 +1,50 @@
-import React, { useState } from "react";
-import HeroMainTeam from "../../components/Common/Hero/heroMainTeam";
-import mainHero from "../../assets/Images/Team/mainhero.png";
-import main1 from "../../assets/Images/Team/main1.png";
-import { Container, Stack, Button } from "@mui/material";
-import ProfileCard from "../../components/Common/ProfileCard/profileCard";
-import ChangeHistoryIcon from "@mui/icons-material/ChangeHistory";
-import bx6 from "../../assets/Images/Misc/img.svg";
+import React, { useState } from 'react';
+import HeroMainTeam from '../../components/Common/Hero/heroMainTeam';
+import mainHero from '../../assets/Images/Team/mainhero.png';
+import main1 from '../../assets/Images/Team/main1.png';
+import { Container, Stack, Button } from '@mui/material';
+import ProfileCard from '../../components/Common/ProfileCard/profileCard';
+import ChangeHistoryIcon from '@mui/icons-material/ChangeHistory';
+import bx6 from '../../assets/Images/Misc/img.svg';
 
-import habilAbuElKheirProfilePic from "../../assets/Images/Team/habil.png";
-import tamerKandilProfileImage from "../../assets/Images/Team/tamerKandilProfilePic.jpeg";
-import mohamedTayelProfileImage from "../../assets/Images/Team/mohamedTayelProfilePic.jpeg";
-import hossamElSharawiProfilePic from "../../assets/Images/Team/hossamElSharawiProfilePic.jpeg";
-import gamilDorghamProfilePic from "../../assets/Images/Team/gamilDorghamProfilePic.jpeg";
-import mahmoudMaherProfilePic from "../../assets/Images/Team/mahmoudMaherProfilePic.png";
-import adelFekryProfilePic from "../../assets/Images/Team/adelFekryProfilePic.jpeg";
-import aliaSafeiProfilePic from "../../assets/Images/Team/aliaSafeiProfilePic.jpeg";
-import andrewAfifiProfilePic from "../../assets/Images/Team/andrewAfifiProfilePic.jpeg";
-import asserNegmEldinProfilePic from "../../assets/Images/Team/asserNegmElDinProfilePic.jpeg";
-import emilGhobrialProfilePic from "../../assets/Images/Team/emilGhorbielProfilePic.jpeg";
-import aminKamalAminProfilePic from "../../assets/Images/Team/aminKamalAminProfilePic.jpeg";
-import walidSakrProfilePic from "../../assets/Images/Team/walidSakrProfilePic.jpeg";
+import habilAbuElKheirProfilePic from '../../assets/Images/Team/habil.png';
+import tamerKandilProfileImage from '../../assets/Images/Team/tamerKandilProfilePic.jpeg';
+import mohamedTayelProfileImage from '../../assets/Images/Team/mohamedTayelProfilePic.jpeg';
+import hossamElSharawiProfilePic from '../../assets/Images/Team/hossamElSharawiProfilePic.jpeg';
+import gamilDorghamProfilePic from '../../assets/Images/Team/gamilDorghamProfilePic.jpeg';
+import mahmoudMaherProfilePic from '../../assets/Images/Team/mahmoudMaherProfilePic.png';
+import adelFekryProfilePic from '../../assets/Images/Team/adelFekryProfilePic.jpeg';
+import aliaSafeiProfilePic from '../../assets/Images/Team/aliaSafeiProfilePic.jpeg';
+import andrewAfifiProfilePic from '../../assets/Images/Team/andrewAfifiProfilePic.jpeg';
+import asserNegmEldinProfilePic from '../../assets/Images/Team/asserNegmElDinProfilePic.jpeg';
+import emilGhobrialProfilePic from '../../assets/Images/Team/emilGhorbielProfilePic.jpeg';
+import aminKamalAminProfilePic from '../../assets/Images/Team/aminKamalAminProfilePic.jpeg';
+import walidSakrProfilePic from '../../assets/Images/Team/walidSakrProfilePic.jpeg';
 
 const MainTeam = () => {
   const [isHovered5, setIsHovered5] = useState(false);
   const [isHovered4, setIsHovered4] = useState(false);
 
   const heroDetails = {
-    heroPrimaryHeading: "Meet Our Legal / Pioneers",
-    heroSecondaryHeading: "",
-    heroSubHeading: "Founded in 1981, Leading through Excellence",
+    heroPrimaryHeading: 'Meet Our Legal / Pioneers',
+    heroSecondaryHeading: '',
+    heroSubHeading: 'Founded in 1981, Leading through Excellence',
   };
 
   const profilesWithPhotos = {
-    "habil-abu-el-kheir": habilAbuElKheirProfilePic,
-    "tamer-kamal": tamerKandilProfileImage,
-    "mohamed-tayel": mohamedTayelProfileImage,
-    "hossam-el-sharawi": hossamElSharawiProfilePic,
-    "gamil-dorgham": gamilDorghamProfilePic,
-    "mahmoud-maher": mahmoudMaherProfilePic,
-    "adel-fekry": adelFekryProfilePic,
-    "alia-safei": aliaSafeiProfilePic,
-    "andrew-afifi": andrewAfifiProfilePic,
-    "asser-negm-el-din": asserNegmEldinProfilePic,
-    "emil-ghobrial": emilGhobrialProfilePic,
-    "amin-kamal-amin": aminKamalAminProfilePic,
-    "walid-sakr": walidSakrProfilePic,
+    'habil-abu-el-kheir': habilAbuElKheirProfilePic,
+    'tamer-kamal': tamerKandilProfileImage,
+    'mohamed-tayel': mohamedTayelProfileImage,
+    'hossam-el-sharawi': hossamElSharawiProfilePic,
+    'gamil-dorgham': gamilDorghamProfilePic,
+    'mahmoud-maher': mahmoudMaherProfilePic,
+    'adel-fekry': adelFekryProfilePic,
+    'alia-safei': aliaSafeiProfilePic,
+    'andrew-afifi': andrewAfifiProfilePic,
+    'asser-negm-el-din': asserNegmEldinProfilePic,
+    'emil-ghobrial': emilGhobrialProfilePic,
+    'amin-kamal-amin': aminKamalAminProfilePic,
+    'walid-sakr': walidSakrProfilePic,
   };
 
   // Convert the object into an array of key-value pairs
@@ -60,10 +60,7 @@ const MainTeam = () => {
   ); // Profiles after the initial ones
 
   const handleShowMore = () => {
-    setVisibleProfiles((prevProfiles) => [
-      ...prevProfiles,
-      ...remainingProfiles,
-    ]);
+    setVisibleProfiles(prevProfiles => [...prevProfiles, ...remainingProfiles]);
     setShowLess(true);
   };
 
@@ -74,42 +71,39 @@ const MainTeam = () => {
   };
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: 'relative' }}>
       <HeroMainTeam
         backgroundImage={mainHero}
         primaryHeading={heroDetails.heroPrimaryHeading}
         secondaryHeading={heroDetails.heroSecondaryHeading}
         subHeading={heroDetails.heroSubHeading}
       />
-      <Stack direction={"row"} spacing={0}>
+      <Stack direction={'row'} spacing={0}>
         <div
           style={{
-            width: "713px",
-            height: "651px",
-            marginLeft: "80px", // Adjust left margin instead of left positioning
-          }}
-        >
+            width: '713px',
+            height: '651px',
+            marginLeft: '80px', // Adjust left margin instead of left positioning
+          }}>
           <p
             style={{
-              width: "240px",
-              fontSize: "50px",
-              fontFamily: "Montserrat",
+              width: '240px',
+              fontSize: '50px',
+              fontFamily: 'Montserrat',
               fontWeight: 300,
-              marginTop: "180px",
-            }}
-          >
-            Our Own{" "}
-            <span style={{ fontWeight: 100, fontStyle: "italic" }}>Spirit</span>
+              marginTop: '180px',
+            }}>
+            Our Own{' '}
+            <span style={{ fontWeight: 100, fontStyle: 'italic' }}>Spirit</span>
           </p>
           <p
             style={{
-              width: "592px",
-              fontSize: "18px",
-              fontFamily: "Montserrat",
+              width: '592px',
+              fontSize: '18px',
+              fontFamily: 'Montserrat',
               fontWeight: 400,
-              marginTop: "45px",
-            }}
-          >
+              marginTop: '45px',
+            }}>
             Their unwavering dedication and collaborative spirit have been
             instrumental in achieving our notable legal successes and in
             establishing us as a distinguished presence in the legal community.
@@ -117,61 +111,57 @@ const MainTeam = () => {
           <br />
           <p
             style={{
-              width: "592px",
-              fontSize: "18px",
-              fontFamily: "Montserrat",
+              width: '592px',
+              fontSize: '18px',
+              fontFamily: 'Montserrat',
               fontWeight: 400,
-              marginTop: "18px",
-            }}
-          >
+              marginTop: '18px',
+            }}>
             Together, they are the cornerstone of our firm, continually driving
             us towards new heights in legal excellence and client service.
           </p>
         </div>
-        <div style={{ marginLeft: "auto" }}>
-          {" "}
+        <div style={{ marginLeft: 'auto' }}>
+          {' '}
           {/* Use marginLeft: "auto" to push the image to the right */}
           <img
             src={main1}
             alt="bg"
             style={{
-              width: "713px",
-              height: "651px",
+              width: '713px',
+              height: '651px',
             }}
           />
         </div>
       </Stack>
       <p
         style={{
-          width: "320px",
-          fontSize: "50px",
+          width: '320px',
+          fontSize: '50px',
           fontWeight: 300,
-          fontFamily: "Montserrat",
+          fontFamily: 'Montserrat',
           marginLeft: 80,
-        }}
-      >
-        Our{" "}
+        }}>
+        Our{' '}
         <span
           style={{
             fontWeight: 100,
-            fontStyle: "italic",
-          }}
-        >
+            fontStyle: 'italic',
+          }}>
           Professionals
         </span>
       </p>
-      <Container style={{ marginTop: "20px" }}>
+      <Container style={{ marginTop: '20px' }}>
         <div>
-          {[0, 1, 2, 3].map((rowIndex) => (
+          {[0, 1, 2, 3].map(rowIndex => (
             <div
               key={rowIndex}
-              style={{ display: "flex", marginBottom: "20px" }}
-            >
-              {[0, 1].map((profileIndex) => {
+              style={{ display: 'flex', marginBottom: '20px' }}>
+              {[0, 1].map(profileIndex => {
                 const index = rowIndex * 2 + profileIndex;
                 if (index < visibleProfiles.length) {
                   return (
-                    <div key={index} style={{ marginRight: "20px" }}>
+                    <div key={index} style={{ marginRight: '20px' }}>
                       <ProfileCard
                         profileName={visibleProfiles[index][0]}
                         profileImage={visibleProfiles[index][1]}
@@ -184,16 +174,15 @@ const MainTeam = () => {
             </div>
           ))}
           {visibleProfiles.length > 8 &&
-            [4, 5, 6, 7].map((rowIndex) => (
+            [4, 5, 6, 7].map(rowIndex => (
               <div
                 key={rowIndex}
-                style={{ display: "flex", marginBottom: "20px" }}
-              >
-                {[0, 1].map((profileIndex) => {
+                style={{ display: 'flex', marginBottom: '20px' }}>
+                {[0, 1].map(profileIndex => {
                   const index = rowIndex * 2 + profileIndex;
                   if (index < visibleProfiles.length) {
                     return (
-                      <div key={index} style={{ marginRight: "20px" }}>
+                      <div key={index} style={{ marginRight: '20px' }}>
                         <ProfileCard
                           profileName={visibleProfiles[index][0]}
                           profileImage={visibleProfiles[index][1]}
@@ -209,17 +198,15 @@ const MainTeam = () => {
         {remainingProfiles.length > 0 && (
           <Container
             style={{
-              marginTop: "20px",
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
+              marginTop: '20px',
+              display: 'flex',
+              justifyContent: 'center',
+            }}>
             {!showLess && (
               <Button
                 onClick={handleShowMore}
                 variant="outlined"
-                style={{ color: "black", border: "none" }}
-              >
+                style={{ color: 'black', border: 'none' }}>
                 Show More
               </Button>
             )}
@@ -227,8 +214,7 @@ const MainTeam = () => {
               <Button
                 onClick={handleShowLess}
                 variant="outlined"
-                style={{ color: "black", border: "none" }}
-              >
+                style={{ color: 'black', border: 'none' }}>
                 Show Less
               </Button>
             )}
@@ -238,177 +224,165 @@ const MainTeam = () => {
       <div
         style={{
           height: 565,
-          width: "100%",
-          background: "#09283F",
-          marginTop: "25px",
-        }}
-      >
+          width: '100%',
+          background: '#09283F',
+          marginTop: '25px',
+        }}>
         <Stack
-          direction={"row"}
+          direction={'row'}
           spacing={12}
-          style={{ justifyContent: "center", alignItems: "center" }}
-        >
+          style={{ justifyContent: 'center', alignItems: 'center' }}>
           <div
             style={{
-              position: "relative",
-              height: "306px",
-              width: "376px",
-              background: "#114164",
-              marginTop: "54px",
-            }}
-          >
+              position: 'relative',
+              height: '306px',
+              width: '376px',
+              background: '#114164',
+              marginTop: '54px',
+            }}>
             <p
               style={{
-                position: "absolute",
-                color: "white",
-                fontSize: "30px",
-                width: "149px",
-                textAlign: "left",
-                lineHeight: "31.69px",
-                fontFamily: "Montserrat",
+                position: 'absolute',
+                color: 'white',
+                fontSize: '30px',
+                width: '149px',
+                textAlign: 'left',
+                lineHeight: '31.69px',
+                fontFamily: 'Montserrat',
                 top: 30,
                 left: 28,
-              }}
-            >
+              }}>
               <strong>Careers</strong>
             </p>
             <p
               style={{
-                position: "absolute",
-                color: "white",
-                fontSize: "20px",
-                width: "216px",
-                textAlign: "left",
-                lineHeight: "31.69px",
-                fontFamily: "Montserrat",
+                position: 'absolute',
+                color: 'white',
+                fontSize: '20px',
+                width: '216px',
+                textAlign: 'left',
+                lineHeight: '31.69px',
+                fontFamily: 'Montserrat',
                 top: 96,
                 left: 28,
-              }}
-            >
+              }}>
               Join Afifi Law Office
             </p>
             <p
               style={{
-                position: "absolute",
-                color: "white",
-                fontSize: "15px",
-                width: "316px",
-                textAlign: "left",
-                fontFamily: "Montserrat",
-                fontStyle: "italic",
-                height: "72px",
+                position: 'absolute',
+                color: 'white',
+                fontSize: '15px',
+                width: '316px',
+                textAlign: 'left',
+                fontFamily: 'Montserrat',
+                fontStyle: 'italic',
+                height: '72px',
                 top: 161,
                 left: 28,
-              }}
-            >
+              }}>
               We consistently welcome accomplished and ambitious professionals
               to join our team and contribute to our ongoing success story.
             </p>
             <p
               style={{
-                color: "white",
-                textAlign: "right",
+                color: 'white',
+                textAlign: 'right',
                 bottom: 10,
-                position: "absolute",
+                position: 'absolute',
                 right: 35,
                 fontSize: 15,
-                display: "flex",
-                alignItems: "center",
-                transition: "transform 0.3s", // Apply transition to transform property
-                cursor: "pointer",
+                display: 'flex',
+                alignItems: 'center',
+                transition: 'transform 0.3s', // Apply transition to transform property
+                cursor: 'pointer',
               }}
               onMouseEnter={() => setIsHovered5(true)}
-              onMouseLeave={() => setIsHovered5(false)}
-            >
+              onMouseLeave={() => setIsHovered5(false)}>
               <span
                 style={{
-                  marginRight: isHovered5 ? "20px" : "10px",
-                  transition: "margin-right 0.3s",
-                }}
-              >
+                  marginRight: isHovered5 ? '20px' : '10px',
+                  transition: 'margin-right 0.3s',
+                }}>
                 Join Us
               </span>
               <ChangeHistoryIcon
                 style={{
-                  color: "orange",
+                  color: 'orange',
                   transform: isHovered5
-                    ? "translateX(-5px) rotateZ(90deg)"
-                    : "rotateZ(90deg)", // Adjust transform on hover
-                  width: "15px",
-                  transition: "transform 0.3s", // Apply transition to transform property
+                    ? 'translateX(-5px) rotateZ(90deg)'
+                    : 'rotateZ(90deg)', // Adjust transform on hover
+                  width: '15px',
+                  transition: 'transform 0.3s', // Apply transition to transform property
                 }}
               />
             </p>
           </div>
           <div
             style={{
-              height: "457px",
-              width: "850px",
-              marginTop: "54px",
-              position: "relative",
-              overflow: "hidden", // Prevent image overflow
-              padding: "20px 0", // Add padding to maintain space for the image
+              height: '457px',
+              width: '850px',
+              marginTop: '54px',
+              position: 'relative',
+              overflow: 'hidden', // Prevent image overflow
+              padding: '20px 0', // Add padding to maintain space for the image
             }}
             onMouseEnter={() => setIsHovered4(true)}
-            onMouseLeave={() => setIsHovered4(false)}
-          >
+            onMouseLeave={() => setIsHovered4(false)}>
             <img
               src={bx6}
               alt="side"
               style={{
-                objectFit: "cover",
-                position: "absolute",
-                top: isHovered4 ? "-20px" : "0", // Adjust top position based on hover
-                left: "0",
-                width: "100%",
-                transition: "top 0.3s ease", // Smooth transition for "translation"
+                objectFit: 'cover',
+                position: 'absolute',
+                top: isHovered4 ? '-20px' : '0', // Adjust top position based on hover
+                left: '0',
+                width: '100%',
+                transition: 'top 0.3s ease', // Smooth transition for "translation"
               }}
             />
             <div
               style={{
-                position: "absolute",
+                position: 'absolute',
                 top: 0,
                 left: 0,
-                width: "100%",
-                height: "100%",
+                width: '100%',
+                height: '100%',
                 backgroundColor: isHovered4
-                  ? "rgba(0, 0, 0, 0.5)"
-                  : "transparent",
-                transition: "background-color 0.3s ease",
-              }}
-            ></div>
+                  ? 'rgba(0, 0, 0, 0.5)'
+                  : 'transparent',
+                transition: 'background-color 0.3s ease',
+              }}></div>
             <p
               style={{
-                position: "absolute",
-                color: "white",
-                fontSize: "40px",
-                width: "600px",
-                textAlign: "left",
-                lineHeight: "31.69px",
-                fontFamily: "Montserrat",
+                position: 'absolute',
+                color: 'white',
+                fontSize: '40px',
+                width: '600px',
+                textAlign: 'left',
+                lineHeight: '31.69px',
+                fontFamily: 'Montserrat',
                 top: 145,
                 left: 49,
                 zIndex: 1, // Ensure text is above the overlay
-              }}
-            >
+              }}>
               Accountability is Significant
             </p>
             <p
               style={{
-                position: "absolute",
-                color: "white",
-                fontSize: "25px",
-                width: "600px",
-                height: "120px",
-                textAlign: "left",
-                lineHeight: "31.69px",
-                fontFamily: "Montserrat",
-                fontStyle: "italic",
+                position: 'absolute',
+                color: 'white',
+                fontSize: '25px',
+                width: '600px',
+                height: '120px',
+                textAlign: 'left',
+                lineHeight: '31.69px',
+                fontFamily: 'Montserrat',
+                fontStyle: 'italic',
                 top: 226,
                 left: 49,
                 zIndex: 1, // Ensure text is above the overlay
-              }}
-            >
+              }}>
               Afifi Law Office is an expanding global law firm characterized by
               its dynamism and unwavering commitment to conducting business
               responsibly.
