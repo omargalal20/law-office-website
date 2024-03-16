@@ -16,7 +16,7 @@ const Practice = React.lazy(
 
 // Insights
 const MainInsights = React.lazy(
-  () => import('../pages/Insights/MainInsights/MainInsights.jsx')
+  () => import('../pages/Insights/MainInsights/mainInsights.jsx')
 );
 const PersonalRelatedInsights = React.lazy(
   () =>

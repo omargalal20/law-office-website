@@ -2,15 +2,14 @@ import ProfessionalsHeroImage from '../../../assets/Images/Careers/Professionals
 
 import HeroCareers from '../../../components/Common/Hero/HeroCareers';
 import SectionHeaderWithoutArrow from '../../../components/Common/Section/sectionHeaderWithoutArrow';
-import CustomInput from '../../../components/Common/Input/CustomInput';
-import HoverableButton from '../../../components/Common/Button/HoverableButton';
+import CustomForm from '../../../components/Common/Form/CustomForm';
 
 import { FormConstants } from '../../../constants/Constants';
 
 import createTheme from '@mui/material/styles/createTheme';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
 import Container from '@mui/material/Container';
-import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
 
 const theme = createTheme({
   breakpoints: {
@@ -58,7 +57,7 @@ const Professionals = () => {
       inputTitle: 'Email Address',
     },
     {
-      inputType: FormConstants.TEXT,
+      inputType: FormConstants.PHONE_NUMBER,
       inputTitle: 'Phone Number',
     },
     {
@@ -90,17 +89,13 @@ const Professionals = () => {
             sectionInfo={firstSectionHeader}
           />
 
-          <Stack direction={'column'} spacing={3}>
-            {formInputs.map((input, index) => (
-              <CustomInput
-                key={index}
-                inputType={input.inputType}
-                inputTitle={input.inputTitle}
-              />
-            ))}
-          </Stack>
-
-          <HoverableButton buttonText={'Apply Now'} />
+          <Box
+            style={{
+              width: '60%'
+            }}
+          >
+            <CustomForm key={'Professionals Form'} inputs={formInputs} buttonText={'Apply Now'} />
+          </Box>
         </Container>
       </ThemeProvider>
     </>

@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 import CustomUploadArrow from '../../../../assets/Images/Misc/Upload-Input-Arrow.svg';
 
-import { Button, message, Upload, Typography } from 'antd';
+import { Button, message, Upload, Typography, Form } from 'antd';
 import Stack from '@mui/material/Stack';
 
 const props = {
@@ -30,22 +30,32 @@ const CustomUpload = ({ title }) => {
           fontSize: '25px',
           fontFamily: 'Montserrat',
           fontWeight: 400,
-          marginTop: '20px',
+          marginTop: '30px',
         }}>
         {title}
       </Typography.Title>
 
       <Stack direction={'row'} spacing={3} alignItems={'center'}>
-        <Upload {...props}>
-          <Button style={{ display: 'flex', alignItems: 'center' }}>
-            <Typography.Text>Upload Files</Typography.Text>
-            <img
-              src={CustomUploadArrow}
-              alt="icon"
-              style={{ marginLeft: '10px' }}
-            />
-          </Button>
-        </Upload>
+        <Form.Item
+          name={title}
+          rules={[
+            {
+              required: true,
+              message: 'Please upload ' + title + ' !',
+            },
+          ]}
+        >
+          <Upload {...props}>
+            <Button style={{ display: 'flex', alignItems: 'center' }}>
+              <Typography.Text>Upload Files</Typography.Text>
+              <img
+                src={CustomUploadArrow}
+                alt="icon"
+                style={{ marginLeft: '10px' }}
+              />
+            </Button>
+          </Upload>
+        </Form.Item>
         <Typography.Text style={{ color: '#0000008C' }}>
           Resume / Cover Letter/ Additional Documents/ ETC....
         </Typography.Text>

@@ -3,8 +3,7 @@ import BoatImage from '../../../assets/Images/Careers/InternsBoatImage.jpeg';
 import TelescopeImage from '../../../assets/Images/Careers/InternsTelescopeImage.jpeg';
 
 import HeroCareers from '../../../components/Common/Hero/HeroCareers';
-import CustomInput from '../../../components/Common/Input/CustomInput';
-import HoverableButton from '../../../components/Common/Button/HoverableButton';
+import CustomForm from '../../../components/Common/Form/CustomForm';
 import SectionHeaderWithoutArrow from '../../../components/Common/Section/sectionHeaderWithoutArrow';
 import ApplyNowSection from '../../../components/Page/Careers/Interns/ApplyNowSection';
 
@@ -63,7 +62,7 @@ const Interns = () => {
       inputTitle: 'Email Address',
     },
     {
-      inputType: FormConstants.TEXT,
+      inputType: FormConstants.PHONE_NUMBER,
       inputTitle: 'Phone Number',
     },
     {
@@ -218,17 +217,13 @@ const Interns = () => {
         <Container
           maxWidth="lg"
           style={{ marginTop: '10vh', marginBottom: '10vh' }}>
-          <Stack direction={'column'} spacing={3}>
-            {formInputs.map((input, index) => (
-              <CustomInput
-                key={index}
-                inputType={input.inputType}
-                inputTitle={input.inputTitle}
-              />
-            ))}
-          </Stack>
-
-          <HoverableButton buttonText={'Apply Now'} />
+          <Box
+            style={{
+              width: '60%'
+            }}
+          >
+            <CustomForm key={'Professionals Form'} inputs={formInputs} buttonText={'Apply Now'} />
+          </Box>
         </Container>
       </ThemeProvider>
     </>

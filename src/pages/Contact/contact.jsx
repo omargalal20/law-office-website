@@ -1,10 +1,9 @@
 import contactbg from '../../assets/Images/Contact/contact.svg';
 
 import HeaderBar from '../../components/Layout/Header/header';
-import CustomInput from '../../components/Common/Input/CustomInput';
 import SectionHeaderWithoutArrow from '../../components/Common/Section/sectionHeaderWithoutArrow';
 import Maps from '../../components/Page/Contact/Maps';
-import HoverableButton from '../../components/Common/Button/HoverableButton';
+import CustomForm from '../../components/Common/Form/CustomForm';
 
 import { FormConstants } from '../../constants/Constants';
 
@@ -12,6 +11,7 @@ import Stack from '@mui/material/Stack';
 import createTheme from '@mui/material/styles/createTheme';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
 import Container from '@mui/material/Container';
+import Box from '@mui/material/Box';
 
 const theme = createTheme({
   breakpoints: {
@@ -46,27 +46,12 @@ const Contact = () => {
     },
     {
       inputType: FormConstants.TEXT,
-      inputTitle: 'Email Address',
+      inputTitle: 'Email',
       largeInput: false,
     },
     {
-      inputType: FormConstants.TEXT,
-      inputTitle: 'Nearest Office',
-      largeInput: false,
-    },
-    {
-      inputType: FormConstants.TEXT,
-      inputTitle: 'Expertise',
-      largeInput: false,
-    },
-    {
-      inputType: FormConstants.TEXT,
-      inputTitle: 'Enquiry Type',
-      largeInput: false,
-    },
-    {
-      inputType: FormConstants.TEXT,
-      inputTitle: 'Nearest Office',
+      inputType: FormConstants.PHONE_NUMBER,
+      inputTitle: 'Phone Number',
       largeInput: false,
     },
     {
@@ -133,12 +118,16 @@ const Contact = () => {
             left: 80,
             right: 0,
             color: 'white',
-            fontSize: '50px',
-            width: '800px',
+            fontFamily: 'Montserrat',
+            fontSize: '60px',
             fontWeight: '500',
+            lineHeight: '73px',
+            letterSpacing: '0em',
+            width: '800px',
           }}>
           Contact Us
         </p>
+
         <p
           style={{
             position: 'absolute',
@@ -146,10 +135,12 @@ const Contact = () => {
             left: 80,
             right: 0,
             color: 'white',
-            fontSize: '40px',
-            width: '817px',
-            fontWeight: '100',
             fontFamily: 'Montserrat',
+            fontSize: '40px',
+            fontWeight: '300',
+            lineHeight: '49px',
+            letterSpacing: '0em',
+            width: '817px',
           }}>
           Thank you for considering Afifi Law Office
         </p>
@@ -165,18 +156,13 @@ const Contact = () => {
           />
 
           <Stack direction={'row'} spacing={8}>
-            <Stack direction={'column'} spacing={3}>
-              {formInputs.map((input, index) => (
-                <CustomInput
-                  key={index}
-                  inputType={input.inputType}
-                  inputTitle={input.inputTitle}
-                  largeInput={input.largeInput}
-                />
-              ))}
-
-              <HoverableButton buttonText={'Send Message'} />
-            </Stack>
+            <Box
+              style={{
+                width: '60%'
+              }}
+            >
+              <CustomForm key={'Professionals Form'} inputs={formInputs} buttonText={'Apply Now'} />
+            </Box>
 
             <Maps />
           </Stack>
