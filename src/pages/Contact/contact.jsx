@@ -158,10 +158,13 @@ const Contact = () => {
           <Stack direction={'row'} spacing={8}>
             <Box
               style={{
-                width: '60%'
-              }}
-            >
-              <CustomForm key={'Professionals Form'} inputs={formInputs} buttonText={'Apply Now'} />
+                width: '60%',
+              }}>
+              <CustomForm
+                key={'Professionals Form'}
+                inputs={formInputs}
+                buttonText={'Apply Now'}
+              />
             </Box>
 
             <Maps />

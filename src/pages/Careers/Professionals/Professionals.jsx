@@ -91,10 +91,13 @@ const Professionals = () => {
 
           <Box
             style={{
-              width: '60%'
-            }}
-          >
-            <CustomForm key={'Professionals Form'} inputs={formInputs} buttonText={'Apply Now'} />
+              width: '60%',
+            }}>
+            <CustomForm
+              key={'Professionals Form'}
+              inputs={formInputs}
+              buttonText={'Apply Now'}
+            />
           </Box>
         </Container>
       </ThemeProvider>

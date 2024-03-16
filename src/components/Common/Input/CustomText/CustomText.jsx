@@ -21,8 +21,7 @@ const CustomText = ({ title, largeInput = false }) => {
             required: true,
             message: 'Please input ' + title + ' !',
           },
-        ]}
-      >
+        ]}>
         {largeInput ? (
           <Input
             style={{

@@ -43,8 +43,7 @@ const CustomUpload = ({ title }) => {
               required: true,
               message: 'Please upload ' + title + ' !',
             },
-          ]}
-        >
+          ]}>
           <Upload {...props}>
             <Button style={{ display: 'flex', alignItems: 'center' }}>
               <Typography.Text>Upload Files</Typography.Text>

@@ -1,21 +1,21 @@
 .button {
-    border: none;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
+  border: none;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .hovered-button {
-    border: none;
-    font-family: Montserrat;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: underline;
-    color: brown;
+  border: none;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-decoration: underline;
+  color: brown;
 }
