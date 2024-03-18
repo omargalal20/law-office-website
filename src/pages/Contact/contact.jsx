@@ -5,7 +5,7 @@ import SectionHeaderWithoutArrow from '../../components/Common/Section/sectionHe
 import Maps from '../../components/Page/Contact/Maps';
 import CustomForm from '../../components/Common/Form/CustomForm';
 
-import { FormConstants } from '../../constants/Constants';
+import { FormConstants } from '../../utils/Constants';
 
 import Stack from '@mui/material/Stack';
 import createTheme from '@mui/material/styles/createTheme';

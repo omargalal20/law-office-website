@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PropTypes from 'prop-types';
 
-import { MainInsightsConstants } from '../../../constants/Constants';
+import { MainInsightsConstants } from '../../../utils/Constants';
 
 import dentonsHongKong from '../../../assets/Images/Insights/main-insights-denton-hong-kong-logo.svg';
 import viewMoreInsightsArrow from '../../../assets/Images/Insights/view-more-insights-arrow.svg';

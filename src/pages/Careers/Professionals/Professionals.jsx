@@ -4,7 +4,7 @@ import HeroCareers from '../../../components/Common/Hero/HeroCareers';
 import SectionHeaderWithoutArrow from '../../../components/Common/Section/sectionHeaderWithoutArrow';
 import CustomForm from '../../../components/Common/Form/CustomForm';
 
-import { FormConstants } from '../../../constants/Constants';
+import { FormConstants } from '../../../utils/Constants';
 
 import createTheme from '@mui/material/styles/createTheme';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
