@@ -7,7 +7,7 @@ import CustomForm from '../../../components/Common/Form/CustomForm';
 import SectionHeaderWithoutArrow from '../../../components/Common/Section/sectionHeaderWithoutArrow';
 import ApplyNowSection from '../../../components/Page/Careers/Interns/ApplyNowSection';
 
-import { FormConstants } from '../../../constants/Constants';
+import { FormConstants } from '../../../utils/Constants';
 
 import createTheme from '@mui/material/styles/createTheme';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-import { FormConstants } from '../../../constants/Constants';
+import { FormConstants } from '../../../utils/Constants';
 
 import CustomText from './CustomText/CustomText';
 import CustomCheckbox from './CustomCheckbox/CustomCheckbox';

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import { MainInsightsConstants } from '../../../constants/Constants';
+import { MainInsightsConstants } from '../../../utils/Constants';
 
 import insightsOfficeAdvantagePrimaryImage from '../../../assets/Images/Insights/main-insights-office-advantage-1.png';
 import sectionHeaderArrow from '../../../assets/Images/Misc/section-header-arrow.svg';

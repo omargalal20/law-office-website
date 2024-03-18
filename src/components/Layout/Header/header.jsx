@@ -1,7 +1,11 @@
-import React from 'react';
+import { useState } from 'react';
+
 import mainLogo from '../../../assets/Images/Misc/main.svg';
 import drawerLogo from '../../../assets/Images/Misc/drawerLogo.svg';
 import mobLogo from '../../../assets/Images/Misc/mobLogo.svg';
+
+import Search from '../../Common/Search/Search';
+
 import Box from '@mui/material/Box';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
@@ -12,11 +16,11 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import Stack from '@mui/material/Stack';
-import { makeStyles } from '@mui/styles';
-import SearchIcon from '@mui/icons-material/Search';
-import TextField from '@mui/material/TextField';
-import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+
+import useTheme from '@mui/material/styles/useTheme';
+import makeStyles from '@mui/styles/makeStyles';
+
 import MenuIcon from '@mui/icons-material/Menu';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import CloseIcon from '@mui/icons-material/Close';
@@ -45,7 +49,7 @@ export default function HeaderBar() {
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('lg'));
 
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleDrawer = newOpen => () => {
     setOpen(newOpen);
@@ -138,28 +142,9 @@ export default function HeaderBar() {
       <IconButton href="/">
         <img src={mobLogo} alt="Home" />
       </IconButton>
-      <div className={classes.searchContainer}>
-        <TextField
-          id="input-with-sx"
-          label="Search Here"
-          variant="standard"
-          style={{ width: 180 }}
-          InputProps={{
-            sx: {
-              color: 'white',
-              '& .MuiInputBase-root': {
-                color: 'white', // To change input text color
-              },
-            },
-          }}
-          InputLabelProps={{
-            style: {
-              color: 'white',
-              fontSize: '14px',
-            },
-          }}
-        />
-      </div>
+
+      <Search key={'Search-Header'} inputColor='white' isSmallScreen={isSmallScreen} />
+
       <div>
         <IconButton onClick={toggleDrawer(true)}>
           <MenuIcon style={{ color: 'white' }} />
@@ -176,38 +161,15 @@ export default function HeaderBar() {
           <img src={mainLogo} alt="Home" />
         </IconButton>
       </div>
-      <div className={classes.center}>
-        <SearchIcon
-          sx={{ transform: 'translate(-10px, 10px)' }}
-          style={{ color: 'white' }}
-        />
-        <TextField
-          id="input-with-sx"
-          label="Search Here"
-          variant="standard"
-          style={{ width: 630 }}
-          sx={{
-            border: 'none',
-            '& .MuiTextField-root': {
-              color: 'white',
-            },
-          }}
-          InputLabelProps={{
-            style: {
-              color: 'white',
-            },
-          }}
-        />
-      </div>
+
+      <Search key={'Search-Header'} inputColor='white' isSmallScreen={isSmallScreen} />
+
       <div className={classes.root}>
         <IconButton onClick={toggleDrawer(true)}>
           <img src={drawerLogo} alt="Icon" />
         </IconButton>
       </div>
-      <Drawer
-        open={open}
-        onClose={toggleDrawer(false)}
-        anchor="top                                                                                                 ">
+      <Drawer open={open} onClose={toggleDrawer(false)} anchor="top">
         {DrawerList}
       </Drawer>
     </Stack>

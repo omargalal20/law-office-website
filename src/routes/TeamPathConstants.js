@@ -1,6 +1,32 @@
 const TeamPathConstants = {
   MAIN: '/team',
   PROFILE: '/team/:profileName',
+  HABIL_ABU_EL_KHEIR: '/team/habil-abu-el-kheir',
+  TAMER_KAMAL: '/team/tamer-kamal',
+  MOHAMED_TAYEL: '/team/mohamed-tayel',
+  HOSSAM_EL_SHARAWI: '/team/hossam-el-sharawi',
+  GAMIL_DORGHAM: '/team/gamil-dorgham',
+  MAHMOUD_MAHER: '/team/mahmoud-maher',
+  ADEL_FEKRY: '/team/adel-fekry',
+  ALIA_SAFEI: '/team/alia-safei',
+  ANDREW_AFIFI: '/team/andrew-afifi',
+  ASSER_NEGM_EL_DIN: '/team/asser-negm-el-din',
+  EMIL_GHOBRIAL: '/team/emil-ghobrial',
+  AMIN_KAMAL_AMIN: '/team/amin-kamal-amin',
+  WALID_SAKR: '/team/walid-sakr',
+  ADEL_RASHEED: '/team/adel-rasheed',
+  EMIL_LABIB_HANA: '/team/emil-labib-hana',
+  GAMAL_ABDEL_RAZAK: '/team/gamal-abdel-razak',
+  HANY_EDWARD: '/team/hany-edward',
+  NANCY_NASHAT: '/team/nancy-nashat',
+  MARY_RIZKALLA: '/team/mary-rizkalla',
+  BESHOY_MELAD: '/team/beshoy-melad',
+  FADY_SEIF: '/team/fady-seif',
+  AHMED_RASHEED: '/team/ahmed-rasheed',
+  ABANOUB_THARWAT: '/team/abanoub-tharwat',
+  MAHROUS_SHAFIK: '/team/mahrous-shafik',
+  AMAL_AFIFI: '/team/amal-afifi',
 };
+
 
 export default TeamPathConstants;
