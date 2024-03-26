@@ -31,10 +31,6 @@ import hanyEdwardProfilePic from '../../assets/Images/Misc/Image-Not-Found.jpg';
 import antitrustChallengesImage from '../../assets/Images/Team/Rectangle 20 (1).png';
 import eCommerceImage from '../../assets/Images/Team/Group 58 (1).png';
 import globalMergerControlImage from '../../assets/Images/Team/Group 59 (1).png';
-import hybridWorkModelsImage from '../../assets/Images/Team/Group 87 (3).png';
-import flexibleBenefitsPackagesImages from '../../assets/Images/Team/Group 88 (2).png';
-import greenLivingImage from '../../assets/Images/PracticeArea/RealEstate/real-estate-green-living.jpeg';
-import interestRateImage from '../../assets/Images/PracticeArea/RealEstate/real-estate-interest-rates.jpeg';
 import remoteWorkImage from '../../assets/Images/PracticeArea/RealEstate/real-estate-remote-work.jpeg';
 import technologyImage from '../../assets/Images/PracticeArea/RealEstate/real-estate-technology.jpeg';
 import smartHomesImage from '../../assets/Images/PracticeArea/RealEstate/real-estate-smart-homes.jpeg';
@@ -44,6 +40,18 @@ import corporateRegulatoryImage from '../../assets/Images/Team/corporateRegulato
 import corporateSupplyChainImage from '../../assets/Images/Team/corporateSupplyChain.jpeg';
 import corporateBiImage from '../../assets/Images/Team/corporateBi.jpeg';
 import corporateDigitalTransformationImage from '../../assets/Images/Team/corporateDigitalTransformation.jpeg';
+
+import WhiteCollarCrimeHero from '../../assets/Images/PracticeArea/WhiteCollarCrime/WhiteCollarCrimeHero.jpeg';
+import LitigationHero from '../../assets/Images/PracticeArea/Litigation/LitigationHero.jpeg';
+import ArbitrationHero from '../../assets/Images/PracticeArea/Arbitration/arbitrationHero.jpeg';
+import ConstructionTrendsHero from '../../assets/Images/Insights/main-insights-construction-trends.jpeg';
+import corporateHero from '../../assets/Images/PracticeArea/Corporate/corporatehero.jpeg';
+import CorporateGovernanceHero from '../../assets/Images/PracticeArea/CorporateGovernance/CorporateGovernanceHero.jpeg';
+import BankingAndFinanceHero from '../../assets/Images/PracticeArea/BankingAndFinance/banking-and-finance-hero-image.jpeg';
+import AviationHero from '../../assets/Images/PracticeArea/Aviation/hero.svg';
+import EmploymentHero from '../../assets/Images/PracticeArea/Employment/EmploymentHero.jpeg';
+import RealEstateHero from '../../assets/Images/PracticeArea/RealEstate/real-estate-hero-image.jpeg';
+import OilAndGasHero from '../../assets/Images/PracticeArea/OilAndGas/oil-gas-hero-image.jpeg';
 
 export const LatestNewsImages = [
   {
@@ -114,21 +122,27 @@ export const ProfileImagesData = {
     profileImage: habilAbuElKheirProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: hybridWorkModelsImage,
-        title: 'Employment',
-        textLines: ['Employment', 'Hybrid Work Models', '', '31 January, 2024'],
-        toPage: PracticeAreasConstants.EMPLOYMENT,
-      },
-      {
-        img: flexibleBenefitsPackagesImages,
-        title: 'Employment',
+        img: WhiteCollarCrimeHero,
+        title: 'White Collar Crime',
         textLines: [
-          'Employment',
-          'Flexible Benefits Packages',
+          'White Collar Crime',
+          'White Collar Crime',
           '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.EMPLOYMENT,
+        toPage: PracticeAreasConstants.WHITE_COLLAR_CRIME,
+      },
+      {
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
+      },
+      {
+        img: ArbitrationHero,
+        title: 'Adaptions',
+        textLines: ['Arbitration', 'Arbitration', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.ARBITRATION,
       },
     ],
     latestNewsImages: [
@@ -173,21 +187,33 @@ export const ProfileImagesData = {
     profileImage: tamerKandilProfileImage,
     relatedPracticeAreasImages: [
       {
-        img: hybridWorkModelsImage,
-        title: 'Employment',
-        textLines: ['Employment', 'Hybrid Work Models', '', '31 January, 2024'],
-        toPage: PracticeAreasConstants.EMPLOYMENT,
-      },
-      {
-        img: flexibleBenefitsPackagesImages,
-        title: 'Employment',
+        img: WhiteCollarCrimeHero,
+        title: 'White Collar Crime',
         textLines: [
-          'Employment',
-          'Flexible Benefits Packages',
+          'White Collar Crime',
+          'White Collar Crime',
           '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.EMPLOYMENT,
+        toPage: PracticeAreasConstants.WHITE_COLLAR_CRIME,
+      },
+      {
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
+      },
+      {
+        img: ArbitrationHero,
+        title: 'Adaptions',
+        textLines: ['Arbitration', 'Arbitration', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.ARBITRATION,
+      },
+      {
+        img: ConstructionTrendsHero,
+        title: 'Construction',
+        textLines: ['Construction', 'Construction', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.CONSTRUCTION,
       },
     ],
     latestNewsImages: [
@@ -232,7 +258,7 @@ export const ProfileImagesData = {
     profileImage: mohamedTayelProfileImage,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
+        img: corporateHero,
         title: 'Corporate',
         textLines: [
           'Corporate',
@@ -243,16 +269,28 @@ export const ProfileImagesData = {
         toPage: PracticeAreasConstants.CORPORATE,
       },
       {
-        img: corporateRegulatoryImage,
+        img: CorporateGovernanceHero,
         title: 'Corporate',
         textLines: [
-          'Corporate',
+          'Corporate Governance',
           'Regulatory Compliance',
           'and Changes',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.CORPORATE_GOVERNANCE,
       },
+      {
+        img: BankingAndFinanceHero,
+        title: 'Banking & Finance',
+        textLines: [
+          'Banking & Finance',
+          'Digital',
+          'Banking Transformation',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.BANKING_AND_FINANCE,
+      },
+
     ],
     latestNewsImages: [
       {
@@ -288,26 +326,26 @@ export const ProfileImagesData = {
     profileImage: hossamElSharawiProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
+        img: AviationHero,
+        title: 'Aviation',
         textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
+          'Aviation',
+          'Aviation',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.AVIATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
     ],
     latestNewsImages: [
@@ -344,27 +382,33 @@ export const ProfileImagesData = {
     profileImage: gamilDorghamProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: greenLivingImage,
-        title: 'Real Estate',
+        img: WhiteCollarCrimeHero,
+        title: 'White Collar Crime',
         textLines: [
-          'Real Estate',
-          'Sustainable and Green Living',
+          'White Collar Crime',
+          'White Collar Crime',
           '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.WHITE_COLLAR_CRIME,
       },
       {
-        img: interestRateImage,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
+      },
+      {
+        img: RealEstateHero,
         title: 'Real Estate',
         textLines: [
           'Real Estate',
-          'Impact of Changing Interest Rates',
+          'Real Estate',
           '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
-      },
+        toPage: PracticeAreasConstants.REAL_ESTATE,
+      }
     ],
     latestNewsImages: [
       {
@@ -415,15 +459,26 @@ export const ProfileImagesData = {
         toPage: PracticeAreasConstants.CORPORATE,
       },
       {
-        img: corporateRegulatoryImage,
+        img: CorporateGovernanceHero,
         title: 'Corporate',
         textLines: [
-          'Corporate',
+          'Corporate Governance',
           'Regulatory Compliance',
           'and Changes',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.CORPORATE_GOVERNANCE,
+      },
+      {
+        img: EmploymentHero,
+        title: 'Employment',
+        textLines: [
+          'Employment',
+          'Employment',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
     ],
     latestNewsImages: [
@@ -572,15 +627,20 @@ export const ProfileImagesData = {
     profileImage: andrewAfifiProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
+      },
+      {
+        img: technologyImage,
+        title: 'Real Estate',
         textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
+          'Real Estate',
+          'Technology in Real Estate',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.TECHNOLOGY,
       },
       {
         img: corporateRegulatoryImage,
@@ -593,6 +653,17 @@ export const ProfileImagesData = {
         ],
         toPage: PracticeAreasConstants.CORPORATE,
       },
+      {
+        img: OilAndGasHero,
+        title: 'Oil And Gas',
+        textLines: [
+          'Oil And Gas',
+          'Oil And Gas',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.OIL_AND_GAS,
+      }
     ],
     latestNewsImages: [
       {
@@ -639,16 +710,27 @@ export const ProfileImagesData = {
         toPage: PracticeAreasConstants.CORPORATE,
       },
       {
-        img: corporateRegulatoryImage,
+        img: CorporateGovernanceHero,
         title: 'Corporate',
         textLines: [
-          'Corporate',
+          'Corporate Governance',
           'Regulatory Compliance',
           'and Changes',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.CORPORATE_GOVERNANCE,
       },
+      {
+        img: EmploymentHero,
+        title: 'Employment',
+        textLines: [
+          'Employment',
+          'Employment',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.EMPLOYMENT,
+      }
     ],
     latestNewsImages: [
       {
@@ -695,15 +777,15 @@ export const ProfileImagesData = {
         toPage: PracticeAreasConstants.CORPORATE,
       },
       {
-        img: corporateRegulatoryImage,
+        img: CorporateGovernanceHero,
         title: 'Corporate',
         textLines: [
-          'Corporate',
+          'Corporate Governance',
           'Regulatory Compliance',
           'and Changes',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.CORPORATE_GOVERNANCE,
       },
     ],
     latestNewsImages: [
@@ -740,27 +822,33 @@ export const ProfileImagesData = {
     profileImage: aminKamalAminProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
-        textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
-          '31 January, 2024',
-        ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
+      {
+        img: RealEstateHero,
+        title: 'Real Estate',
+        textLines: [
+          'Real Estate',
+          'Real Estate',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.REAL_ESTATE,
+      }
     ],
     latestNewsImages: [
       {
@@ -795,6 +883,12 @@ export const ProfileImagesData = {
   walidSakr: {
     profileImage: walidSakrProfilePic,
     relatedPracticeAreasImages: [
+      {
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
+      },
       {
         img: corporateWorkImage,
         title: 'Corporate',
@@ -853,27 +947,44 @@ export const ProfileImagesData = {
     profileImage: adelRasheedProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
-        textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
-          '31 January, 2024',
-        ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
+      {
+        img: WhiteCollarCrimeHero,
+        title: 'White Collar Crime',
+        textLines: [
+          'White Collar Crime',
+          'White Collar Crime',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.WHITE_COLLAR_CRIME,
+      },
+      {
+        img: RealEstateHero,
+        title: 'Real Estate',
+        textLines: [
+          'Real Estate',
+          'Real Estate',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.REAL_ESTATE,
+      }
     ],
     latestNewsImages: [
       {
@@ -909,26 +1020,32 @@ export const ProfileImagesData = {
     profileImage: emilLabibHanaProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
-        textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
-          '31 January, 2024',
-        ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
+      },
+      {
+        img: WhiteCollarCrimeHero,
+        title: 'White Collar Crime',
+        textLines: [
+          'White Collar Crime',
+          'White Collar Crime',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.WHITE_COLLAR_CRIME,
       },
     ],
     latestNewsImages: [
@@ -965,27 +1082,33 @@ export const ProfileImagesData = {
     profileImage: gamalAbdelRazakProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
-        textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
-          '31 January, 2024',
-        ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
+      {
+        img: WhiteCollarCrimeHero,
+        title: 'White Collar Crime',
+        textLines: [
+          'White Collar Crime',
+          'White Collar Crime',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.WHITE_COLLAR_CRIME,
+      }
     ],
     latestNewsImages: [
       {
@@ -1021,27 +1144,33 @@ export const ProfileImagesData = {
     profileImage: hanyEdwardProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
-        textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
-          '31 January, 2024',
-        ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
+      {
+        img: RealEstateHero,
+        title: 'Real Estate',
+        textLines: [
+          'Real Estate',
+          'Real Estate',
+          '',
+          '31 January, 2024',
+        ],
+        toPage: PracticeAreasConstants.REAL_ESTATE,
+      }
     ],
     latestNewsImages: [
       {
@@ -1301,26 +1430,21 @@ export const ProfileImagesData = {
     profileImage: fadySeifProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
-        textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
-          '31 January, 2024',
-        ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
     ],
     latestNewsImages: [
@@ -1413,26 +1537,21 @@ export const ProfileImagesData = {
     profileImage: abanoubTharwatProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
-        textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
-          '31 January, 2024',
-        ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
     ],
     latestNewsImages: [
@@ -1469,26 +1588,21 @@ export const ProfileImagesData = {
     profileImage: mahrousShafikProfilePic,
     relatedPracticeAreasImages: [
       {
-        img: corporateWorkImage,
-        title: 'Corporate',
-        textLines: [
-          'Corporate',
-          'Remote and Hybrid Work',
-          'Models',
-          '31 January, 2024',
-        ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        img: LitigationHero,
+        title: 'Litigation',
+        textLines: ['Litigation', 'Litigation', '', '31 January, 2024'],
+        toPage: PracticeAreasConstants.LITIGATION,
       },
       {
-        img: corporateRegulatoryImage,
-        title: 'Corporate',
+        img: EmploymentHero,
+        title: 'Employment',
         textLines: [
-          'Corporate',
-          'Regulatory Compliance',
-          'and Changes',
+          'Employment',
+          'Employment',
+          '',
           '31 January, 2024',
         ],
-        toPage: PracticeAreasConstants.CORPORATE,
+        toPage: PracticeAreasConstants.EMPLOYMENT,
       },
     ],
     latestNewsImages: [

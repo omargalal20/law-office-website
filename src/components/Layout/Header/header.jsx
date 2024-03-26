@@ -143,7 +143,11 @@ export default function HeaderBar() {
         <img src={mobLogo} alt="Home" />
       </IconButton>
 
-      <Search key={'Search-Header'} inputColor='white' isSmallScreen={isSmallScreen} />
+      <Search
+        key={'Search-Header'}
+        inputColor="white"
+        isSmallScreen={isSmallScreen}
+      />
 
       <div>
         <IconButton onClick={toggleDrawer(true)}>
@@ -162,7 +166,11 @@ export default function HeaderBar() {
         </IconButton>
       </div>
 
-      <Search key={'Search-Header'} inputColor='white' isSmallScreen={isSmallScreen} />
+      <Search
+        key={'Search-Header'}
+        inputColor="white"
+        isSmallScreen={isSmallScreen}
+      />
 
       <div className={classes.root}>
         <IconButton onClick={toggleDrawer(true)}>

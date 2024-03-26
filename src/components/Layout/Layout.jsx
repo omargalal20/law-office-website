@@ -1,16 +1,17 @@
+import { Suspense, lazy } from 'react';
 import { Outlet } from 'react-router-dom';
-import Footer from './Footer/footer';
-import { Suspense } from 'react';
+
+import ScrollToTop from './ScrollToTop';
+
+const Footer = lazy(() => import('./Footer/footer'));
 
 export default function Layout() {
   return (
-    <>
-      <main>
-        <Suspense fallback={<div>Loading...</div>}>
-          <Outlet />
-          <Footer />
-        </Suspense>
-      </main>
-    </>
+    <ScrollToTop>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Outlet />
+        <Footer />
+      </Suspense>
+    </ScrollToTop>
   );
 }

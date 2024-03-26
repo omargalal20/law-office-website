@@ -28,5 +28,4 @@ const TeamPathConstants = {
   AMAL_AFIFI: '/team/amal-afifi',
 };
 
-
 export default TeamPathConstants;

@@ -1,11 +1,14 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { shuffleArray } from '../../../utils/ShuffleArray';
 
 import Insight from '../../../components/Layout/Insights/Insight';
-import Swiper from '../../../components/Common/Swiper/swiper';
-import ProfileCard from '../../../components/Common/ProfileCard/profileCard';
+
+const Swiper = lazy(() => import('../../../components/Common/Swiper/swiper'));
+const ProfileCard = lazy(
+  () => import('../../../components/Common/ProfileCard/profileCard')
+);
 
 import { InsightsInfo, RelatedInsightsImages } from '../InsightsInfos';
 
@@ -36,17 +39,19 @@ const PersonalRelatedInsights = () => {
           {insight.insightInfo}
         </Insight>
 
-        {insight.profiles && insight.profiles.length > 0 && (
-          <Swiper
-            key={insightName + '-Our-Experts-Swiper'}
-            sectionHeader={'Our Experts'}>
-            {insight.profiles.map((profile, index) => (
-              <swiper-slide key={index}>
-                <ProfileCard profileName={profile} profileImage={''} />
-              </swiper-slide>
-            ))}
-          </Swiper>
-        )}
+        <Suspense fallback={<div>Loading...</div>}>
+          {insight.profiles && insight.profiles.length > 0 && (
+            <Swiper
+              key={insightName + '-Our-Experts-Swiper'}
+              sectionHeader={'Our Experts'}>
+              {insight.profiles.map((profile, index) => (
+                <swiper-slide key={index}>
+                  <ProfileCard profileName={profile} profileImage={''} />
+                </swiper-slide>
+              ))}
+            </Swiper>
+          )}
+        </Suspense>
       </>
     )
   );

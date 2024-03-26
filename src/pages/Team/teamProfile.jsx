@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, lazy, Suspense } from 'react';
 import { useParams } from 'react-router-dom';
 
 import { shuffleArray } from '../../utils/ShuffleArray';
@@ -7,8 +7,13 @@ import hero from '../../assets/Images/Team/hero.png';
 
 import TextCard from '../../components/Common/TextCard/TextCard';
 import HeroTeam from '../../components/Common/Hero/heroTeam';
-import RelatedImagesSection from '../../components/Common/Section/relatedImagesSection';
-import TripleImageGrid from '../../components/Common/Section/tripleImageGrid';
+
+const RelatedImagesSection = lazy(
+  () => import('../../components/Common/Section/relatedImagesSection')
+);
+const TripleImageGrid = lazy(
+  () => import('../../components/Common/Section/tripleImageGrid')
+);
 
 import profilesData from '../../data/TeamProfiles.json';
 import { ProfileImagesData } from './profileImages';
@@ -34,21 +39,30 @@ const TeamProfile = () => {
   const { profileName } = useParams();
 
   const [profile, setProfile] = useState({});
-  const [profileImages, setProfileImages] = useState({});
+  const [profileImages, setProfileImages] = useState([]);
   const [latestNewsImages, setLatestNewsImages] = useState([]);
 
   const numberOfLatestNewsImages = 3;
+  const numberOfRelatedPracticeAreas = 2;
 
   useEffect(() => {
     const profilePageImagesKey =
       profilesData[profileName]?.profilePageImagesKey;
-    const suffledArray = shuffleArray(RelatedInsightsImages);
+    const suffledRelatedInsights = shuffleArray(RelatedInsightsImages);
+    const suffledRelatedPracticeAreas = profilePageImagesKey
+      ? shuffleArray(ProfileImagesData[profilePageImagesKey].relatedPracticeAreasImages)
+      : [];
 
     setProfile(profilesData[profileName] || {});
     setProfileImages(
-      profilePageImagesKey ? ProfileImagesData[profilePageImagesKey] : {}
+      {
+        profileImage: ProfileImagesData[profilePageImagesKey].profileImage,
+        relatedPracticeAreasImages: suffledRelatedPracticeAreas.slice(0, numberOfRelatedPracticeAreas)
+      }
     );
-    setLatestNewsImages(suffledArray.slice(0, numberOfLatestNewsImages));
+    setLatestNewsImages(
+      suffledRelatedInsights.slice(0, numberOfLatestNewsImages)
+    );
   }, [profileName]);
 
   return (
@@ -96,9 +110,12 @@ const TeamProfile = () => {
                   Practice Areas
                 </span>
               </p>
-              <RelatedImagesSection
-                insightImages={profileImages.relatedPracticeAreasImages}
-              />
+
+              <Suspense fallback={<div>Loading...</div>}>
+                <RelatedImagesSection
+                  insightImages={profileImages.relatedPracticeAreasImages}
+                />
+              </Suspense>
             </div>
             <p
               style={{
@@ -118,11 +135,13 @@ const TeamProfile = () => {
               </span>
             </p>
 
-            <TripleImageGrid
-              images={latestNewsImages}
-              width="569px"
-              bigWidth="712px"
-            />
+            <Suspense fallback={<div>Loading...</div>}>
+              <TripleImageGrid
+                images={latestNewsImages}
+                width="569px"
+                bigWidth="712px"
+              />
+            </Suspense>
           </Container>
         </ThemeProvider>
       </div>

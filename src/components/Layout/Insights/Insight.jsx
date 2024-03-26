@@ -1,8 +1,12 @@
+import { lazy, Suspense } from 'react';
 import PropTypes from 'prop-types';
 
 import HeroInsights from '../../Common/Hero/HeroInsights';
 import SectionHeader from '../../Common/Section/sectionHeader';
-import RelatedImagesSection from '../../Common/Section/relatedImagesSection';
+
+const RelatedImagesSection = lazy(
+  () => import('../../Common/Section/relatedImagesSection')
+);
 
 import createTheme from '@mui/material/styles/createTheme';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
@@ -46,11 +50,13 @@ const Insight = ({
 
           <SectionHeader title={'Related Insights'} />
 
-          <RelatedImagesSection
-            key={key}
-            insightImages={insightImages}
-            teamName={teamName}
-          />
+          <Suspense fallback={<div>Loading...</div>}>
+            <RelatedImagesSection
+              key={key}
+              insightImages={insightImages}
+              teamName={teamName}
+            />
+          </Suspense>
         </Container>
       </ThemeProvider>
     </>

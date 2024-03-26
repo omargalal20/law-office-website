@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, lazy, Suspense } from 'react';
 
 import { MainInsightsConstants } from '../../../utils/Constants';
 
@@ -14,8 +14,13 @@ import {
 } from './MainInsightsImages';
 
 import HeroInsights from '../../../components/Common/Hero/HeroInsights';
-import HoverableImageWith from '../../../components/Common/HoverableImage/hvImgwith';
-import ViewMoreInsights from '../../../components/Page/Insights/viewMoreInsights';
+
+const HoverableImageWith = lazy(
+  () => import('../../../components/Common/HoverableImage/hvImgwith')
+);
+const ViewMoreInsights = lazy(
+  () => import('../../../components/Page/Insights/viewMoreInsights')
+);
 
 import createTheme from '@mui/material/styles/createTheme';
 import ThemeProvider from '@mui/material/styles/ThemeProvider';
@@ -225,27 +230,32 @@ const MainInsights = () => {
             </Stack>
           </Stack>
 
-          {expanded && (
-            <Stack direction={'row'} spacing={4} sx={{ marginBottom: '20px' }}>
-              <Stack spacing={4}>
-                {exploreMoreInsightsImages.slice(0, 5).map(item => (
-                  <>{item.component}</>
-                ))}
+          <Suspense fallback={<div>Loading...</div>}>
+            {expanded && (
+              <Stack
+                direction={'row'}
+                spacing={4}
+                sx={{ marginBottom: '20px' }}>
+                <Stack spacing={4}>
+                  {exploreMoreInsightsImages.slice(0, 5).map(item => (
+                    <>{item.component}</>
+                  ))}
 
-                <ViewMoreInsights
-                  state={MainInsightsConstants.EXPANDED}
-                  toggleView={toggleView}
-                  setExpanded={setExpanded}
-                />
-              </Stack>
+                  <ViewMoreInsights
+                    state={MainInsightsConstants.EXPANDED}
+                    toggleView={toggleView}
+                    setExpanded={setExpanded}
+                  />
+                </Stack>
 
-              <Stack spacing={4}>
-                {exploreMoreInsightsImages.slice(5).map(item => (
-                  <>{item.component}</>
-                ))}
+                <Stack spacing={4}>
+                  {exploreMoreInsightsImages.slice(5).map(item => (
+                    <>{item.component}</>
+                  ))}
+                </Stack>
               </Stack>
-            </Stack>
-          )}
+            )}
+          </Suspense>
         </Container>
       </ThemeProvider>
     </>

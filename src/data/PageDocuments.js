@@ -155,8 +155,7 @@ export const Documents = [
   },
   {
     url: CareersPathConstants.CAREERS,
-    header:
-      'Main Careers, Interns, Professionals, Build Your Legal Career',
+    header: 'Main Careers, Interns, Professionals, Build Your Legal Career',
     text: 'We are proud to offer lawyers and professional staff myriad opportunities to apply their talents toward important, challenging projects on a global stage. We seek motivated individuals who are talented and committed to pursue meaningful work and ensure excellent service to clients.',
   },
   {
@@ -314,5 +313,5 @@ export const Documents = [
     url: TeamPathConstants.AMAL_AFIFI,
     header: 'Amal Afifi Team Profile',
     text: 'Founding and Managing Partner',
-  }
+  },
 ];

@@ -117,7 +117,7 @@ HoverableImageWith.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,
-  bigWidth: PropTypes.string.isRequired,
+  bigWidth: PropTypes.string,
   height: PropTypes.string.isRequired,
   text: PropTypes.arrayOf(PropTypes.string),
   toPage: PropTypes.string.isRequired,
